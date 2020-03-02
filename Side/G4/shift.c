@@ -6,7 +6,7 @@ void shift(int a[],int dim,int arg) {
     arg = arg-dim;
   }
   if (arg != 0) {
-    i=arg-1;
+    i=arg;
     while (c < dim) {
       B[c]=a[i];
       if ((i+1)>=dim) i=0;
