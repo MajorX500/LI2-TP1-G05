@@ -27,7 +27,7 @@ int main(int argc,char *argv[]) {
         printArray(a,dim);
       break;
     }
-      default:printf("Wrong Job");
+      default:printf("Wrong Job\n");
   }
   return 0;
 }
