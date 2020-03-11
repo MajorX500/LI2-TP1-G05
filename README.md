@@ -1,5 +1,5 @@
-# SlimeTrail - LI2
-Um jogo baseado no jogo "SlimeTrail", criado em C no âmbito da cadeira de Laboratórios de Informática II 2019/2020, no mestrado integrado em Engenharia Informática da Universidade do Minho.
+# Rastros - LI2
+Um jogo baseado no jogo "Rastros", criado em C no âmbito da cadeira de Laboratórios de Informática II 2019/2020, no mestrado integrado em Engenharia Informática da Universidade do Minho.
 
 Turno - PL1
 
