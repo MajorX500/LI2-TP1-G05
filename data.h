@@ -26,6 +26,10 @@ typedef struct
     int current_player;
 } STATE;
 
+void empty_board(HOUSE [8][8]);
+
+STATE *starting_state();
+
 int get_current_player(STATE *);
 
 HOUSE get_house(STATE *, COORDINATES);
