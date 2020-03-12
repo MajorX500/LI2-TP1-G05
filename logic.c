@@ -9,12 +9,12 @@ int validate_move(STATE *s, COORDINATES c)
     {
         make_move(s, c);
         printf("Move %d %d\n", c.x, c.y);
-        draw_board(s);
+        draw(s);
         return 1;
     }
     else
     {
-        printf("Invalid move");
+        printf("Invalid move\n");
         return 0;
     }
 }

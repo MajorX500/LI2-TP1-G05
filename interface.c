@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "data.h"
 
 void draw(STATE *s) {
@@ -16,9 +17,16 @@ void draw(STATE *s) {
     y++;
   }
 }
-/*
-int main() {
-  draw(starting_state());
-  return 0;
+
+int CMD(STATE *e) {
+  char command[1024];
+  char x[2], y[2];
+  if(fgets(command, 1024, stdin) == NULL) return 0;
+  if(strlen(command) == 3 && sscanf(command, "%[a-h]%[1-8]", x, y) == 2) {
+    COORDINATES pos = {*x -'a', *y -'1'};
+    printf("%s %s\n",x,y);
+    make_move(e, pos);
+    draw(e);
+  }
+  return 1;
 }
-*/
