@@ -55,6 +55,6 @@ int get_current_player(STATE *s)
 HOUSE get_house(STATE *s, COORDINATES c)
 {
     HOUSE b[8][8];
-    memcpy(b,s -> board,8);
+    memcpy(b,s -> board,8); //copy the matrix (s.board) to b with size 8. (needed strings.h)
     return b[c.y][c.x];
 }
