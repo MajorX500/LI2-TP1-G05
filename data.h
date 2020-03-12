@@ -26,4 +26,10 @@ typedef struct
     int current_player;
 } STATE;
 
+int get_current_player(STATE *);
+
+HOUSE get_house(STATE *, COORDINATES);
+
+int get_num_moves(STATE *);
+
 #endif
