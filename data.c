@@ -5,7 +5,7 @@ void empty_board(HOUSE board[8][8])
     int x, y;
     for (y = 0; y < 8; y ++)
     {
-        for (x = 0; x < 8; x ++)    
+        for (x = 0; x < 8; x ++)
             board[x][y] = EMPTY;
     }
     board[4][4] = BLACK;
