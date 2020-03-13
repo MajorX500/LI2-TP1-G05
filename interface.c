@@ -22,10 +22,10 @@ void draw(STATE *s) {
 int CMD(STATE *s) {
   char command[1024];
   char x[2], y[2];
-<<<<<<< HEAD
   do
   {
     if(fgets(command, 1024, stdin) == NULL) return 0;
+    if(strlen(command) == 2) return 0;
     if(strlen(command) == 3 && sscanf(command, "%[a-h]%[1-8]", x, y) == 2) {
       COORDINATES pos = {*x -'a', 7 - (*y -'1')};
       printf("%d %d\n",pos.x, pos.y);
@@ -33,15 +33,5 @@ int CMD(STATE *s) {
       draw(s);
     }
   } while (command != "Q");
-=======
-  if(fgets(command, 1024, stdin) == NULL) return 0;
-  if(strlen(command) == 2) return 0;
-  if(strlen(command) == 3 && sscanf(command, "%[a-h]%[1-8]", x, y) == 2) {
-    COORDINATES pos = {*x -'a', *y -'1'};
-    printf("%s %s\n",x,y);
-    make_move(e, pos);
-    draw(e);
-  }
->>>>>>> 1738582f3630c41809d74574e0f85e37b09d74fb
   return 1;
 }
