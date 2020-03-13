@@ -22,6 +22,7 @@ int CMD(STATE *e) {
   char command[1024];
   char x[2], y[2];
   if(fgets(command, 1024, stdin) == NULL) return 0;
+  if(strlen(command) == 2){return 0;}
   if(strlen(command) == 3 && sscanf(command, "%[a-h]%[1-8]", x, y) == 2) {
     COORDINATES pos = {*x -'a', *y -'1'};
     printf("%s %s\n",x,y);
