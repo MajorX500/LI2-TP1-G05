@@ -2,8 +2,7 @@
 #include "interface.h"
 #include <stdlib.h>
 
-int main()
-{
+int main() {
     STATE *s = starting_state();
     draw(s);
     CMD(s);

@@ -2,18 +2,13 @@
 #include "interface.h"
 #include <stdio.h>
 
-int validate_move(STATE *s, COORDINATES c)
-{
-    COORDINATES old_c = s -> previous_move;
-    if ((c.x == old_c.x + 1 || c.x == old_c.x - 1) && (c.y == old_c.y + 1 || c.y == old_c.y - 1) && get_house(s, c) == EMPTY)
-    {
-        make_move(s, c);
+int validate_move(STATE *s, COORDINATES c) {
+    COORDINATES prev_move = get_previous_move(s);
+    if ((c.x == prev_move.x + 1 || c.x == prev_move.x - 1 || c.x == prev_move.x) && (c.y == prev_move.y + 1 || c.y == prev_move.y - 1 || c.x == prev_move.y) && get_house(s, c) == EMPTY) {
         printf("Move %d %d\n", c.x, c.y);
-        draw(s);
         return 1;
     }
-    else
-    {
+    else {
         printf("Invalid move\n");
         return 0;
     }

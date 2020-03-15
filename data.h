@@ -36,6 +36,8 @@ HOUSE get_house(STATE *, COORDINATES);
 
 int get_num_moves(STATE *);
 
+COORDINATES get_previous_move (STATE *s);
+
 void make_move(STATE *s, COORDINATES c);
 
 #endif

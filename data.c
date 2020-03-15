@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include "data.h"
 
-void empty_board(HOUSE board[8][8])
-{
+void empty_board(HOUSE board[8][8]) {
     int x, y;
     for (y = 0; y < 8; y ++)
     {
@@ -12,8 +11,7 @@ void empty_board(HOUSE board[8][8])
     board[3][4] = WHITE;
 }
 
-STATE *starting_state()
-{
+STATE *starting_state() {
     STATE *s = (STATE *) malloc(sizeof(STATE));
     empty_board(s -> board);
     s -> previous_move.x = 4;
@@ -23,23 +21,23 @@ STATE *starting_state()
     return s;
 }
 
-int get_current_player(STATE *s)
-{
+int get_current_player(STATE *s) {
     return s -> current_player;
 }
 
-HOUSE get_house(STATE *s, COORDINATES c)
-{
+HOUSE get_house(STATE *s, COORDINATES c) {
     return s -> board[c.y][c.x];
 }
 
-int get_num_moves(STATE *s)
-{
+int get_num_moves(STATE *s) {
     return s -> num_moves;
 }
 
-void make_move(STATE *s, COORDINATES c)
-{
+COORDINATES get_previous_move (STATE *s) {
+    return s -> previous_move;
+}
+
+void make_move(STATE *s, COORDINATES c) {
     s -> board[c.y][c.x] = WHITE;
     s -> board[s -> previous_move.y][s -> previous_move.x] = BLACK;
     s -> previous_move = c;
