@@ -13,7 +13,7 @@ void draw(STATE *s) {
       if (x == 7 && y == 0) {printf(" 2");}
       else if (x == 0 && y == 7) {printf(" 1");}
       else if (get_house(s, (COORDINATES){x, y}) == EMPTY) {printf(" .");}
-      else if (s->board[y][x] == WHITE) {printf(" @");}
+      else if (get_house(s, (COORDINATES){x, y}) == WHITE) {printf(" @");}
       else{printf(" #");}
       x++;
     }
