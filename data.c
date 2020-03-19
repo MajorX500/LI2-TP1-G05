@@ -3,8 +3,7 @@
 
 void empty_board(HOUSE board[8][8]) {
     int x, y;
-    for (y = 0; y < 8; y ++)
-    {
+    for (y = 0; y < 8; y ++) {
         for (x = 0; x < 8; x ++)
             board[y][x] = EMPTY;
     }
@@ -37,7 +36,7 @@ COORDINATES get_previous_move (STATE *s) {
     return s -> previous_move;
 }
 
-void make_move(STATE *s, COORDINATES c) {
+void make_move(STATE *s, COORDINATES c) { //this function has to go to logic
     s -> board[c.y][c.x] = WHITE;
     s -> board[s -> previous_move.y][s -> previous_move.x] = BLACK;
     s -> previous_move = c;

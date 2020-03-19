@@ -23,7 +23,7 @@ void draw(STATE *s) {
   }
 }
 
-int CMD(STATE *s) {
+int CMD(STATE *s) { // switch with first char
   char command[BUF_SIZE];
   char x[2], y[2];
   do
@@ -38,6 +38,6 @@ int CMD(STATE *s) {
         draw(s);
       }
     }
-  } while (command != "Q");
+  } while (command[0] != 'Q');
   return 1;
 }
