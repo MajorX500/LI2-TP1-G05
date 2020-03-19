@@ -1,18 +1,24 @@
 #ifndef __DATA_H__
 #define __DATA_H__
 
-typedef enum {EMPTY, WHITE, BLACK} HOUSE;
+typedef enum {
+    EMPTY = '.',
+    WHITE = '@',
+    BLACK = '#',
+    H1 = '1',
+    H2 = '2'
+    } HOUSE;
 
 typedef struct 
 {
     int x; //columns
     int y; //lines
-} COORDINATES;
+} COORDINATE;
 
 typedef struct 
 {
-    COORDINATES player1;
-    COORDINATES player2;
+    COORDINATE player1;
+    COORDINATE player2;
 } MOVE;
 
 typedef MOVE MOVES[32];
@@ -20,7 +26,7 @@ typedef MOVE MOVES[32];
 typedef struct 
 {
     HOUSE board[8][8]; //board state
-    COORDINATES previous_move;
+    COORDINATE previous_move;
     MOVES moves;
     int num_moves;
     int current_player;
@@ -32,12 +38,16 @@ STATE *starting_state();
 
 int get_current_player(STATE *);
 
-HOUSE get_house(STATE *, COORDINATES);
+HOUSE get_house(STATE *, COORDINATE);
 
 int get_num_moves(STATE *);
 
-COORDINATES get_previous_move (STATE *s);
+COORDINATE get_previous_move (STATE *);
 
-void make_move(STATE *s, COORDINATES c);
+void put_white_house(STATE *, COORDINATE );
+
+void put_black_house(STATE *);
+
+void update_previous_move(STATE *, COORDINATE );
 
 #endif

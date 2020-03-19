@@ -1,43 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <string.h>
 #include "data.h"
 #include "logic.h"
 
 #define BUF_SIZE 1024
 
 void draw(STATE *s) {
-  int y=0,x=0;
-  while (y < 8) {
-    while (x < 8) {
-      if (x == 7 && y == 0) {printf(" 2");}
-      else if (x == 0 && y == 7) {printf(" 1");}
-      else if (get_house(s, (COORDINATES){x, y}) == EMPTY) {printf(" .");}
-      else if (get_house(s, (COORDINATES){x, y}) == WHITE) {printf(" @");}
-      else{printf(" #");}
-      x++;
-    }
-    x=0;
-    printf("\n");
-    y++;
-  }
+    int y, x, i = 8;
+    for (y = 0, putchar('\n'); y < 8; y++, i--, putchar('\n'))
+        for (x = 0, printf("%d ", i); x < 8; x++)
+            printf(" %c", get_house(s, (COORDINATE){x, y}));
+    puts("\n   a b c d e f g h\n");
 }
 
-int CMD(STATE *s) { // switch with first char
+int CMD(STATE *s) {
   char command[BUF_SIZE];
-  char x[2], y[2];
-  do
-  {
+  do {
     if(fgets(command, 1024, stdin) == NULL) return 0;
-    if(strlen(command) == 2) return 0;
-    if(strlen(command) == 3 && sscanf(command, "%[a-h]%[1-8]", x, y) == 2) {
-      COORDINATES pos = {*x -'a', 7 - (*y -'1')};
-      printf("%d %d\n",pos.x, pos.y);
-      if (validate_move(s, pos)){
-        make_move(s, pos);
-        draw(s);
-      }
+    switch (command[0]) {
+        case 'a' ... 'h': {
+            if (command[0] == 'g' && command[1] == 'r')
+                //gravar()
+                ;
+            else if (command[1] >= '1' && command[1] <= '8') {
+                COORDINATE c = {command[0] - 'a', 7 - (command[1] - '1')};
+                if (validate_move(s, c)) {
+                    if (check_winner(s, c))
+                        printf("Player %d wins!", check_winner(s, c));
+                    make_move(s, c);
+                    if (!valid_moves(s)) (printf("Player %d wins!",(get_current_player(s) + 1 % 2)));
+                }
+            }
+            else puts("Invalid Command");
+        }
     }
-  } while (command[0] != 'Q');
+    draw(s);
+  } while (strncmp (command, "Q", 1));
   return 1;
 }
