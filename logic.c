@@ -4,8 +4,8 @@
 #include "interface.h"
 
 void make_move(STATE *s, COORDINATE c) {
-    put_white_house(s, c);
-    put_black_house(s);
+    change_house(s, c, WHITE);
+    change_house(s, get_previous_move(s), BLACK);
     update_previous_move(s, c);
 }
 

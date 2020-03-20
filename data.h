@@ -44,9 +44,7 @@ int get_num_moves(STATE *);
 
 COORDINATE get_previous_move (STATE *);
 
-void put_white_house(STATE *, COORDINATE );
-
-void put_black_house(STATE *);
+void change_house(STATE *, COORDINATE , HOUSE);
 
 void update_previous_move(STATE *, COORDINATE );
 

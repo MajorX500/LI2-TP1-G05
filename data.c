@@ -38,12 +38,8 @@ COORDINATE get_previous_move(STATE *s) {
     return s -> previous_move;
 }
 
-void put_white_house(STATE *s, COORDINATE c) {
-    s -> board[c.y][c.x] = WHITE;
-}
-
-void put_black_house(STATE *s) {
-    s -> board[s -> previous_move.y][s -> previous_move.x] = BLACK;
+void change_house(STATE *s, COORDINATE c, HOUSE h) {
+    s -> board[c.y][c.x] = h;
 }
 
 void update_previous_move(STATE *s, COORDINATE c) {
