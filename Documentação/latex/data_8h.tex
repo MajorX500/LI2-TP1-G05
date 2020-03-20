@@ -1,0 +1,193 @@
+\hypertarget{data_8h}{}\doxysection{Referência ao ficheiro C\+:/\+Users/\+Miguel Gomes/\+Documents/\+Miguel/\+Uni/\+L\+I2-\/\+T\+P1-\/\+G05/data.h}
+\label{data_8h}\index{C:/Users/Miguel Gomes/Documents/Miguel/Uni/LI2-\/TP1-\/G05/data.h@{C:/Users/Miguel Gomes/Documents/Miguel/Uni/LI2-\/TP1-\/G05/data.h}}
+\doxysubsection*{Componentes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_o_o_r_d_i_n_a_t_e}{C\+O\+O\+R\+D\+I\+N\+A\+TE}}
+\begin{DoxyCompactList}\small\item\em Tipo de dados para as coordenadas. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_m_o_v_e}{M\+O\+VE}}
+\begin{DoxyCompactList}\small\item\em Tipo de dados para a jogada. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}}
+\begin{DoxyCompactList}\small\item\em Tipo de dados para o estado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Definições de tipos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{data_8h_abea336e51b9e60c4d4a3752105b05c67}\label{data_8h_abea336e51b9e60c4d4a3752105b05c67}} 
+typedef \mbox{\hyperlink{struct_m_o_v_e}{M\+O\+VE}} \mbox{\hyperlink{data_8h_abea336e51b9e60c4d4a3752105b05c67}{M\+O\+V\+ES}}\mbox{[}32\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tipo de dados para as jogadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerações}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{data_8h_a695a2c9044d3fd6651f8eeeced1b312b}\label{data_8h_a695a2c9044d3fd6651f8eeeced1b312b}} 
+enum \mbox{\hyperlink{data_8h_a695a2c9044d3fd6651f8eeeced1b312b}{H\+O\+U\+SE}} \{ \newline
+{\bfseries E\+M\+P\+TY} = \textquotesingle{}.\textquotesingle{}, 
+{\bfseries W\+H\+I\+TE} = \textquotesingle{}@\textquotesingle{}, 
+{\bfseries B\+L\+A\+CK} = \textquotesingle{}\#\textquotesingle{}, 
+{\bfseries H1} = \textquotesingle{}1\textquotesingle{}, 
+\newline
+{\bfseries H2} = \textquotesingle{}2\textquotesingle{}
+ \}
+\begin{DoxyCompactList}\small\item\em Tipo de dados para a casa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{data_8h_a77ff8c01d209d95f750e19c569900052}{empty\+\_\+board}} (\mbox{\hyperlink{data_8h_a695a2c9044d3fd6651f8eeeced1b312b}{H\+O\+U\+SE}}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]})
+\begin{DoxyCompactList}\small\item\em Tabuleiro vazio. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}} $\ast$ \mbox{\hyperlink{data_8h_a7f5845c0422715df4f2ebab7cd9fd6ad}{starting\+\_\+state}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa o valor do estado Esta função inicializa o valor do estado. Isso implica o tabuleiro ser colocado na posição inicial e todos os campos do estado estarem com o valor por omissão. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{data_8h_a8afc6da34265592d514ee773812c05ae}{get\+\_\+current\+\_\+player}} (\mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Jogador Atual. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{data_8h_a695a2c9044d3fd6651f8eeeced1b312b}{H\+O\+U\+SE}} \mbox{\hyperlink{data_8h_abbaadf8ce3fb2f08c03cb5de4b9a0a27}{get\+\_\+house}} (\mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}} $\ast$, \mbox{\hyperlink{struct_c_o_o_r_d_i_n_a_t_e}{C\+O\+O\+R\+D\+I\+N\+A\+TE}})
+\begin{DoxyCompactList}\small\item\em Devolve o valor de uma casa. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{data_8h_ab234de075947f34e2fa05465ecd99487}{get\+\_\+num\+\_\+moves}} (\mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Número de jogadas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_o_o_r_d_i_n_a_t_e}{C\+O\+O\+R\+D\+I\+N\+A\+TE}} \mbox{\hyperlink{data_8h_aef3b23609044410974811c284d23ebf9}{get\+\_\+previous\+\_\+move}} (\mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Jogada anterior. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{data_8h_a1de49f0a068501662a111fe84639e65a}{change\+\_\+house}} (\mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}} $\ast$, \mbox{\hyperlink{struct_c_o_o_r_d_i_n_a_t_e}{C\+O\+O\+R\+D\+I\+N\+A\+TE}}, \mbox{\hyperlink{data_8h_a695a2c9044d3fd6651f8eeeced1b312b}{H\+O\+U\+SE}})
+\begin{DoxyCompactList}\small\item\em Querido Mudei a Casa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{data_8h_a3f5b9792edc954b44e0230ebb0acb2f0}{update\+\_\+previous\+\_\+move}} (\mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}} $\ast$, \mbox{\hyperlink{struct_c_o_o_r_d_i_n_a_t_e}{C\+O\+O\+R\+D\+I\+N\+A\+TE}})
+\begin{DoxyCompactList}\small\item\em Atualiza jogada anterior. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Definição do estado e das funções que o manipulam 
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{data_8h_a1de49f0a068501662a111fe84639e65a}\label{data_8h_a1de49f0a068501662a111fe84639e65a}} 
+\index{data.h@{data.h}!change\_house@{change\_house}}
+\index{change\_house@{change\_house}!data.h@{data.h}}
+\doxysubsubsection{\texorpdfstring{change\_house()}{change\_house()}}
+{\footnotesize\ttfamily void change\+\_\+house (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}} $\ast$}]{,  }\item[{\mbox{\hyperlink{struct_c_o_o_r_d_i_n_a_t_e}{C\+O\+O\+R\+D\+I\+N\+A\+TE}}}]{,  }\item[{\mbox{\hyperlink{data_8h_a695a2c9044d3fd6651f8eeeced1b312b}{H\+O\+U\+SE}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Querido Mudei a Casa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em e} & Apontador para o estado \\
+\hline
+{\em c} & A coordenada \\
+\hline
+{\em h} & O valor da casa Esta função altera o valor da casa de uma certa coordenada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{data_8h_a77ff8c01d209d95f750e19c569900052}\label{data_8h_a77ff8c01d209d95f750e19c569900052}} 
+\index{data.h@{data.h}!empty\_board@{empty\_board}}
+\index{empty\_board@{empty\_board}!data.h@{data.h}}
+\doxysubsubsection{\texorpdfstring{empty\_board()}{empty\_board()}}
+{\footnotesize\ttfamily void empty\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{data_8h_a695a2c9044d3fd6651f8eeeced1b312b}{H\+O\+U\+SE}}}]{\mbox{[}8\mbox{]}\mbox{[}8\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Tabuleiro vazio. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em t} & Array do tabuleiro Esta função inicializa o array do tabuleiro. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{data_8h_a8afc6da34265592d514ee773812c05ae}\label{data_8h_a8afc6da34265592d514ee773812c05ae}} 
+\index{data.h@{data.h}!get\_current\_player@{get\_current\_player}}
+\index{get\_current\_player@{get\_current\_player}!data.h@{data.h}}
+\doxysubsubsection{\texorpdfstring{get\_current\_player()}{get\_current\_player()}}
+{\footnotesize\ttfamily int get\+\_\+current\+\_\+player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Jogador Atual. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em e} & Apontador para o estado Esta função diz qual é o jogador a efectuar a jogada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+O jogador atual 
+\end{DoxyReturn}
+\mbox{\Hypertarget{data_8h_abbaadf8ce3fb2f08c03cb5de4b9a0a27}\label{data_8h_abbaadf8ce3fb2f08c03cb5de4b9a0a27}} 
+\index{data.h@{data.h}!get\_house@{get\_house}}
+\index{get\_house@{get\_house}!data.h@{data.h}}
+\doxysubsubsection{\texorpdfstring{get\_house()}{get\_house()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{data_8h_a695a2c9044d3fd6651f8eeeced1b312b}{H\+O\+U\+SE}} get\+\_\+house (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}} $\ast$}]{,  }\item[{\mbox{\hyperlink{struct_c_o_o_r_d_i_n_a_t_e}{C\+O\+O\+R\+D\+I\+N\+A\+TE}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Devolve o valor de uma casa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em e} & Apontador para o estado \\
+\hline
+{\em c} & A coordenada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+O valor da casa 
+\end{DoxyReturn}
+\mbox{\Hypertarget{data_8h_ab234de075947f34e2fa05465ecd99487}\label{data_8h_ab234de075947f34e2fa05465ecd99487}} 
+\index{data.h@{data.h}!get\_num\_moves@{get\_num\_moves}}
+\index{get\_num\_moves@{get\_num\_moves}!data.h@{data.h}}
+\doxysubsubsection{\texorpdfstring{get\_num\_moves()}{get\_num\_moves()}}
+{\footnotesize\ttfamily int get\+\_\+num\+\_\+moves (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Número de jogadas. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em e} & Apontador para o estado Esta função calcula qual o número total das jogadas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Número total de jogadas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{data_8h_aef3b23609044410974811c284d23ebf9}\label{data_8h_aef3b23609044410974811c284d23ebf9}} 
+\index{data.h@{data.h}!get\_previous\_move@{get\_previous\_move}}
+\index{get\_previous\_move@{get\_previous\_move}!data.h@{data.h}}
+\doxysubsubsection{\texorpdfstring{get\_previous\_move()}{get\_previous\_move()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_o_o_r_d_i_n_a_t_e}{C\+O\+O\+R\+D\+I\+N\+A\+TE}} get\+\_\+previous\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Jogada anterior. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em e} & Apontador para o estado Esta função diz qual foi a coordenada da jogada anterior. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+A coordenada da jogada anterior 
+\end{DoxyReturn}
+\mbox{\Hypertarget{data_8h_a7f5845c0422715df4f2ebab7cd9fd6ad}\label{data_8h_a7f5845c0422715df4f2ebab7cd9fd6ad}} 
+\index{data.h@{data.h}!starting\_state@{starting\_state}}
+\index{starting\_state@{starting\_state}!data.h@{data.h}}
+\doxysubsubsection{\texorpdfstring{starting\_state()}{starting\_state()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}}$\ast$ starting\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa o valor do estado Esta função inicializa o valor do estado. Isso implica o tabuleiro ser colocado na posição inicial e todos os campos do estado estarem com o valor por omissão. 
+
+\begin{DoxyReturn}{Retorna}
+O novo estado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{data_8h_a3f5b9792edc954b44e0230ebb0acb2f0}\label{data_8h_a3f5b9792edc954b44e0230ebb0acb2f0}} 
+\index{data.h@{data.h}!update\_previous\_move@{update\_previous\_move}}
+\index{update\_previous\_move@{update\_previous\_move}!data.h@{data.h}}
+\doxysubsubsection{\texorpdfstring{update\_previous\_move()}{update\_previous\_move()}}
+{\footnotesize\ttfamily void update\+\_\+previous\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_t_a_t_e}{S\+T\+A\+TE}} $\ast$}]{,  }\item[{\mbox{\hyperlink{struct_c_o_o_r_d_i_n_a_t_e}{C\+O\+O\+R\+D\+I\+N\+A\+TE}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Atualiza jogada anterior. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em e} & Apontador para o estado \\
+\hline
+{\em c} & A coordenada Esta função altera a coordenada da jogada anterior no estado para a coordenada nova. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,49 @@
+.TH "STATE" 3 "Sexta, 20 de Março de 2020" "Version 0.1" "SlimeTrail" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+STATE \- Tipo de dados para o estado\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <data\&.h>\fP
+.SS "Atributos Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBHOUSE\fP \fBboard\fP [8][8]"
+.br
+.ti -1c
+.RI "\fBCOORDINATE\fP \fBprevious_move\fP"
+.br
+.ti -1c
+.RI "\fBMOVES\fP \fBmoves\fP"
+.br
+.ti -1c
+.RI "int \fBnum_moves\fP"
+.br
+.ti -1c
+.RI "int \fBcurrent_player\fP"
+.br
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Tipo de dados para o estado\&. 
+.SH "Documentação dos dados membro"
+.PP 
+.SS "\fBHOUSE\fP STATE::board[8][8]"
+O tabuleiro 
+.SS "int STATE::current_player"
+O jogador atual 
+.SS "\fBMOVES\fP STATE::moves"
+As jogadas 
+.SS "int STATE::num_moves"
+O número das jogadas, usado no prompt 
+.SS "\fBCOORDINATE\fP STATE::previous_move"
+A coordenada da última jogada 
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para SlimeTrail a partir do código fonte\&.

@@ -1,0 +1,101 @@
+.TH "C:/Users/Miguel Gomes/Documents/Miguel/Uni/LI2-TP1-G05/logic.h" 3 "Sexta, 20 de Março de 2020" "Version 0.1" "SlimeTrail" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/Miguel Gomes/Documents/Miguel/Uni/LI2-TP1-G05/logic.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Funções"
+
+.in +1c
+.ti -1c
+.RI "void \fBmake_move\fP (\fBSTATE\fP *, \fBCOORDINATE\fP)"
+.br
+.RI "I like to move it, move it\&. "
+.ti -1c
+.RI "int \fBvalidate_move\fP (\fBSTATE\fP *, \fBCOORDINATE\fP)"
+.br
+.RI "Valida\&. "
+.ti -1c
+.RI "int \fBcheck_winner\fP (\fBSTATE\fP *, \fBCOORDINATE\fP)"
+.br
+.RI "Verifica vencedor\&. "
+.ti -1c
+.RI "int \fBvalid_moves\fP (\fBSTATE\fP *)"
+.br
+.RI "Scanner\&. "
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Definição da parte lógica do jogo\&. 
+.SH "Documentação das funções"
+.PP 
+.SS "int check_winner (\fBSTATE\fP *, \fBCOORDINATE\fP)"
+
+.PP
+Verifica vencedor\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIe\fP Apontador para o estado 
+.br
+\fIc\fP A coordenada Esta função verifica se existem vencedores no momento da jogada\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Verdadeiro ou Falso 
+.RE
+.PP
+
+.SS "void make_move (\fBSTATE\fP *, \fBCOORDINATE\fP)"
+
+.PP
+I like to move it, move it\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIe\fP Apontador para o estado 
+.br
+\fIc\fP A coordenada Esta função realiza o movimento chamando todas as auxiliares\&. 
+.RE
+.PP
+
+.SS "int valid_moves (\fBSTATE\fP *)"
+
+.PP
+Scanner\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIe\fP Apontador para o estado Esta função calcula todos os movimentos possíveis no tabuleiro\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Número de jogadas possíveis 
+.RE
+.PP
+
+.SS "int validate_move (\fBSTATE\fP *, \fBCOORDINATE\fP)"
+
+.PP
+Valida\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIe\fP Apontador para o estado 
+.br
+\fIc\fP A coordenada Esta função faz a validação de uma jogada com uma certa coordenada\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Verdadeiro ou Falso 
+.RE
+.PP
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para SlimeTrail a partir do código fonte\&.

@@ -1,0 +1,101 @@
+.TH "C:/Users/Miguel Gomes/Documents/Miguel/Uni/LI2-TP1-G05/interface.h" 3 "Sexta, 20 de Março de 2020" "Version 0.1" "SlimeTrail" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/Miguel Gomes/Documents/Miguel/Uni/LI2-TP1-G05/interface.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Funções"
+
+.in +1c
+.ti -1c
+.RI "void \fBdraw\fP (\fBSTATE\fP *, FILE *)"
+.br
+.RI "Desenha\&. "
+.ti -1c
+.RI "void \fBsave\fP (\fBSTATE\fP *, FILE *)"
+.br
+.RI "Guarda\&. "
+.ti -1c
+.RI "void \fBmove\fP (\fBSTATE\fP *, \fBCOORDINATE\fP)"
+.br
+.RI "Movimento\&. "
+.ti -1c
+.RI "int \fBCMD\fP (\fBSTATE\fP *)"
+.br
+.RI "Interpretador de commandos\&. "
+.ti -1c
+.RI "void \fBprompt\fP (\fBSTATE\fP *s)"
+.br
+.RI "Prompt\&. "
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Definição da interface\&. 
+.SH "Documentação das funções"
+.PP 
+.SS "int CMD (\fBSTATE\fP *)"
+
+.PP
+Interpretador de commandos\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIe\fP Apontador para o estado Esta função funciona como interpretador de comandos\&. 
+.RE
+.PP
+
+.SS "void draw (\fBSTATE\fP *, FILE *)"
+
+.PP
+Desenha\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIe\fP Apontador para o estado 
+.br
+\fIF\fP Ficheiro Esta função desenha o estado num ficheiro (stdout)\&. 
+.RE
+.PP
+
+.SS "void move (\fBSTATE\fP *, \fBCOORDINATE\fP)"
+
+.PP
+Movimento\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIe\fP Apontador para o estado 
+.br
+\fIc\fP A coordenada Esta função faz a verificação de vencedores e caso não exista realiza o movimento\&. 
+.RE
+.PP
+
+.SS "void prompt (\fBSTATE\fP * s)"
+
+.PP
+Prompt\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIe\fP Apontador para o estado Esta função faz print a informações úteis no ecran\&. 
+.RE
+.PP
+
+.SS "void save (\fBSTATE\fP *, FILE *)"
+
+.PP
+Guarda\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIe\fP Apontador para o estado 
+.br
+\fIF\fP Ficheiro Esta função guarda o estado atual num ficheiro\&. 
+.RE
+.PP
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para SlimeTrail a partir do código fonte\&.

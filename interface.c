@@ -27,7 +27,7 @@ void read(STATE *s, FILE *file) {
             for (int x = 0; x < 8;) {
                 char c = fgetc(file);
                 if (c != ' ') {
-                    change_house(s, (COORDINATE){x,y}, c); 
+                    change_house(s, (COORDINATE){x,y}, c);
                     x ++;
                 }
             fgetc(file);
@@ -47,7 +47,7 @@ void move(STATE *s, COORDINATE c) {
 int CMD(STATE *s) {
     char command[BUF_SIZE];
     do {
-    if(fgets(command, 1024, stdin) == NULL) return 0;
+    if(fgets(command, BUF_SIZE, stdin) == NULL) return 0;
     switch (command[0]) {
         case 'a' ... 'h': {
             if (command[0] == 'g' && command[1] == 'r') {
@@ -73,4 +73,13 @@ int CMD(STATE *s) {
     draw(s, stdout);
     } while (command[0] != 'Q');
     return 1;
+}
+
+void prompt(STATE *s){
+  int move;
+  if (get_num_moves(s)>=1) {
+    move = (get_num_moves(s))/2
+    printf("Jogada %d\n",move);
+  }
+  printf("jogador%d@slimetrail>",get_current_player(s));
 }
