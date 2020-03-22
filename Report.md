@@ -8,7 +8,8 @@ Não foram encontradas grandes dificuldades, apenas tivemos que pesquisar alguma
 
 # Guião 6:
 
-Neste Guião desenvolvemos as funções `ler`, `gr` e `Q`, que fazem a leitura de um estado a partir um ficheiro, gravação de um estado num ficheiro e o fecho da aplicação respetivamente.
-Também criamos um prompt que escreve no terminal algumas informações essenciais aos jogadores para garantir uma experiencia agradável.
+Neste Guião desenvolvemos as funções `ler`, `gr`, `Q` e `check_winner`, que fazem a leitura de um estado a partir um ficheiro, gravação de um estado num ficheiro, o fecho da aplicação e verifica se naquela jogada existe algum vencedor respetivamente.
+Criamos um prompt que escreve no terminal algumas informações essenciais aos jogadores para garantir uma experiencia agradável.
+Acabamos a função que verifica se a jogada é válida, juntamente com a função que realiza o movimento.
 
-Com a ajuda do programa Doxygen passamos à fase de criação da documentação do código, onde surgiu a única dificuldade com que nos deparamos: a "syntax" utilizada na documentação, que implicou a leitura da documentação da aplicação e a consulta de fóruns. 
+Com a ajuda do programa Doxygen passamos à fase de criação da documentação do código, onde surgiu a única dificuldade com que nos deparamos: a "syntax" utilizada na documentação, que implicou a leitura da documentação da aplicação e a consulta de fóruns.
