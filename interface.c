@@ -37,16 +37,14 @@ void read(STATE *s, FILE *file) {
     }
 }
 
-void move(STATE *s, COORDINATE c) {
-    if (check_winner(s, c))
-        printf("Player %d wis.board!\n", check_winner(s, c));
-    make_move(s, c);
-    if (!valid_moves(s)) (printf("Player %d wins!\n",(get_current_player(s) + 1 % 2)));
+void prompt(STATE *s){
+  printf("# PL%d (%d) > " ,get_current_player(s), get_num_moves(s) / 2);
 }
 
 int CMD(STATE *s) {
     char command[BUF_SIZE];
     do {
+    prompt(s);
     if(fgets(command, BUF_SIZE, stdin) == NULL) return 0;
     switch (command[0]) {
         case 'a' ... 'h': {
@@ -62,12 +60,14 @@ int CMD(STATE *s) {
                 else puts ("Invalid Coordinate");
             }
             else puts("Invalid Command");
+            break;
         }
         case 'l': {
             char f[BUF_SIZE];
             sscanf(command, "%*s %s", f);
             FILE *file = fopen(f, "r");
             read(s, file);
+            break;
         }
     }
     draw(s, stdout);
@@ -75,11 +75,3 @@ int CMD(STATE *s) {
     return 1;
 }
 
-void prompt(STATE *s){
-  int move;
-  if (get_num_moves(s)>=1) {
-    move = (get_num_moves(s))/2
-    printf("Jogada %d\n",move);
-  }
-  printf("jogador%d@slimetrail>",get_current_player(s));
-}

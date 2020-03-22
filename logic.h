@@ -7,7 +7,7 @@ Definição da parte lógica do jogo.
 #define __LOGIC_H__
 
 /**
-\brief I like to move it, move it
+\brief Faz movimento
 @param e Apontador para o estado
 @param c A coordenada
 Esta função realiza o movimento chamando todas as auxiliares.
@@ -39,5 +39,13 @@ Esta função calcula todos os movimentos possíveis no tabuleiro.
 @return Número de jogadas possíveis
 */
 int valid_moves(STATE *);
+
+/**
+\brief Movimento
+@param e Apontador para o estado
+@param c A coordenada
+Esta função faz a verificação de vencedores e caso não exista realiza o movimento.
+*/
+void move(STATE *, COORDINATE);
 
 #endif

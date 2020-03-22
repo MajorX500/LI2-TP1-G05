@@ -124,4 +124,18 @@ Esta função altera a coordenada da jogada anterior no estado para a coordenada
 */
 void update_previous_move(STATE *, COORDINATE );
 
+/**
+\brief Próximo jogador
+@param e Apontador para o estado
+Esta função altera o jogador atual.
+*/
+void next_player(STATE *s);
+
+/**
+\brief Póxima jogada
+@param e Apontador para o estado
+Esta função altera o o número de jogadas efetuadas.
+*/
+void next_move(STATE *s);
+
 #endif

@@ -7,6 +7,8 @@ void make_move(STATE *s, COORDINATE c) {
     change_house(s, c, WHITE);
     change_house(s, get_previous_move(s), BLACK);
     update_previous_move(s, c);
+    next_player(s);
+    next_move(s);
 }
 
 int validate_move(STATE *s, COORDINATE c) {
@@ -29,4 +31,11 @@ int valid_moves(STATE *s) {
     for (y = 0; y < 8; y++)
         for (x = 0; x < 8; c = (COORDINATE) {x, y}, n += validate_move(s,c), x++);
     return n;
+}
+
+void move(STATE *s, COORDINATE c) {
+    if (check_winner(s, c))
+        printf("Player %d wins!\n", check_winner(s, c));
+    make_move(s, c);
+    if (!valid_moves(s)) (printf("Player %d wins!\n",1 + (s -> current_player % 2)));
 }

@@ -45,3 +45,11 @@ void change_house(STATE *s, COORDINATE c, HOUSE h) {
 void update_previous_move(STATE *s, COORDINATE c) {
     s -> previous_move = c;
 }
+
+void next_player(STATE *s) {
+    s -> current_player = 1 + (s -> current_player % 2);
+}
+
+void next_move(STATE *s) {
+    s -> num_moves++;
+}
