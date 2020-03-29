@@ -48,4 +48,11 @@ Esta função faz a verificação de vencedores e caso não exista realiza o mov
 */
 void move(STATE *, COORDINATE);
 
+/**
+\brief Guarda coordenada
+@param e Apontadoe para o estado
+Esta função guarda uma coordenada no array de jogadas.
+*/
+void store_coordinate(STATE *, COORDINATE);
+
 #endif

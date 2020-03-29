@@ -2,20 +2,21 @@
 #include <stdlib.h>
 #include "data.h"
 #include "interface.h"
+#include "logic.h"
 
 void make_move(STATE *s, COORDINATE c) {
     change_house(s, c, WHITE);
     change_house(s, get_previous_move(s), BLACK);
     update_previous_move(s, c);
+    store_coordinate(s, c);
     next_player(s);
-    next_move(s);
+    if (get_current_player(s) == 1) next_move(s);
 }
 
 int validate_move(STATE *s, COORDINATE c) {
     COORDINATE prev_move = get_previous_move(s);
     HOUSE h = get_house(s, c);
     if ((abs(c.x - prev_move.x) <= 1) && (abs(c.y - prev_move.y) <= 1) && (h == EMPTY || h == H1 || h == H2)) return 1;
-
     else return 0;
 }
 
@@ -38,4 +39,9 @@ void move(STATE *s, COORDINATE c) {
         printf("Player %d wins!\n", check_winner(s, c));
     make_move(s, c);
     if (!valid_moves(s)) (printf("Player %d wins!\n",1 + (s -> current_player % 2)));
+}
+
+void store_coordinate(STATE *s, COORDINATE c) {
+    if (get_current_player(s) == 1) store_p1_coordinate(s, c);
+    else store_p2_coordinate(s, c);
 }
