@@ -62,8 +62,8 @@ typedef struct
 
 /**
 \brief Tabuleiro vazio
-@param t Array do tabuleiro
 Esta função inicializa o array do tabuleiro.
+@param t Array do tabuleiro
 */
 void empty_board(HOUSE [8][8]);
 
@@ -77,8 +77,8 @@ STATE *starting_state();
 
 /**
 \brief Jogador Atual
-@param e Apontador para o estado
 Esta função diz qual é o jogador a efectuar a jogada.
+@param e Apontador para o estado
 @returns O jogador atual
 */
 int get_current_player(STATE *);
@@ -93,95 +93,101 @@ HOUSE get_house(STATE *, COORDINATE);
 
 /**
 \brief Número de jogadas
-@param e Apontador para o estado
 Esta função calcula qual o número total das jogadas.
+@param e Apontador para o estado
 @returns Número total de jogadas
 */
 int get_num_moves(STATE *);
 
 /**
 \brief Jogada anterior
-@param e Apontador para o estado
 Esta função diz qual foi a coordenada da jogada anterior.
+@param e Apontador para o estado
 @return A coordenada da jogada anterior
 */
 COORDINATE get_previous_move (STATE *);
 
 /**
 \brief Jogada no array de jogadas
+Esta função devolve a jogada de um certo indice do array.
 @param e Apontador para o estado
 @param i Indice da jogada
-Esta função devolve a jogada de um certo indice do array.
 */
 MOVE get_move(STATE *, int);
 
 /**
 \brief Querido Mudei a Casa
+Esta função altera o valor da casa de uma certa coordenada.
 @param e Apontador para o estado
 @param c A coordenada
 @param h O valor da casa
-Esta função altera o valor da casa de uma certa coordenada.
 */
 void change_house(STATE *, COORDINATE , HOUSE);
 
 /**
 \brief Atualiza jogada anterior
+Esta função altera a coordenada da jogada anterior no estado para a coordenada nova.
 @param e Apontador para o estado
 @param c A coordenada
-Esta função altera a coordenada da jogada anterior no estado para a coordenada nova.
 */
 void update_previous_move(STATE *, COORDINATE );
 
 /**
 \brief Atualiza o numero de jogadas
+Esta função altera a co numero de jogadas efetuadas
 @param e Apontador para o estado
 @param i O novo numero de jogadas
-Esta função altera a co numero de jogadas efetuadas
 */
 void update_num_moves(STATE *, int);
 
 /**
 \brief Próximo jogador
-@param e Apontador para o estado
 Esta função altera o jogador atual.
+@param e Apontador para o estado
 */
 void next_player(STATE *s);
 
 /**
 \brief Jogador 1 atual
-@param e Apontador para o estado
 Esta função altera o jogador atual para o jogador 1.
+@param e Apontador para o estado
 */
 void set_player1(STATE *s);
 
 /**
 \brief Jogador 2 atual
-@param e Apontador para o estado
 Esta função altera o jogador atual para o jogador 2.
+@param e Apontador para o estado
 */
 void set_player2(STATE *s);
 
 /**
 \brief Póxima jogada
-@param e Apontador para o estado
 Esta função altera o o número de jogadas efetuadas.
+@param e Apontador para o estado
 */
 void next_move(STATE *s);
 
 /**
 \brief Guarda coordenada do jogador 1
+Esta função guarda uma coordenada do jogador 1 no array de jogadas.
 @param e Apontadoe para o estado
 @param c Coordenada a ser guardada
-Esta função guarda uma coordenada do jogador 1 no array de jogadas.
 */
 void store_p1_coordinate(STATE *, COORDINATE);
 
 /**
 \brief Guarda coordenada do jogador 2
+Esta função guarda uma coordenada do jogador 2 no array de jogadas.
 @param e Apontadoe para o estado
 @param c Coordenada a ser guardada
-Esta função guarda uma coordenada do jogador 2 no array de jogadas.
 */
 void store_p2_coordinate(STATE *, COORDINATE);
 
+/**
+\brief Faz o rollback do estado
+Esta função limpa o estado do jogo, deixando apenas qual a lista de jogadas e o nº das mesmas.
+@param e Apontadoe para o estado
+*/
+void rollback_state(STATE *);
 #endif

@@ -34,6 +34,12 @@ int CMD(STATE *s) {
                 break;
             }
             case 'm': draw_moves(s, stdout);
+            case 'p': {
+              int m;
+              sscanf(command, "%*s %d",&m);
+              if (m > s->num_moves) puts ("Invalid Play");
+              else rollback(s,m);
+            }
         }
         draw(s, stdout);
     } while (command[0] != 'Q');
@@ -52,9 +58,9 @@ void draw_moves(STATE *s, FILE *file) {
     for (int i = 0; i <= get_num_moves(s) && !(get_num_moves(s) == i && get_current_player(s) == 1); i ++) {
         MOVE m = get_move(s, i);
         fprintf(file, "%02d: %c%d", i + 1, m.player1.x + 'a', 8 - m.player1.y);
-        if (!(i == get_num_moves(s) && get_current_player(s) == 2)) 
+        if (!(i == get_num_moves(s) && get_current_player(s) == 2))
             fprintf(file, " %c%d\n", m.player2.x + 'a', 8 - m.player2.y);
-        else 
+        else
             putc('\n', file);
     }
 }
@@ -103,4 +109,18 @@ void read(STATE *s, FILE *file) {
 
 void prompt(STATE *s){
   printf("# PL%d (%d) > ", get_current_player(s), get_num_moves(s));
+}
+
+void rollback(STATE *s,int num) { // como uma jogada são os moves dos dois jogadores, o o rollback fica sempre no jogador 1.
+  int i=0;
+  COORDINATE c;
+  rollback_state(s);
+  while (i!=num) {
+      c = s->moves[i].player1;
+      move(s,c);
+      c = s->moves[i].player2;
+      move(s,c);
+    i++;
+  }
+  update_num_moves(s,num);
 }

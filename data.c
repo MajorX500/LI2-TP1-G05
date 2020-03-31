@@ -77,3 +77,10 @@ void store_p1_coordinate(STATE *s, COORDINATE c) {
 void store_p2_coordinate(STATE *s, COORDINATE c) {
     s->moves[s->num_moves].player2 = c;
 }
+
+void rollback_state(STATE *s){
+  empty_board(s->board);
+  s->previous_move.x = 4;
+  s->previous_move.y = 3;
+  s->current_player = 1;
+}
