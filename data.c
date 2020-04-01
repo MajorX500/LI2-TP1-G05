@@ -13,13 +13,17 @@ void empty_board(HOUSE board[8][8]) {
 }
 
 STATE *starting_state() {
-    STATE *s = (STATE *) malloc(sizeof(STATE));
-    empty_board(s->board);
-    s->previous_move.x = 4;
-    s->previous_move.y = 3;
-    s->num_moves = 0;
-    s->current_player = 1;
+    STATE *s = (STATE *) calloc(1, sizeof(STATE));
+    clear_state(s);
     return s;
+}
+
+void clear_state(STATE *s){
+  empty_board(s->board);
+  s->previous_move.x = 4;
+  s->previous_move.y = 3;
+  s->current_player = 1;
+  s->num_moves = 0;
 }
 
 int get_current_player(STATE *s) {
@@ -50,10 +54,6 @@ void update_previous_move(STATE *s, COORDINATE c) {
     s->previous_move = c;
 }
 
-void update_num_moves(STATE *s, int i) {
-    s->num_moves = i;
-}
-
 void next_player(STATE *s) {
     s->current_player = 1 + (s->current_player % 2);
 }
@@ -76,11 +76,4 @@ void store_p1_coordinate(STATE *s, COORDINATE c) {
 
 void store_p2_coordinate(STATE *s, COORDINATE c) {
     s->moves[s->num_moves].player2 = c;
-}
-
-void rollback_state(STATE *s){
-  empty_board(s->board);
-  s->previous_move.x = 4;
-  s->previous_move.y = 3;
-  s->current_player = 1;
 }

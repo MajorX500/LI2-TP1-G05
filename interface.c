@@ -15,8 +15,7 @@ int CMD(STATE *s) {
                 if (command[0] == 'g' && command[1] == 'r') {
                     char f[BUF_SIZE];
                     sscanf(command, "%*s %s", f);
-                    FILE *file = fopen(f, "w");
-                    save(s, file);
+                    save(s, f);
                 }
                 else if (command[1] >= '1' && command[1] <= '8') {
                     COORDINATE c = {command[0] - 'a', 7 - (command[1] - '1')};
@@ -29,16 +28,19 @@ int CMD(STATE *s) {
             case 'l': {
                 char f[BUF_SIZE];
                 sscanf(command, "%*s %s", f);
-                FILE *file = fopen(f, "r");
-                read(s, file);
+                read(s, f);
                 break;
             }
-            case 'm': draw_moves(s, stdout);
+            case 'm': {
+                draw_moves(s, stdout);
+                break;
+            }
             case 'p': {
-              int m;
-              sscanf(command, "%*s %d",&m);
-              if (m > s->num_moves) puts ("Invalid Play");
-              else rollback(s,m);
+                int m;
+                sscanf(command, "%*s %d",&m);
+                if (m < 0 || m > get_num_moves(s)) puts ("Invalid Move");
+                else rollback(s,m);
+                break;
             }
         }
         draw(s, stdout);
@@ -65,62 +67,55 @@ void draw_moves(STATE *s, FILE *file) {
     }
 }
 
-void save(STATE *s, FILE *file) {
-    draw(s, file);
+void save(STATE *s, char*f) {
+    FILE *file = fopen(f, "w");
+    int y, x, i = 8;
+    for (y = 0; y < 8; y++, i--, putc('\n', file))
+        for (x = 0; x < 8; x++) {
+            char h = get_house(s, (COORDINATE){x, y});
+            if (h == '@') h = '*';
+            fprintf(file, "%c", h);
+        }
+    putc('\n', file);
     draw_moves(s, file);
     fclose(file);
 }
 
-void read(STATE *s, FILE *file) {
+void read(STATE *s, char *f) {
+    FILE *file = fopen(f, "r");
+    clear_state(s);
     if (file == NULL) puts("Non existent file");
     else {
-        for (int y = 0; y < 8; y++) {
-            fgetc(file);
-            for (int x = 0; x < 8;) {
+        for (int y = 0; y < 8; fgetc(file),y++)
+            for (int x = 0; x < 8; x++) {
                 char c = fgetc(file);
-                if (c != ' ') {
-                    change_house(s, (COORDINATE){x,y}, c);
-                    x ++;
-                }
-            fgetc(file);
+                if (c == '*') c = '@';
+                change_house(s, (COORDINATE){x,y}, c);
             }
-        }
-        fseek(file, 173, SEEK_SET);
+        fseek(file, 1, SEEK_CUR);
         for (int i = 0, c; c != EOF; c = getc(file), i++) {
-            fseek(file, 4, SEEK_CUR);
             char p1[2], p2[2];
-            if (fscanf(file, "%s %s", p1, p2) == 2) {
-                update_previous_move(s, (COORDINATE) {p2[0] - 'a', 7 - (p2[1] - '1')});
-                store_p1_coordinate(s, (COORDINATE) {p1[0] - 'a', 7 - (p1[1] - '1')});
-                store_p2_coordinate(s, (COORDINATE) {p2[0] - 'a', 7 - (p2[1] - '1')});
-                update_num_moves(s, i + 1);
-                set_player1(s);
+            int l = fscanf(file, "%*s %s %s", p1, p2);
+            if (l == 2) {
+                make_move(s, (COORDINATE) {p1[0] - 'a', 7 - (p1[1] - '1')});
+                make_move(s, (COORDINATE) {p2[0] - 'a', 7 - (p2[1] - '1')});
             }
-            else {
-                fscanf(file, "%s", p1);
-                update_previous_move(s, (COORDINATE) {p1[0] - 'a', 7 - (p1[1] - '1')});
-                store_p1_coordinate(s, (COORDINATE) {p1[0] - 'a', 7 - (p1[1] - '1')});
-                set_player2(s);
-            }
+            else if (l == 1)
+                make_move(s, (COORDINATE) {p1[0] - 'a', 7 - (p1[1] - '1')});
         }
-        fclose(file);
     }
+    fclose(file);
 }
 
-void prompt(STATE *s){
+void prompt(STATE *s) {
   printf("# PL%d (%d) > ", get_current_player(s), get_num_moves(s));
 }
 
-void rollback(STATE *s,int num) { // como uma jogada são os moves dos dois jogadores, o o rollback fica sempre no jogador 1.
-  int i=0;
-  COORDINATE c;
-  rollback_state(s);
-  while (i!=num) {
-      c = s->moves[i].player1;
-      move(s,c);
-      c = s->moves[i].player2;
-      move(s,c);
-    i++;
-  }
-  update_num_moves(s,num);
+void rollback(STATE *s,int num) {
+    clear_state(s);
+    for (int i = 0; i != num; i++) {
+        MOVE c = get_move(s, i);
+        make_move(s, c.player1);
+        make_move(s, c.player2);
+    }
 }

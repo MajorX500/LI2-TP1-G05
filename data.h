@@ -133,14 +133,6 @@ Esta função altera a coordenada da jogada anterior no estado para a coordenada
 void update_previous_move(STATE *, COORDINATE );
 
 /**
-\brief Atualiza o numero de jogadas
-Esta função altera a co numero de jogadas efetuadas
-@param e Apontador para o estado
-@param i O novo numero de jogadas
-*/
-void update_num_moves(STATE *, int);
-
-/**
 \brief Próximo jogador
 Esta função altera o jogador atual.
 @param e Apontador para o estado
@@ -189,5 +181,5 @@ void store_p2_coordinate(STATE *, COORDINATE);
 Esta função limpa o estado do jogo, deixando apenas qual a lista de jogadas e o nº das mesmas.
 @param e Apontadoe para o estado
 */
-void rollback_state(STATE *);
+void clear_state(STATE *);
 #endif

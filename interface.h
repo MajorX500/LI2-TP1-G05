@@ -32,9 +32,9 @@ Esta função guarda o estado atual num ficheiro.
 @param e Apontador para o estado
 @param F Ficheiro
 */
-void save(STATE *, FILE *);
+void save(STATE *, char *);
 
-void read(STATE *, FILE *);
+void read(STATE *, char *);
 
 /**
 \brief Prompt
