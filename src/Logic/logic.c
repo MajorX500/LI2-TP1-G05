@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "data.h"
-#include "interface.h"
-#include "logic.h"
+#include "../Data/data.h"
+#include "../Interface/interface.h"
+#include "../Logic/logic.h"
 
 void make_move(STATE *s, COORDINATE c) {
     change_house(s, c, WHITE);
@@ -22,7 +22,7 @@ int validate_move(STATE *s, COORDINATE c) {
 
 int check_winner(STATE *s, COORDINATE c) {
     if (get_house(s, c) == H1) return 1;
-    else if (get_house(s, c) == H2) return 2; 
+    else if (get_house(s, c) == H2) return 2;
     else return 0;
 }
 

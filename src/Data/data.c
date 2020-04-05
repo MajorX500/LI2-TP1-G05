@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "data.h"
+#include "../Data/data.h"
 
 void empty_board(HOUSE board[8][8]) {
     int x, y;
