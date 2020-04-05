@@ -24,6 +24,12 @@ Esta função desenha o estado num ficheiro (stdout).
 */
 void draw(STATE *, FILE *);
 
+/**
+\brief Desenha Movimentos
+Esta função desenha o array de jogadas.
+@param e Apontador para o estado
+@param F Ficheiro
+*/
 void draw_moves(STATE *, FILE *);
 
 /**
@@ -34,6 +40,12 @@ Esta função guarda o estado atual num ficheiro.
 */
 void save(STATE *, char *);
 
+/**
+\brief Ler
+Esta função lê o estado atual de um ficheiro.
+@param e Apontador para o estado
+@param F Ficheiro
+*/
 void read(STATE *, char *);
 
 /**

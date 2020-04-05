@@ -85,29 +85,27 @@ void save(STATE *s, char*f) {
 }
 
 void read(STATE *s, char *f) {
-    FILE *file = fopen(f, "r");
-    clear_state(s);
-    if (file == NULL) puts("Non existent file");
-    else {
-        for (int y = 0; y < 8; fgetc(file),y++)
-            for (int x = 0; x < 8; x++) {
-                char c = fgetc(file);
-                if (c == '*') c = '@';
-                change_house(s, (COORDINATE){x,y}, c);
-            }
-        fseek(file, 1, SEEK_CUR);
+    	FILE *file = fopen(f, "r");
+    	clear_state(s);
+	if (file == NULL) puts("Non existent file");
+    	for (int y = 0; y < 8; fgetc(file),y++)
+    		for (int x = 0; x < 8; x++) {
+              		char c = fgetc(file);	
+			if (c == '*') c = '@';
+                	change_house(s, (COORDINATE){x,y}, c);
+            	}
+	fseek(file, 1, SEEK_CUR);
         for (int i = 0, c; c != EOF; c = getc(file), i++) {
-            char p1[2], p2[2];
-            int l = fscanf(file, "%*s %s %s", p1, p2);
-            if (l == 2) {
-                make_move(s, (COORDINATE) {p1[0] - 'a', 7 - (p1[1] - '1')});
-                make_move(s, (COORDINATE) {p2[0] - 'a', 7 - (p2[1] - '1')});
-            }
-            else if (l == 1)
-                make_move(s, (COORDINATE) {p1[0] - 'a', 7 - (p1[1] - '1')});
-        }
-    }
-    fclose(file);
+            	char p1[2], p2[2];
+            	int l = fscanf(file, "%*s %s %s", p1, p2);
+            	if (l == 2) {
+               		make_move(s, (COORDINATE) {p1[0] - 'a', 7 - (p1[1] - '1')});
+                	make_move(s, (COORDINATE) {p2[0] - 'a', 7 - (p2[1] - '1')});
+            	}
+            	else if (l == 1)
+                	make_move(s, (COORDINATE) {p1[0] - 'a', 7 - (p1[1] - '1')});
+    	}
+    	fclose(file);
 }
 
 void prompt(STATE *s) {
