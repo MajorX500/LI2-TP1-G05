@@ -8,6 +8,7 @@
 int CMD(STATE *s) {
     char command[BUF_SIZE];
     do {
+	int pos_cap;
         prompt(s);
         if(fgets(command, BUF_SIZE, stdin) == NULL) return 0;
         switch (command[0]) {
@@ -23,12 +24,14 @@ int CMD(STATE *s) {
                     else puts ("Invalid Coordinate");
                 }
                 else puts("Invalid Command");
+		pos_cap = get_num_moves(s);
                 break;
             }
             case 'l': {
                 char f[BUF_SIZE];
                 sscanf(command, "%*s %s", f);
                 read(s, f);
+		pos_cap = get_num_moves(s);
                 break;
             }
             case 'm': {
@@ -38,7 +41,7 @@ int CMD(STATE *s) {
             case 'p': {
                 int m;
                 sscanf(command, "%*s %d",&m);
-                if (m < 0 || m > get_num_moves(s)) puts ("Invalid Move");
+                if (m < 0 || m > pos_cap) puts ("Invalid Move");
                 else rollback(s,m);
                 break;
             }
