@@ -20,8 +20,7 @@ typedef enum {
 /**
 \brief Tipo de dados para as coordenadas
 */
-typedef struct
-{
+typedef struct {
     int x; //columns
     int y; //lines
 } COORDINATE;
@@ -30,8 +29,7 @@ typedef struct
 /**
 \brief Tipo de dados para a jogada
 */
-typedef struct
-{
+typedef struct {
     COORDINATE player1;
     COORDINATE player2;
 } MOVE;
@@ -45,15 +43,14 @@ typedef MOVE MOVES[32];
 /**
 \brief Tipo de dados para o estado
 */
-typedef struct
-{
+typedef struct {
     /** O tabuleiro */
     HOUSE board[8][8];
     /** A coordenada da última jogada */
     COORDINATE previous_move;
     /** As jogadas */
     MOVES moves;
-    /** O número das jogadas, usado no prompt */
+    /** O número das jogadas */
     int num_moves;
     /** O jogador atual */
     int current_player;

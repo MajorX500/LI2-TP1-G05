@@ -6,7 +6,7 @@ typedef struct NODE {
     void  *data; 
   
     struct NODE *next; 
-} NODE, *LIST; 
+} *LIST; 
 
 LIST initialize_list();
 

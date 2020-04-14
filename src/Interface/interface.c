@@ -114,7 +114,7 @@ void prompt(STATE *s) {
 
 void rollback(STATE *s,int num) {
     clear_state(s);
-    for (int i = 0; i != num; i++) {
+    for (int i = 0; i <= num; i++) {
         MOVE c = get_move(s, i);
         make_move(s, c.player1);
         make_move(s, c.player2);
