@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "../Data/data.h"
-#include "../Interface/interface.h"
+#include "data.h"
+#include "interface.h"
 
 int main() {
     STATE *s = starting_state();

@@ -1,6 +1,6 @@
 #include <stddef.h>
 #include <stdlib.h>
-#include "../List/lists.h"
+#include "lists.h"
 
 LIST initialize_list() {
     LIST l = NULL;

@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../Data/data.h"
-#include "../Interface/interface.h"
-#include "../Logic/logic.h"
+#include "data.h"
+#include "interface.h"
+#include "logic.h"
 
 int CMD(STATE *s) {
     char command[BUF_SIZE];

@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../Data/data.h"
-#include "../Interface/interface.h"
-#include "../Logic/logic.h"
+#include "data.h"
+#include "interface.h"
+#include "logic.h"
 
 void make_move(STATE *s, COORDINATE c) {
     change_house(s, c, WHITE);
