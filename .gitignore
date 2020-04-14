@@ -72,4 +72,4 @@ dkms.conf
 # MINE
 *.txt
 *.out
-.vscode
+*.vscode
