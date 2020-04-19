@@ -13,42 +13,42 @@ int min(int x, int y) {
 
 LIST possible_coordinates(STATE *s, COORDINATE c) {
 	LIST l = initialize_list();
-	if (c.x >= 1 && c.y >= 1 && get_house(s, (COORDINATE){c.x - 1, c.y - 1}) == EMPTY) {
+	if (c.x >= 1 && c.y >= 1 && get_house(s, (COORDINATE){c.x - 1, c.y - 1}) != BLACK && get_house(s, (COORDINATE){c.x - 1, c.y - 1}) != WHITE) {
 		COORDINATE *tl = malloc(sizeof(COORDINATE));
 		*tl = (COORDINATE){c.x - 1, c.y - 1};
 		l = insert_head(l, tl);
 	}
-	if (c.x >= 1 && get_house(s, (COORDINATE){c.x - 1, c.y}) == EMPTY) {
+	if (c.x >= 1 && get_house(s, (COORDINATE){c.x - 1, c.y}) != BLACK && get_house(s, (COORDINATE){c.x - 1, c.y}) != WHITE) {
 		COORDINATE *ml = malloc(sizeof(COORDINATE));
 		*ml = (COORDINATE){c.x - 1, c.y};
 		l = insert_head(l, ml);
 	}
-	if (c.x >= 1 && c.y <= 6 && get_house(s, (COORDINATE){c.x - 1, c.y + 1}) == EMPTY) {
+	if (c.x >= 1 && c.y <= 6 && get_house(s, (COORDINATE){c.x - 1, c.y + 1}) != BLACK && get_house(s, (COORDINATE){c.x - 1, c.y + 1}) != WHITE) {
 		COORDINATE *bl = malloc(sizeof(COORDINATE));
 		*bl = (COORDINATE){c.x - 1, c.y + 1};
 		l = insert_head(l, bl);
 	}
-	if (c.x <= 6  && get_house(s, (COORDINATE){c.x + 1, c.y}) == EMPTY) {
+	if (c.x <= 6  && get_house(s, (COORDINATE){c.x + 1, c.y}) != BLACK && get_house(s, (COORDINATE){c.x + 1, c.y}) != WHITE) {
 		COORDINATE *mr = malloc(sizeof(COORDINATE));
 		*mr = (COORDINATE){c.x + 1, c.y};
 		l = insert_head(l, mr);
 	}
-	if (c.y >= 1 && get_house(s, (COORDINATE){c.x, c.y - 1}) == EMPTY) {
+	if (c.y >= 1 && get_house(s, (COORDINATE){c.x, c.y - 1}) != BLACK && get_house(s, (COORDINATE){c.x, c.y - 1}) != WHITE) {
 		COORDINATE *tm = malloc(sizeof(COORDINATE));
 		*tm = (COORDINATE){c.x, c.y - 1};
 		l = insert_head(l, tm);
 	}
-	if (c.y >= 1 && c.x <= 6 && get_house(s, (COORDINATE){c.x + 1, c.y - 1}) == EMPTY) {
+	if (c.y >= 1 && c.x <= 6 && get_house(s, (COORDINATE){c.x + 1, c.y - 1}) != BLACK && get_house(s, (COORDINATE){c.x + 1, c.y - 1}) != WHITE) {
 		COORDINATE *tr = malloc(sizeof(COORDINATE));
 		*tr = (COORDINATE){c.x + 1, c.y - 1};
 		l = insert_head(l, tr);
 		}
-	if (c.y <= 6 && get_house(s, (COORDINATE){c.x, c.y + 1}) == EMPTY) {
+	if (c.y <= 6 && get_house(s, (COORDINATE){c.x, c.y + 1}) != BLACK && get_house(s, (COORDINATE){c.x, c.y + 1}) != WHITE) {
 		COORDINATE *bm = malloc(sizeof(COORDINATE));
 		*bm = (COORDINATE){c.x, c.y + 1};
 		l = insert_head(l, bm);
 	}
-	if (c.y <= 6 && c.x <= 6 && get_house(s, (COORDINATE){c.x + 1, c.y + 1}) == EMPTY) {
+	if (c.y <= 6 && c.x <= 6 && get_house(s, (COORDINATE){c.x + 1, c.y + 1}) != BLACK && get_house(s, (COORDINATE){c.x + 1, c.y + 1}) != WHITE) {
 		COORDINATE *br = malloc(sizeof(COORDINATE));
 		*br = (COORDINATE){c.x + 1, c.y + 1};
 		l = insert_head(l, br);
