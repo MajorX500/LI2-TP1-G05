@@ -67,7 +67,7 @@ void empty_board(HOUSE [8][8]);
 /**
 \brief Inicializa o valor do estado
 Esta função inicializa o valor do estado. Isso implica o tabuleiro ser colocado na posição inicial e todos os campos do estado estarem com o valor por omissão.
-@returns O novo estado
+@return O novo estado
 */
 STATE *starting_state();
 
@@ -76,7 +76,7 @@ STATE *starting_state();
 \brief Jogador Atual
 Esta função diz qual é o jogador a efectuar a jogada.
 @param e Apontador para o estado
-@returns O jogador atual
+@return O jogador atual
 */
 int get_current_player(STATE *);
 
@@ -84,7 +84,7 @@ int get_current_player(STATE *);
 \brief Devolve o valor de uma casa
 @param e Apontador para o estado
 @param c A coordenada
-@returns O valor da casa
+@return O valor da casa
 */
 HOUSE get_house(STATE *, COORDINATE);
 
@@ -92,7 +92,7 @@ HOUSE get_house(STATE *, COORDINATE);
 \brief Número de jogadas
 Esta função calcula qual o número total das jogadas.
 @param e Apontador para o estado
-@returns Número total de jogadas
+@return Número total de jogadas
 */
 int get_num_moves(STATE *);
 

@@ -1,16 +1,73 @@
+/**
+@file bot.h
+Definição do bot e das funçoes utilizadas pelo mesmo
+*/
+
+
 #ifndef __BOT_H__
 #define __BOT_H__
 
+
+/**
+\brief Max
+Esta função calcula o maior de dois números
+@param x Numero 1
+@param y Numero 2
+@return O maior numero
+*/
 int max(int, int);
 
+
+
+/**
+\brief Min
+Esta função calcula o menor de dois números
+@param x Numero 1
+@param y Numero 2
+@return O menor numero
+*/
 int min(int, int);
 
+
+/**
+\brief Jogadas possiveis
+Esta função verifica as jogadas/casa que são possiveis efectuar
+a partir de uma certa coordenada.
+@param e Apontador para o estado
+@param c Coordenada
+@return Uma Lista Ligada de coordenadas
+*/
 LIST possible_coordinates(STATE *, COORDINATE);
 
+
+/**
+\brief Valor da Casa
+Esta função devolve o valor de uma casa.
+@param c Uma Coordenada
+@return O valor da casa
+*/
 int value_of(COORDINATE);
 
+
+/**
+\brief MinMax
+Esta função é o brain do bot.
+@param e Apontador para o estado
+@param c Coordenada
+@param d Numero de Pecas a Procurar
+@param b Numero de jogador do bot
+@return O valor da melhor coordenada
+*/
 int minmax(STATE *, COORDINATE, int, int);
 
+
+/**
+\brief Melhor coordenada
+Esta função calcula qual a melhor coordenada para
+aumentar a probabilidade de ganhar.
+@param e Apontador para o estado
+@return A melhor coordenada
+*/
 COORDINATE find_best_coordinate(STATE *);
 
 #endif
