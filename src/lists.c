@@ -3,8 +3,7 @@
 #include "lists.h"
 
 LIST initialize_list() {
-    LIST l = NULL;
-    return l;
+    return NULL;
 }
 
 LIST insert_head(LIST l, void *d) {
@@ -15,19 +14,19 @@ LIST insert_head(LIST l, void *d) {
 }
 
 void *get_head(LIST l) {
-  return l->data;
+    return l->data;
 }
 
 LIST next(LIST l) {
-  return l->next;
+    return l->next;
 }
 
 LIST remove_head(LIST l) {
-  LIST nl = l->next;
-  free(l);
-  return nl;
+    LIST nl = l->next;
+    free(l);
+    return nl;
 }
 
 int is_list_empty(LIST l) {
-  return !l;
+    return !l;
 }

@@ -1,5 +1,5 @@
-SlimeTrail : src/main.o src/data.o src/interface.o src/logic.o
-	gcc -o SlimeTrail src/main.o src/data.o src/interface.o src/logic.o
+SlimeTrail : src/main.o src/data.o src/interface.o src/logic.o src/lists.o src/bot.o
+	gcc -o SlimeTrail src/main.o src/data.o src/interface.o src/logic.o src/lists.o src/bot.o
 
 main.o : src/main.c src/data.h src/interface.h
 	gcc -c src/main.c
@@ -15,3 +15,6 @@ logic.o : src/logic.c src/logic.h src/data.h src/interface.h
 
 lists.o : src/lists.c src/lists.h
 	gcc -c src/lists.c
+
+bot.o : src/bot.c src/bot.h src/lists.h
+	gcc -c src/bot.c

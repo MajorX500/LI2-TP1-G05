@@ -102,7 +102,7 @@ Esta função diz qual foi a coordenada da jogada anterior.
 @param e Apontador para o estado
 @return A coordenada da jogada anterior
 */
-COORDINATE get_previous_move (STATE *);
+COORDINATE get_previous_move(STATE *);
 
 /**
 \brief Jogada no array de jogadas

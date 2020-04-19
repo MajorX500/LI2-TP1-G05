@@ -4,6 +4,8 @@
 #include "data.h"
 #include "interface.h"
 #include "logic.h"
+#include "lists.h"
+#include "bot.h"
 
 int CMD(STATE *s) {
     char command[BUF_SIZE];
@@ -44,6 +46,9 @@ int CMD(STATE *s) {
                 if (m < 0 || m > pos_cap) puts ("Invalid Move");
                 else rollback(s,m);
                 break;
+            }
+	    case 'j': {
+		move(s, find_best_coordinate(s));
             }
         }
         draw(s, stdout);
