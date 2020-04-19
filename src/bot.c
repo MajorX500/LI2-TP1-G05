@@ -100,7 +100,7 @@ COORDINATE find_best_coordinate(STATE *s) {
 		int maxEval = -20;
 		for(LIST l = possible_coordinates(s, c); !is_list_empty(l); l = next(l)) {	
 			COORDINATE *nc = get_head(l);
-			int eval = minimax(s, *nc, 0, maximizing_player);
+			int eval = minimax(s, *nc, 3, maximizing_player);
 			if (eval > maxEval) {
 				maxEval = eval;
 				bc = *nc;
@@ -112,7 +112,7 @@ COORDINATE find_best_coordinate(STATE *s) {
 		int minEval = 20;
 		for(LIST l = possible_coordinates(s, c); !is_list_empty(l); l = remove_head(l)) {	
 			COORDINATE *nc = get_head(l);
-			int eval = minimax(s, *nc, 0, maximizing_player);
+			int eval = minimax(s, *nc, 3, maximizing_player);
 			if (eval < minEval) {
 				minEval = eval;
 				bc = *nc;
