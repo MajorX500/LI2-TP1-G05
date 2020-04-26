@@ -70,4 +70,22 @@ aumentar a probabilidade de ganhar.
 */
 COORDINATE find_best_coordinate(STATE *);
 
+/**
+\brief Paridade
+Esta função é o algoritmo da Paridade.
+@param e Apontador para o estado
+@return A melhor coordenada
+*/
+COORDINATE pairity(STATE *) {
+
+/**
+\brief ContaVazio
+Esta função conta o numero de 
+casa vazias no tabuleiro.
+@param e Apontador para o estado
+@param c Coordenada Atual
+@return Numero de Vazios
+*/
+int numbEmpty(STATE *, COORDINATE)
+
 #endif
