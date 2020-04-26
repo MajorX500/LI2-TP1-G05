@@ -13,42 +13,42 @@ int min(int x, int y) {
 
 LIST possible_coordinates(STATE *s, COORDINATE c) {
 	LIST l = initialize_list();
-	if (c.x >= 1 && c.y >= 1 && get_house(s, (COORDINATE){c.x - 1, c.y - 1}) != BLACK && get_house(s, (COORDINATE){c.x - 1, c.y - 1}) != WHITE) {
+	if (c.x >= 1 && c.y >= 1 && get_house(s, (COORDINATE){c.x - 1, c.y - 1}) != BLACK) {
 		COORDINATE *tl = malloc(sizeof(COORDINATE));
 		*tl = (COORDINATE){c.x - 1, c.y - 1};
 		l = insert_head(l, tl);
 	}
-	if (c.x >= 1 && get_house(s, (COORDINATE){c.x - 1, c.y}) != BLACK && get_house(s, (COORDINATE){c.x - 1, c.y}) != WHITE) {
+	if (c.x >= 1 && get_house(s, (COORDINATE){c.x - 1, c.y}) != BLACK) {
 		COORDINATE *ml = malloc(sizeof(COORDINATE));
 		*ml = (COORDINATE){c.x - 1, c.y};
 		l = insert_head(l, ml);
 	}
-	if (c.x >= 1 && c.y <= 6 && get_house(s, (COORDINATE){c.x - 1, c.y + 1}) != BLACK && get_house(s, (COORDINATE){c.x - 1, c.y + 1}) != WHITE) {
+	if (c.x >= 1 && c.y <= 6 && get_house(s, (COORDINATE){c.x - 1, c.y + 1}) != BLACK) {
 		COORDINATE *bl = malloc(sizeof(COORDINATE));
 		*bl = (COORDINATE){c.x - 1, c.y + 1};
 		l = insert_head(l, bl);
 	}
-	if (c.x <= 6  && get_house(s, (COORDINATE){c.x + 1, c.y}) != BLACK && get_house(s, (COORDINATE){c.x + 1, c.y}) != WHITE) {
+	if (c.x <= 6  && get_house(s, (COORDINATE){c.x + 1, c.y}) != BLACK) {
 		COORDINATE *mr = malloc(sizeof(COORDINATE));
 		*mr = (COORDINATE){c.x + 1, c.y};
 		l = insert_head(l, mr);
 	}
-	if (c.y >= 1 && get_house(s, (COORDINATE){c.x, c.y - 1}) != BLACK && get_house(s, (COORDINATE){c.x, c.y - 1}) != WHITE) {
+	if (c.y >= 1 && get_house(s, (COORDINATE){c.x, c.y - 1}) != BLACK) {
 		COORDINATE *tm = malloc(sizeof(COORDINATE));
 		*tm = (COORDINATE){c.x, c.y - 1};
 		l = insert_head(l, tm);
 	}
-	if (c.y >= 1 && c.x <= 6 && get_house(s, (COORDINATE){c.x + 1, c.y - 1}) != BLACK && get_house(s, (COORDINATE){c.x + 1, c.y - 1}) != WHITE) {
+	if (c.y >= 1 && c.x <= 6 && get_house(s, (COORDINATE){c.x + 1, c.y - 1}) != BLACK) {
 		COORDINATE *tr = malloc(sizeof(COORDINATE));
 		*tr = (COORDINATE){c.x + 1, c.y - 1};
 		l = insert_head(l, tr);
 		}
-	if (c.y <= 6 && get_house(s, (COORDINATE){c.x, c.y + 1}) != BLACK && get_house(s, (COORDINATE){c.x, c.y + 1}) != WHITE) {
+	if (c.y <= 6 && get_house(s, (COORDINATE){c.x, c.y + 1}) != BLACK) {
 		COORDINATE *bm = malloc(sizeof(COORDINATE));
 		*bm = (COORDINATE){c.x, c.y + 1};
 		l = insert_head(l, bm);
 	}
-	if (c.y <= 6 && c.x <= 6 && get_house(s, (COORDINATE){c.x + 1, c.y + 1}) != BLACK && get_house(s, (COORDINATE){c.x + 1, c.y + 1}) != WHITE) {
+	if (c.y <= 6 && c.x <= 6 && get_house(s, (COORDINATE){c.x + 1, c.y + 1}) != BLACK) {
 		COORDINATE *br = malloc(sizeof(COORDINATE));
 		*br = (COORDINATE){c.x + 1, c.y + 1};
 		l = insert_head(l, br);
@@ -70,24 +70,33 @@ int value_of(COORDINATE c) {
 }
 
 int minimax(STATE *s, COORDINATE c, int depth, int maximizing_player) {
+	if (!valid_moves(s)) {
+		if (maximizing_player) return 10;
+		else return -10;
+	}
 	if (!depth || check_winner(s, c) || !valid_moves(s))
-		return value_of(c);
+		return value_of(c) * (depth + 1);
+	STATE *ns = malloc(sizeof(STATE));
+	*ns = *s;
+	make_move(ns, c);
 	if (maximizing_player) {
-		int maxEval = -20;
+		int maxEval = -100;
 		for (LIST l = possible_coordinates(s, c); !is_list_empty(l); l = remove_head(l)) {
 			COORDINATE *nc = get_head(l);
-			int eval = minimax(s, *nc, depth - 1, 0);
+			int eval = minimax(ns, *nc, depth - 1, 0);
 			maxEval = max(eval, maxEval);
 		}
+		free(ns);
 		return maxEval;
 	}
 	else {
-		int minEval = 20;
+		int minEval = 100;
 		for (LIST l = possible_coordinates(s, c); !is_list_empty(l); l = remove_head(l)) {
 			COORDINATE *nc = get_head(l);
-			int eval = minimax(s, *nc, depth - 1, 1);
+			int eval = minimax(ns, *nc, depth - 1, 1);
 			minEval = min(eval, minEval);
 		}
+		free(ns);
 		return minEval;
 	}
 }
@@ -106,7 +115,6 @@ COORDINATE find_best_coordinate(STATE *s) {
 				bc = *nc;
 			}
 		}
-		return bc;
 	}
 	else {
 		int minEval = 20;
@@ -118,6 +126,6 @@ COORDINATE find_best_coordinate(STATE *s) {
 				bc = *nc;
 			}
 		}
-		return bc;
 	}
+	return bc;
 }

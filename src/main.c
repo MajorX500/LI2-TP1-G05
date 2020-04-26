@@ -7,10 +7,10 @@
 
 int main() {
    STATE *s = starting_state();
-        draw(s, stdout);
-        CMD(s);
-        free(s);
-        return 0;
+   draw(s, stdout);
+   CMD(s);
+   free(s);
+   return 0;
 }
 
 //void main () {
