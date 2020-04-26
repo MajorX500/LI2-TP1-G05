@@ -48,7 +48,9 @@ int CMD(STATE *s) {
                 break;
             }
 	    case 'j': {
-		move(s, find_best_coordinate(s));
+		if (!strncmp (command, "jog2", 4))
+			move(s, pairity(s));
+		else move(s, find_best_coordinate(s));
             }
         }
         draw(s, stdout);

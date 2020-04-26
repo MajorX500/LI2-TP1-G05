@@ -76,7 +76,7 @@ Esta função é o algoritmo da Paridade.
 @param e Apontador para o estado
 @return A melhor coordenada
 */
-COORDINATE pairity(STATE *) {
+COORDINATE pairity(STATE *);
 
 /**
 \brief ContaVazio
@@ -86,6 +86,6 @@ casa vazias no tabuleiro.
 @param c Coordenada Atual
 @return Numero de Vazios
 */
-int numbEmpty(STATE *, COORDINATE)
+int numbEmpty(STATE *, COORDINATE);
 
 #endif

@@ -130,6 +130,16 @@ COORDINATE find_best_coordinate(STATE *s) {
 	return bc;
 }
 
+
+int numbEmpty(STATE *s, COORDINATE c) {
+    STATE *ns = malloc(sizeof(STATE));
+    *ns = *s;
+    make_move(ns, c);
+    int numb = 0;
+    for(LIST l = possible_coordinates(ns, c); !is_list_empty(l); l = remove_head(l), numb ++)
+    return numb;
+}
+
 COORDINATE pairity(STATE *s) {
     COORDINATE c = get_previous_move(s);
     COORDINATE bc = c;
@@ -142,12 +152,3 @@ COORDINATE pairity(STATE *s) {
     return bc;
 }
 
-int numbEmpty(STATE *s, COORDINATE c) {
-    STATE *ns = malloc(sizeof(STATE));
-    *ns = *s;
-    make_move(ns, c);
-    int numb = 0;
-    for(LIST l = possible_coordinates(ns, c); !is_list_empty(l); l = remove_head(l), numb ++)
-    free (ns);
-    return numb;
-}
