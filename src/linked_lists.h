@@ -3,8 +3,8 @@
 Definição das listas ligadas
 */
 
-#ifndef __LISTS_H_
-#define __LISTS_H_
+#ifndef __LINKED_LISTS_H_
+#define __LINKED_LISTS_H_
 
 typedef struct NODE { 
     // Any data type can be stored in this node 

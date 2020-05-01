@@ -1,6 +1,6 @@
 #include <stddef.h>
 #include <stdlib.h>
-#include "lists.h"
+#include "linked_lists.h"
 
 LIST initialize_list() {
     return NULL;

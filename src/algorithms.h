@@ -4,8 +4,8 @@ Definição do bot e das funçoes utilizadas pelo mesmo
 */
 
 
-#ifndef __BOT_H__
-#define __BOT_H__
+#ifndef __ALGORITHMS_H__
+#define __ALGORITHMS_H__
 
 
 /**
@@ -54,11 +54,13 @@ int value_of(COORDINATE);
 Esta função é o brain do bot.
 @param e Apontador para o estado
 @param c Coordenada
-@param d Numero de Pecas a Procurar
-@param b Numero de jogador do bot
+@param depth Numero de Pecas a Procurar
+@param alpha Pontuação minima do jogador maximizante
+@param beta Pontuação maxima do jogador minimizante
+@param j Identificação do jogador
 @return O valor da melhor coordenada
 */
-int minmax(STATE *, COORDINATE, int, int);
+int minmax(STATE *, COORDINATE, int, int, int, int);
 
 
 /**

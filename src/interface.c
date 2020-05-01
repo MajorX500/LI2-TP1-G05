@@ -4,17 +4,16 @@
 #include "data.h"
 #include "interface.h"
 #include "logic.h"
-#include "lists.h"
-#include "bot.h"
+#include "linked_lists.h"
+#include "algorithms.h"
 
 int CMD(STATE *s) {
     char command[BUF_SIZE];
+    int pos_cap = 0;
     do {
-	int pos_cap;
         prompt(s);
         if(fgets(command, BUF_SIZE, stdin) == NULL) return 0;
-        switch (command[0]) {
-            case 'a' ... 'h': {
+	if (command[0] >= 'a' && command[0] <= 'h') {
                 if (command[0] == 'g' && command[1] == 'r') {
                     char f[BUF_SIZE];
                     sscanf(command, "%*s %s", f);
@@ -27,32 +26,29 @@ int CMD(STATE *s) {
                 }
                 else puts("Invalid Command");
 		pos_cap = get_num_moves(s);
-                break;
             }
-            case 'l': {
+	else if (command[0] == 'l') {
                 char f[BUF_SIZE];
                 sscanf(command, "%*s %s", f);
                 read(s, f);
 		pos_cap = get_num_moves(s);
-                break;
             }
-            case 'm': {
+    	else if (command[0] == 'm') {
                 draw_moves(s, stdout);
-                break;
             }
-            case 'p': {
+	else if (command[0] == 'p') {
                 int m;
                 sscanf(command, "%*s %d",&m);
                 if (m < 0 || m > pos_cap) puts ("Invalid Move");
                 else rollback(s,m);
-                break;
             }
-	    case 'j': {
+	else if (command[0] == 'j') {
 		if (!strncmp (command, "jog2", 4))
 			move(s, pairity(s));
 		else move(s, find_best_coordinate(s));
+		pos_cap = get_num_moves(s);
             }
-        }
+	else puts("Invalid Command");
         draw(s, stdout);
     } while (command[0] != 'Q');
     return 1;
@@ -93,16 +89,17 @@ void save(STATE *s, char*f) {
 
 void read(STATE *s, char *f) {
     	FILE *file = fopen(f, "r");
+	char c;
     	clear_state(s);
 	if (file == NULL) puts("Non existent file");
     	for (int y = 0; y < 8; fgetc(file),y++)
     		for (int x = 0; x < 8; x++) {
-              		char c = fgetc(file);	
+              		c = fgetc(file);	
 			if (c == '*') c = '@';
                 	change_house(s, (COORDINATE){x,y}, c);
             	}
 	fseek(file, 1, SEEK_CUR);
-        for (int i = 0, c; c != EOF; c = getc(file), i++) {
+        for (int i = 0; c != EOF; c = getc(file), i++) {
             	char p1[2], p2[2];
             	int l = fscanf(file, "%*s %s %s", p1, p2);
             	if (l == 2) {
