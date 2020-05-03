@@ -6,6 +6,9 @@ Definição da interface.
 #ifndef __INTERFACE_H__
 #define __INTERFACE_H__
 
+/*! \def BUF_SIZE
+    \brief Tamanho do buf de memoria
+*/
 #define BUF_SIZE 1024
 
 /**

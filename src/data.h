@@ -17,18 +17,25 @@ typedef enum {
     H2 = '2'
     } HOUSE;
 
-/**
-\brief Tipo de dados para as coordenadas
-*/
+/** @struct COORDINATE
+ *  @brief Define as Cooredenadas
+ *  @var COORDINATE::x 
+ *  Member 'x' Colunas
+ *  @var COORDINATE::y
+ *  Member 'y' Linhas
+ */
 typedef struct {
-    int x; //columns
-    int y; //lines
+    int x; 
+    int y; 
 } COORDINATE;
 
-
-/**
-\brief Tipo de dados para a jogada
-*/
+/** @struct MOVE
+ *  @brief Uma Jogada completa
+ *  @var MOVE::player1 
+ *  Member 'player1' jogador 1
+ *  @var MOVE::player2
+ *  Member 'player2' jogador 2
+ */
 typedef struct {
     COORDINATE player1;
     COORDINATE player2;
@@ -40,9 +47,19 @@ typedef struct {
 typedef MOVE MOVES[32];
 
 
-/**
-\brief Tipo de dados para o estado
-*/
+/** @struct STATE
+ *  @brief Estado do jogo
+ *  @var STATE::board 
+ *  Member 'board' Tabuleiro de Jogo
+ *  @var STATE::previous_move 
+ *  Member 'previous_move' Jogada anterior
+ *  @var STATE::moves
+ *  Member 'moves' Lista de Jogadas anteriores
+ *  @var STATE::num_moves
+ *  Member 'num_moves' Numero de jogadas
+ *  @var STATE::current_player
+ *  Member 'current_player' jogador atual
+ */
 typedef struct {
     /** O tabuleiro */
     HOUSE board[8][8];
@@ -180,3 +197,5 @@ Esta função limpa o estado do jogo, deixando apenas qual a lista de jogadas e 
 */
 void clear_state(STATE *e);
 #endif
+
+

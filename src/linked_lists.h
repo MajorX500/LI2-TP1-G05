@@ -6,12 +6,19 @@ Definição das listas ligadas
 #ifndef __LINKED_LISTS_H_
 #define __LINKED_LISTS_H_
 
+/** @struct NODE
+ *  @brief Lista Ligada
+ *  @var NODE::data
+ *  Member 'data' Dados guardados na lista
+ *  @var NODE::next
+ *  Member 'next' Proximo elemento
+ *  @var NODE::LIST
+ *  Member 'LIST' Lista
+*/
 typedef struct NODE { 
-    // Any data type can be stored in this node 
-    void  *data; 
-  
+    void  *data;
     struct NODE *next; 
-} *LIST; 
+} *LIST;
 
 /**
 \brief Inicializar lista
@@ -61,7 +68,7 @@ Esta função verifica se a lista esta vazia
 */
 int is_list_empty(LIST l);
 
-/*
+/**
 \brief Tamanho da lista
 Esta função devolve o tamanho da lista
 @param l Lista ligada
