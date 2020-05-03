@@ -1,5 +1,5 @@
 /**
-@file bot.h
+@file algorithms.h
 Definição do bot e das funçoes utilizadas pelo mesmo
 */
 
@@ -15,7 +15,7 @@ Esta função calcula o maior de dois números
 @param y Numero 2
 @return O maior numero
 */
-int max(int, int);
+int max(int x, int y);
 
 
 
@@ -26,7 +26,7 @@ Esta função calcula o menor de dois números
 @param y Numero 2
 @return O menor numero
 */
-int min(int, int);
+int min(int x, int y);
 
 
 /**
@@ -36,7 +36,7 @@ a partir de uma certa coordenada.
 @param e Apontador para o estado
 @return Uma Lista Ligada de coordenadas
 */
-LIST possible_coordinates(STATE *);
+LIST possible_coordinates(STATE *e);
 
 
 /**
@@ -45,7 +45,7 @@ Esta função devolve o valor de uma casa.
 @param c Uma Coordenada
 @return O valor da casa
 */
-int value_of(COORDINATE);
+int value_of(COORDINATE c);
 
 
 /**
@@ -59,13 +59,34 @@ Esta função é o brain do bot.
 @param j Identificação do jogador
 @return O valor da melhor coordenada
 */
-int minmax(STATE *, COORDINATE, int, int, int, int);
+int minmax(STATE *e, COORDINATE c, int depth, int alpha, int beta, int j);
 
-COORDINATE decide_between_equals(STATE *, COORDINATE, COORDINATE);
+/**
+\brief Decide Iguais
+Esta função escolhe a melhor casa.
+@param e Apontador para p estado
+@param c1 uma coordenada
+@param c2 outra coordenada
+@return A melhor coordenada
+*/
+COORDINATE decide_between_equals(STATE *e, COORDINATE c1, COORDINATE c2);
 
-LIST free_coordinates(STATE *, LIST);
+/**
+\brief FreeCoord
+Esta função monta uma lista de coordenadas vazias.
+@param e apontador para o estado
+@param l Lista de coordenadas
+@return Uma Lista de coordenadas
+*/
+LIST free_coordinates(STATE *e, LIST l);
 
-int num_free_coordinates(STATE *);
+/**
+\brief Número de vazias
+Esta função devolve o numero de casa vazias adjacentes ao jogador.
+@param e apontador paar um estado
+@return Número de casas
+*/
+int num_free_coordinates(STATE *e);
 
 
 /**
@@ -75,7 +96,7 @@ aumentar a probabilidade de ganhar.
 @param e Apontador para o estado
 @return A melhor coordenada
 */
-COORDINATE find_best_coordinate(STATE *);
+COORDINATE find_best_coordinate(STATE *e);
 
 /**
 \brief Paridade
@@ -83,7 +104,7 @@ Esta função é o algoritmo da Paridade.
 @param e Apontador para o estado
 @return A melhor coordenada
 */
-COORDINATE pairity(STATE *);
+COORDINATE pairity(STATE *e);
 
 /**
 \brief ContaVazio
@@ -93,6 +114,6 @@ casa vazias no tabuleiro.
 @param c Coordenada Atual
 @return Numero de Vazios
 */
-int numbEmpty(STATE *, COORDINATE);
+int numbEmpty(STATE *e, COORDINATE c);
 
 #endif
