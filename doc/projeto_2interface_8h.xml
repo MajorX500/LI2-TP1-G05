@@ -4,7 +4,7 @@
     <compoundname>interface.h</compoundname>
     <includedby refid="projeto_2interface_8c" local="yes">projeto/interface.c</includedby>
     <includedby refid="projeto_2logic_8c" local="yes">projeto/logic.c</includedby>
-    <includedby refid="projeto_2main_8c" local="yes">projeto/main.c</includedby>
+    <includedby refid="main_8c" local="yes">projeto/main.c</includedby>
     <invincdepgraph>
       <node id="3">
         <label>projeto/logic.c</label>
@@ -26,7 +26,7 @@
       </node>
       <node id="4">
         <label>projeto/main.c</label>
-        <link refid="projeto_2main_8c"/>
+        <link refid="main_8c"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

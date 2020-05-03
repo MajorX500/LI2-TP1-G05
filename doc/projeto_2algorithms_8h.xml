@@ -3,7 +3,7 @@
   <compounddef id="projeto_2algorithms_8h" kind="file" language="C++">
     <compoundname>algorithms.h</compoundname>
     <includedby refid="projeto_2interface_8c" local="yes">projeto/interface.c</includedby>
-    <includedby refid="projeto_2main_8c" local="yes">projeto/main.c</includedby>
+    <includedby refid="main_8c" local="yes">projeto/main.c</includedby>
     <invincdepgraph>
       <node id="2">
         <label>projeto/interface.c</label>
@@ -19,7 +19,7 @@
       </node>
       <node id="3">
         <label>projeto/main.c</label>
-        <link refid="projeto_2main_8c"/>
+        <link refid="main_8c"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="func">

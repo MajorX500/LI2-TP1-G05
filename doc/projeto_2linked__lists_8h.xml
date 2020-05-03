@@ -5,7 +5,7 @@
     <includedby refid="projeto_2algorithms_8c" local="yes">projeto/algorithms.c</includedby>
     <includedby refid="projeto_2interface_8c" local="yes">projeto/interface.c</includedby>
     <includedby refid="projeto_2linked__lists_8c" local="yes">projeto/linked_lists.c</includedby>
-    <includedby refid="projeto_2main_8c" local="yes">projeto/main.c</includedby>
+    <includedby refid="main_8c" local="yes">projeto/main.c</includedby>
     <invincdepgraph>
       <node id="3">
         <label>projeto/interface.c</label>
@@ -33,7 +33,7 @@
       </node>
       <node id="5">
         <label>projeto/main.c</label>
-        <link refid="projeto_2main_8c"/>
+        <link refid="main_8c"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structNODE" prot="public">NODE</innerclass>

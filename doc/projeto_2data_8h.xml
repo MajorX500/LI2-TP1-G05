@@ -6,7 +6,7 @@
     <includedby refid="projeto_2data_8c" local="yes">projeto/data.c</includedby>
     <includedby refid="projeto_2interface_8c" local="yes">projeto/interface.c</includedby>
     <includedby refid="projeto_2logic_8c" local="yes">projeto/logic.c</includedby>
-    <includedby refid="projeto_2main_8c" local="yes">projeto/main.c</includedby>
+    <includedby refid="main_8c" local="yes">projeto/main.c</includedby>
     <invincdepgraph>
       <node id="5">
         <label>projeto/logic.c</label>
@@ -40,7 +40,7 @@
       </node>
       <node id="6">
         <label>projeto/main.c</label>
-        <link refid="projeto_2main_8c"/>
+        <link refid="main_8c"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structCOORDINATE" prot="public">COORDINATE</innerclass>
@@ -50,96 +50,6 @@
       <memberdef kind="enum" id="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" prot="public" static="no" strong="no">
         <type></type>
         <name>HOUSE</name>
-        <enumvalue id="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" prot="public">
-          <name>EMPTY</name>
-          <initializer>= &apos;.&apos;</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-<para>Vazia HOUSE::EMPTY </para>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" prot="public">
-          <name>WHITE</name>
-          <initializer>= &apos;@&apos;</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-<para>Branca HOUSE::WHITE </para>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" prot="public">
-          <name>BLACK</name>
-          <initializer>= &apos;#&apos;</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-<para>Preta HOUSE::BLACK </para>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" prot="public">
-          <name>H1</name>
-          <initializer>= &apos;1&apos;</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-<para>Casa 1 HOUSE::H1 </para>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" prot="public">
-          <name>H2</name>
-          <initializer>= &apos;2&apos;</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-<para>Casa 2 HOUSE::H2 </para>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" prot="public">
-          <name>EMPTY</name>
-          <initializer>= &apos;.&apos;</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-<para>Vazia HOUSE::EMPTY </para>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" prot="public">
-          <name>WHITE</name>
-          <initializer>= &apos;@&apos;</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-<para>Branca HOUSE::WHITE </para>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" prot="public">
-          <name>BLACK</name>
-          <initializer>= &apos;#&apos;</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-<para>Preta HOUSE::BLACK </para>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" prot="public">
-          <name>H1</name>
-          <initializer>= &apos;1&apos;</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-<para>Casa 1 HOUSE::H1 </para>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" prot="public">
-          <name>H2</name>
-          <initializer>= &apos;2&apos;</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-<para>Casa 2 HOUSE::H2 </para>
-          </detaileddescription>
-        </enumvalue>
         <enumvalue id="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" prot="public">
           <name>EMPTY</name>
           <initializer>= &apos;.&apos;</initializer>

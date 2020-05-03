@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="projeto/linked_lists.c" line="9" column="6" bodyfile="projeto/linked_lists.c" bodystart="9" bodyend="11"/>
+        <location file="projeto/linked_lists.c" line="10" column="6" bodyfile="projeto/linked_lists.c" bodystart="10" bodyend="12"/>
       </memberdef>
       <memberdef kind="function" id="projeto_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="bot_2linked__lists_8h_1a033767905a5074a8ba2f23b740e7ece5" kindref="member">LIST</ref></type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="projeto/linked_lists.c" line="13" column="6" bodyfile="projeto/linked_lists.c" bodystart="13" bodyend="18"/>
+        <location file="projeto/linked_lists.c" line="14" column="6" bodyfile="projeto/linked_lists.c" bodystart="14" bodyend="19"/>
       </memberdef>
       <memberdef kind="function" id="projeto_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="projeto/linked_lists.c" line="20" column="6" bodyfile="projeto/linked_lists.c" bodystart="20" bodyend="22"/>
+        <location file="projeto/linked_lists.c" line="21" column="6" bodyfile="projeto/linked_lists.c" bodystart="21" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="projeto_2linked__lists_8c_1ade529e47d7dc09f69454a4f49f873457" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="bot_2linked__lists_8h_1a033767905a5074a8ba2f23b740e7ece5" kindref="member">LIST</ref></type>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="projeto/linked_lists.c" line="24" column="6" bodyfile="projeto/linked_lists.c" bodystart="24" bodyend="26"/>
+        <location file="projeto/linked_lists.c" line="25" column="6" bodyfile="projeto/linked_lists.c" bodystart="25" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="projeto_2linked__lists_8c_1a1ea1edabba84e02dcefc77f948be307a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="bot_2linked__lists_8h_1a033767905a5074a8ba2f23b740e7ece5" kindref="member">LIST</ref></type>
@@ -176,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="projeto/linked_lists.c" line="28" column="6" bodyfile="projeto/linked_lists.c" bodystart="28" bodyend="32"/>
+        <location file="projeto/linked_lists.c" line="29" column="6" bodyfile="projeto/linked_lists.c" bodystart="29" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="projeto_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -206,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="projeto/linked_lists.c" line="34" column="5" bodyfile="projeto/linked_lists.c" bodystart="34" bodyend="36"/>
+        <location file="projeto/linked_lists.c" line="35" column="5" bodyfile="projeto/linked_lists.c" bodystart="35" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="projeto_2linked__lists_8c_1a255458d0a7974cd11ef98887b6c2b8e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -236,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="projeto/linked_lists.c" line="38" column="5" bodyfile="projeto/linked_lists.c" bodystart="38" bodyend="42"/>
+        <location file="projeto/linked_lists.c" line="39" column="5" bodyfile="projeto/linked_lists.c" bodystart="39" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="projeto_2linked__lists_8c_1a002df25972494eb7c280499a9042f94d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -279,58 +279,59 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="projeto/linked_lists.c" line="44" column="5" bodyfile="projeto/linked_lists.c" bodystart="44" bodyend="47"/>
+        <location file="projeto/linked_lists.c" line="45" column="5" bodyfile="projeto/linked_lists.c" bodystart="45" bodyend="48"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para>Listas ligadas </para>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"></codeline>
-<codeline lineno="5"><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="projeto_2linked__lists_8h" kindref="compound">linked_lists.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><ref refid="structNODE" kindref="compound">LIST</ref><sp/><ref refid="bot_2linked__lists_8c_1a44d30a3a13a3bcf8a9b83fb222541818" kindref="member">initialize_list</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
-<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><ref refid="structNODE" kindref="compound">LIST</ref><sp/><ref refid="bot_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kindref="member">insert_head</ref>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*d)<sp/>{</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structNODE" kindref="compound">LIST</ref><sp/>nl<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structNODE" kindref="compound">NODE</ref>));</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>nl-&gt;<ref refid="structNODE_1a8bc9259707768cdfa141602795fd3028" kindref="member">data</ref><sp/>=<sp/>d;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>nl-&gt;<ref refid="structNODE_1a082de8bf4b4d475e2d851604abcbe2ff" kindref="member">next</ref><sp/>=<sp/>l;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nl;</highlight></codeline>
-<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="bot_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" kindref="member">get_head</ref>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l)<sp/>{</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l-&gt;<ref refid="structNODE_1a8bc9259707768cdfa141602795fd3028" kindref="member">data</ref>;</highlight></codeline>
-<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><ref refid="structNODE" kindref="compound">LIST</ref><sp/><ref refid="bot_2linked__lists_8c_1ade529e47d7dc09f69454a4f49f873457" kindref="member">next</ref>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l)<sp/>{</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l-&gt;<ref refid="structNODE_1a082de8bf4b4d475e2d851604abcbe2ff" kindref="member">next</ref>;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><ref refid="structNODE" kindref="compound">LIST</ref><sp/><ref refid="bot_2linked__lists_8c_1a1ea1edabba84e02dcefc77f948be307a" kindref="member">remove_head</ref>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l)<sp/>{</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structNODE" kindref="compound">LIST</ref><sp/>nl<sp/>=<sp/>l-&gt;<ref refid="structNODE_1a082de8bf4b4d475e2d851604abcbe2ff" kindref="member">next</ref>;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>free(l);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nl;</highlight></codeline>
-<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" kindref="member">is_list_empty</ref>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l)<sp/>{</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!l;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2linked__lists_8c_1a255458d0a7974cd11ef98887b6c2b8e4" kindref="member">length</ref>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l)<sp/>{</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2linked__lists_8c_1a255458d0a7974cd11ef98887b6c2b8e4" kindref="member">length</ref><sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;<sp/>!<ref refid="bot_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" kindref="member">is_list_empty</ref>(l);<sp/><ref refid="bot_2linked__lists_8c_1a255458d0a7974cd11ef98887b6c2b8e4" kindref="member">length</ref>++,<sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1ade529e47d7dc09f69454a4f49f873457" kindref="member">next</ref>(l));</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="bot_2linked__lists_8c_1a255458d0a7974cd11ef98887b6c2b8e4" kindref="member">length</ref>;</highlight></codeline>
-<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2linked__lists_8c_1a002df25972494eb7c280499a9042f94d" kindref="member">elem</ref>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data)<sp/>{</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(;<sp/>l<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/><ref refid="bot_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" kindref="member">get_head</ref>(l)<sp/>!=<sp/>data;<sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1ade529e47d7dc09f69454a4f49f873457" kindref="member">next</ref>(l));</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!!l;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="projeto_2linked__lists_8h" kindref="compound">linked_lists.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="structNODE" kindref="compound">LIST</ref><sp/><ref refid="bot_2linked__lists_8c_1a44d30a3a13a3bcf8a9b83fb222541818" kindref="member">initialize_list</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="structNODE" kindref="compound">LIST</ref><sp/><ref refid="bot_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kindref="member">insert_head</ref>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*d)<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structNODE" kindref="compound">LIST</ref><sp/>nl<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structNODE" kindref="compound">NODE</ref>));</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>nl-&gt;<ref refid="structNODE_1a8bc9259707768cdfa141602795fd3028" kindref="member">data</ref><sp/>=<sp/>d;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>nl-&gt;<ref refid="structNODE_1a082de8bf4b4d475e2d851604abcbe2ff" kindref="member">next</ref><sp/>=<sp/>l;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nl;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="bot_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" kindref="member">get_head</ref>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l-&gt;<ref refid="structNODE_1a8bc9259707768cdfa141602795fd3028" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="structNODE" kindref="compound">LIST</ref><sp/><ref refid="bot_2linked__lists_8c_1ade529e47d7dc09f69454a4f49f873457" kindref="member">next</ref>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l-&gt;<ref refid="structNODE_1a082de8bf4b4d475e2d851604abcbe2ff" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="structNODE" kindref="compound">LIST</ref><sp/><ref refid="bot_2linked__lists_8c_1a1ea1edabba84e02dcefc77f948be307a" kindref="member">remove_head</ref>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structNODE" kindref="compound">LIST</ref><sp/>nl<sp/>=<sp/>l-&gt;<ref refid="structNODE_1a082de8bf4b4d475e2d851604abcbe2ff" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>free(l);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nl;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" kindref="member">is_list_empty</ref>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!l;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2linked__lists_8c_1a255458d0a7974cd11ef98887b6c2b8e4" kindref="member">length</ref>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2linked__lists_8c_1a255458d0a7974cd11ef98887b6c2b8e4" kindref="member">length</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;<sp/>!<ref refid="bot_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" kindref="member">is_list_empty</ref>(l);<sp/><ref refid="bot_2linked__lists_8c_1a255458d0a7974cd11ef98887b6c2b8e4" kindref="member">length</ref>++,<sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1ade529e47d7dc09f69454a4f49f873457" kindref="member">next</ref>(l));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="bot_2linked__lists_8c_1a255458d0a7974cd11ef98887b6c2b8e4" kindref="member">length</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2linked__lists_8c_1a002df25972494eb7c280499a9042f94d" kindref="member">elem</ref>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(;<sp/>l<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/><ref refid="bot_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" kindref="member">get_head</ref>(l)<sp/>!=<sp/>data;<sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1ade529e47d7dc09f69454a4f49f873457" kindref="member">next</ref>(l));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!!l;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="projeto/linked_lists.c"/>
   </compounddef>

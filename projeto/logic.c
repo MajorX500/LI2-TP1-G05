@@ -1,5 +1,6 @@
 /**
 @file logic.c
+Logica do programa 
 */
 
 #include <stdio.h>

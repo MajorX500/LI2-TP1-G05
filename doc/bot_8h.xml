@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bot/bot.h" line="16" column="5" bodyfile="bot/bot.c" bodystart="9" bodyend="18" declfile="bot/bot.h" declline="16" declcolumn="5"/>
+        <location file="bot/bot.h" line="16" column="5" bodyfile="bot/bot.c" bodystart="13" bodyend="22" declfile="bot/bot.h" declline="16" declcolumn="5"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

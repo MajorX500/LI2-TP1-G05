@@ -4,8 +4,8 @@
     <compoundname>bot</compoundname>
     <innerfile refid="bot_2algorithms_8c">algorithms.c</innerfile>
     <innerfile refid="bot_2algorithms_8h">algorithms.h</innerfile>
-    <innerfile refid="bot_2bot_8c">bot.c</innerfile>
-    <innerfile refid="bot_2bot_8h">bot.h</innerfile>
+    <innerfile refid="bot_8c">bot.c</innerfile>
+    <innerfile refid="bot_8h">bot.h</innerfile>
     <innerfile refid="bot_2data_8c">data.c</innerfile>
     <innerfile refid="bot_2data_8h">data.h</innerfile>
     <innerfile refid="bot_2interface_8c">interface.c</innerfile>

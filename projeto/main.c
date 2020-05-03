@@ -1,5 +1,6 @@
 /**
 @file main.c
+Main
 */
 
 #include <stdlib.h>

@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
   <compounddef id="bot_2interface_8h" kind="file" language="C++">
     <compoundname>interface.h</compoundname>
-    <includedby refid="bot_2bot_8c" local="yes">bot/bot.c</includedby>
+    <includedby refid="bot_8c" local="yes">bot/bot.c</includedby>
     <includedby refid="bot_2interface_8c" local="yes">bot/interface.c</includedby>
     <includedby refid="bot_2logic_8c" local="yes">bot/logic.c</includedby>
     <invincdepgraph>
@@ -12,7 +12,7 @@
       </node>
       <node id="2">
         <label>bot/bot.c</label>
-        <link refid="bot_2bot_8c"/>
+        <link refid="bot_8c"/>
       </node>
       <node id="3">
         <label>bot/interface.c</label>

@@ -1,5 +1,6 @@
 /**
 @file interface.c
+Interface do programa
 */
 
 #include <stdio.h>
