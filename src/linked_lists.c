@@ -30,3 +30,14 @@ LIST remove_head(LIST l) {
 int is_list_empty(LIST l) {
     return !l;
 }
+
+int length(LIST l) {
+	int length = 0;
+	for (; !is_list_empty(l); length++, l = next(l));
+	return length;
+}
+
+int elem(LIST l, void *data) {
+	for(; l != NULL && get_head(l) != data; l = next(l));
+	return !!l;
+}

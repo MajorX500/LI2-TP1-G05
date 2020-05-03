@@ -38,7 +38,7 @@ void move(STATE *s, COORDINATE c) {
     if (check_winner(s, c))
         printf("Player %d wins!\n", check_winner(s, c));
     make_move(s, c);
-    if (!valid_moves(s)) (printf("Player %d wins!\n",1 + (s -> current_player % 2)));
+    if (!valid_moves(s)) (printf("Player %d wins!\n",1 + (get_current_player(s) % 2)));
 }
 
 void store_coordinate(STATE *s, COORDINATE c) {

@@ -47,9 +47,12 @@ int CMD(STATE *s) {
 			move(s, pairity(s));
 		else move(s, find_best_coordinate(s));
 		pos_cap = get_num_moves(s);
-            }
-	else puts("Invalid Command");
-        draw(s, stdout);
+        }
+    else if (command[0] == 'z')
+        printf("%d\n", num_free_coordinates(s));
+	else if (command[0] != 'Q')
+		puts("Invalid Command");
+    draw(s, stdout);
     } while (command[0] != 'Q');
     return 1;
 }
@@ -73,7 +76,7 @@ void draw_moves(STATE *s, FILE *file) {
     }
 }
 
-void save(STATE *s, char*f) {
+void save(STATE *s, char *f) {
     FILE *file = fopen(f, "w");
     int y, x, i = 8;
     for (y = 0; y < 8; y++, i--, putc('\n', file))

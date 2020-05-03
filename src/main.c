@@ -13,10 +13,11 @@ int main() {
    return 0;
 }
 /*
-void main () {
+int main () {
     STATE *s = starting_state();
     for (int y = 0; y < 8; y++, putc('\n', stdout))
         for (int x = 0; x < 8; x++)
             printf(" %d", value_of((COORDINATE){x, y}));
+    return 0;
 }
 */

@@ -11,7 +11,8 @@ int min(int x, int y) {
 	return x < y ? x : y;
 }
 
-LIST possible_coordinates(STATE *s, COORDINATE c) {
+LIST possible_coordinates(STATE *s) {
+	COORDINATE c = get_previous_move(s);
 	LIST l = initialize_list();
 	if (c.x >= 1 && c.y >= 1 && get_house(s, (COORDINATE){c.x - 1, c.y - 1}) != BLACK) {
 		COORDINATE *tl = malloc(sizeof(COORDINATE));
@@ -57,53 +58,93 @@ LIST possible_coordinates(STATE *s, COORDINATE c) {
 }
 
 int value_of(COORDINATE c) {
-	//int values[8][8] = {
-	//	{}
-	//}
-	if (c.x == 0 && c.y == 7) return 10;
-	if (c.x <= 1 && c.y >= 6) return 7;
-	if (c.x <= 2 && c.y >= 5) return 5;
-	if (c.x <= 3 && c.y >= 4) return 3;
-	if (c.x <= 4 && c.y >= 3) return 1;
-	if (c.y == 0 && c.x == 7) return -10;
-	if (c.y <= 1 && c.x >= 6) return -8;
-	if (c.y <= 2 && c.x >= 5) return -6;
-	if (c.y <= 3 && c.x >= 4) return -3;
-	return 0;
+	int value[8][8] = {
+		{   0, -5, -15, -30, -50, -70, -90, -150 },
+		{  25, 15, -20, -35, -55, -75, -95,  -90 },
+		{  30, 35,  15, -40, -60, -80, -75,  -70 },
+		{  40, 45,  50,  20,   0, -60, -55,  -50 },
+		{  60, 65,  70,  55,  20, -40, -35,  -30 },
+		{  75, 80,  85,  70,  50,  15, -20,  -15 },
+		{  90, 95,  80,  65,  50,  40,  10,   -5 },
+		{ 150, 90,  75,  60,  45,  35,  30,    0 }
+	};
+	return value[c.y][c.x];
 }
 
 int minimax(STATE *s, COORDINATE c, int depth, int alpha, int beta, int maximizing_player) {
-	if (!valid_moves(s)) {
-		if (maximizing_player) return 10;
-		else return -10;
-	}
-	if (!depth || check_winner(s, c) || !valid_moves(s))
-		return value_of(c) * (depth + 1);
 	STATE *ns = malloc(sizeof(STATE));
 	*ns = *s;
 	make_move(ns, c);
+	if (!valid_moves(ns) && get_house(s, c) == EMPTY) {
+		free(ns);
+		if (maximizing_player) return 150;
+		else return -150;
+	}
+	if (!depth || check_winner(s, c) || !valid_moves(ns)) {
+		free(ns);
+		return value_of(c);
+	}
 	if (maximizing_player) {
-		int maxEval = -100;
-		for (LIST l = possible_coordinates(ns, c); !is_list_empty(l); l = remove_head(l)) {
+		int maxEval = -10000;
+		for (LIST l = possible_coordinates(ns); !is_list_empty(l); l = remove_head(l)) {
 			COORDINATE *nc = get_head(l);
 			int eval = minimax(ns, *nc, depth - 1, alpha, beta, 0);
 			maxEval = max(eval, maxEval);
 			alpha = max(alpha, eval);
 			if (beta <= alpha) break;
 		}
+		free(ns);
 		return maxEval;
 	}
 	else {
-		int minEval = 100;
-		for (LIST l = possible_coordinates(ns, c); !is_list_empty(l); l = remove_head(l)) {
+		int minEval = 10000;
+		for (LIST l = possible_coordinates(ns); !is_list_empty(l); l = remove_head(l)) {
 			COORDINATE *nc = get_head(l);
 			int eval = minimax(ns, *nc, depth - 1, alpha, beta, 1);
 			minEval = min(eval, minEval);
 			beta = min(beta, eval);
 			if (beta <= alpha) break;
 		}
+		free(ns);
 		return minEval;
 	}
+}
+
+COORDINATE decide_between_equals(STATE *s, COORDINATE c1, COORDINATE c2) {
+	if(get_current_player(s) == 1)
+		return value_of(c1) > value_of(c2) ? c1 : c2;
+	else 
+		return value_of(c1) < value_of(c2) ? c1 : c2;
+}
+
+LIST free_coordinates(STATE *s, LIST l) {
+	for(LIST pl = possible_coordinates(s); pl != NULL; pl = next(pl)) {
+		COORDINATE *c = get_head(pl);
+		if (!elem(l, c)) {
+			l = insert_head(l, c);
+			make_move(s, *c);
+			l = free_coordinates(s, l);
+		}
+	}
+	return l;
+}
+
+
+int num_free_coordinates(STATE *s) {
+	STATE *ns = malloc(sizeof(STATE));
+	*ns = *s;
+	LIST l = initialize_list();
+	l = free_coordinates(ns, l);
+	return length(l);
+}
+
+int decide_depth(STATE *s) {
+	int n = num_free_coordinates(s);
+	if (n > 200)
+		return 10;
+	if (n > 130)
+		return 11;
+	else return n / 10;
 }
 
 COORDINATE find_best_coordinate(STATE *s) {
@@ -111,10 +152,12 @@ COORDINATE find_best_coordinate(STATE *s) {
 	int maximizing_player = 2 - get_current_player(s);
 	COORDINATE bc = c;
 	if (maximizing_player) {
-		int maxEval = -20;
-		for(LIST l = possible_coordinates(s, c); !is_list_empty(l); l = remove_head(l)) {
+		int maxEval = -10000;
+		for(LIST l = possible_coordinates(s); !is_list_empty(l); l = remove_head(l)) {
 			COORDINATE *nc = get_head(l);
-			int eval = minimax(s, *nc, 10, -100, 100, maximizing_player);
+			int eval = minimax(s, *nc, decide_depth(s), -10000, 10000, maximizing_player);
+			if (eval == maxEval)
+				bc = decide_between_equals(s, bc, *nc);
 			if (eval > maxEval) {
 				maxEval = eval;
 				bc = *nc;
@@ -122,10 +165,12 @@ COORDINATE find_best_coordinate(STATE *s) {
 		}
 	}
 	else {
-		int minEval = 20;
-		for(LIST l = possible_coordinates(s, c); !is_list_empty(l); l = remove_head(l)) {
+		int minEval = 10000;
+		for(LIST l = possible_coordinates(s); !is_list_empty(l); l = remove_head(l)) {
 			COORDINATE *nc = get_head(l);
-			int eval = minimax(s, *nc, 10, -100, 100, maximizing_player);
+			int eval = minimax(s, *nc, decide_depth(s), -10000, 10000, maximizing_player);
+			if (eval == minEval)
+				bc = decide_between_equals(s, bc, *nc);
 			if (eval < minEval) {
 				minEval = eval;
 				bc = *nc;
@@ -135,20 +180,19 @@ COORDINATE find_best_coordinate(STATE *s) {
 	return bc;
 }
 
-
 int numbEmpty(STATE *s, COORDINATE c) {
     STATE *ns = malloc(sizeof(STATE));
     *ns = *s;
     make_move(ns, c);
     int numb = 0;
-    for(LIST l = possible_coordinates(ns, c); !is_list_empty(l); l = remove_head(l), numb ++);
+    for(LIST l = possible_coordinates(ns); !is_list_empty(l); l = remove_head(l), numb ++);
     return numb - 1;
 }
 
 COORDINATE pairity(STATE *s) {
     COORDINATE c = get_previous_move(s);
     COORDINATE bc = c;
-    for(LIST l = possible_coordinates(s, c); !is_list_empty(l); l = remove_head(l)) {
+    for(LIST l = possible_coordinates(s); !is_list_empty(l); l = remove_head(l)) {
         COORDINATE *nc = get_head(l);
         int eval = numbEmpty(s, *nc);
         if (!(eval % 2))
@@ -156,4 +200,3 @@ COORDINATE pairity(STATE *s) {
     }
     return bc;
 }
-

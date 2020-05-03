@@ -61,4 +61,14 @@ Esta função verifica se a lista esta vazia
 */
 int is_list_empty(LIST);
 
+/*
+\brief Tamanho da lista
+Esta função devolve o tamanho da lista
+@param l Lista ligada
+@return Tamanho da lista
+*/
+int length(LIST);
+
+int elem(LIST, void *);
+
 #endif

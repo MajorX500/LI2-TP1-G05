@@ -34,10 +34,9 @@ int min(int, int);
 Esta função verifica as jogadas/casa que são possiveis efectuar
 a partir de uma certa coordenada.
 @param e Apontador para o estado
-@param c Coordenada
 @return Uma Lista Ligada de coordenadas
 */
-LIST possible_coordinates(STATE *, COORDINATE);
+LIST possible_coordinates(STATE *);
 
 
 /**
@@ -61,6 +60,12 @@ Esta função é o brain do bot.
 @return O valor da melhor coordenada
 */
 int minmax(STATE *, COORDINATE, int, int, int, int);
+
+COORDINATE decide_between_equals(STATE *, COORDINATE, COORDINATE);
+
+LIST free_coordinates(STATE *, LIST);
+
+int num_free_coordinates(STATE *);
 
 
 /**
