@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="namespacevalida__projeto" kind="namespace" language="Python">
+    <compoundname>valida_projeto</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="valida__projeto_8py_1af506d4d9e5eb7f2a2f6aeff18897e6be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def valida_projeto.check_for_warnings</definition>
+        <argsstring>(folder)</argsstring>
+        <name>check_for_warnings</name>
+        <param>
+          <type>folder</type>
+          <defname>folder</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="valida_projeto.py" line="3" column="1" bodyfile="valida_projeto.py" bodystart="3" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="valida__projeto_8py_1a9311c255e306666bbe1467ba4563dd5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def valida_projeto.count_XML_files</definition>
+        <argsstring>(folder)</argsstring>
+        <name>count_XML_files</name>
+        <param>
+          <type>folder</type>
+          <defname>folder</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="valida_projeto.py" line="14" column="1" bodyfile="valida_projeto.py" bodystart="14" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="valida__projeto_8py_1a79a7f3ff548320621d1019341e77b8fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def valida_projeto.check_documentation</definition>
+        <argsstring>(proj, doc)</argsstring>
+        <name>check_documentation</name>
+        <param>
+          <type>proj</type>
+          <defname>proj</defname>
+        </param>
+        <param>
+          <type>doc</type>
+          <defname>doc</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="valida_projeto.py" line="19" column="1" bodyfile="valida_projeto.py" bodystart="19" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="valida__projeto_8py_1a4bc80a4b47d139e4fbefac6d1220478a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def valida_projeto.count_C_files</definition>
+        <argsstring>(folder)</argsstring>
+        <name>count_C_files</name>
+        <param>
+          <type>folder</type>
+          <defname>folder</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="valida_projeto.py" line="29" column="1" bodyfile="valida_projeto.py" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="valida__projeto_8py_1a2091200245a5a5decb48993772920cde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def valida_projeto.check_for_readme</definition>
+        <argsstring>(folder)</argsstring>
+        <name>check_for_readme</name>
+        <param>
+          <type>folder</type>
+          <defname>folder</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="valida_projeto.py" line="33" column="1" bodyfile="valida_projeto.py" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="valida__projeto_8py_1aa4c0fde2cda2a2a677dc8fc4fc757f06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def valida_projeto.extrai</definition>
+        <argsstring>(filename)</argsstring>
+        <name>extrai</name>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="valida_projeto.py" line="38" column="1" bodyfile="valida_projeto.py" bodystart="38" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="valida_projeto.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

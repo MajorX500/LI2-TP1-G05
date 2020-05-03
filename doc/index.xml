@@ -1,0 +1,658 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.18">
+  <compound refid="structCOORDINATE" kind="struct"><name>COORDINATE</name>
+    <member refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kind="variable"><name>x</name></member>
+    <member refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kind="variable"><name>y</name></member>
+  </compound>
+  <compound refid="structMOVE" kind="struct"><name>MOVE</name>
+    <member refid="structMOVE_1a802f677826192d2695df3fe13256ac1d" kind="variable"><name>player1</name></member>
+    <member refid="structMOVE_1a65881528e3c27539f6813e8479cf2f02" kind="variable"><name>player2</name></member>
+  </compound>
+  <compound refid="structNODE" kind="struct"><name>NODE</name>
+    <member refid="structNODE_1a8bc9259707768cdfa141602795fd3028" kind="variable"><name>data</name></member>
+    <member refid="structNODE_1a082de8bf4b4d475e2d851604abcbe2ff" kind="variable"><name>next</name></member>
+  </compound>
+  <compound refid="structSTATE" kind="struct"><name>STATE</name>
+    <member refid="structSTATE_1af1d03dd04058d7c57a4029abeae701f1" kind="variable"><name>board</name></member>
+    <member refid="structSTATE_1ab058fa820cbb60d2138b762e2cc258ab" kind="variable"><name>previous_move</name></member>
+    <member refid="structSTATE_1ac8e19f87314fe850d57487a27b3df0e8" kind="variable"><name>moves</name></member>
+    <member refid="structSTATE_1a815121cea9f6fd1fffb97ab8d2f623db" kind="variable"><name>num_moves</name></member>
+    <member refid="structSTATE_1af6129f7baf3c348badfee5147a6aacfb" kind="variable"><name>current_player</name></member>
+  </compound>
+  <compound refid="namespacevalida__projeto" kind="namespace"><name>valida_projeto</name>
+    <member refid="valida__projeto_8py_1af506d4d9e5eb7f2a2f6aeff18897e6be" kind="function"><name>check_for_warnings</name></member>
+    <member refid="valida__projeto_8py_1a9311c255e306666bbe1467ba4563dd5d" kind="function"><name>count_XML_files</name></member>
+    <member refid="valida__projeto_8py_1a79a7f3ff548320621d1019341e77b8fa" kind="function"><name>check_documentation</name></member>
+    <member refid="valida__projeto_8py_1a4bc80a4b47d139e4fbefac6d1220478a" kind="function"><name>count_C_files</name></member>
+    <member refid="valida__projeto_8py_1a2091200245a5a5decb48993772920cde" kind="function"><name>check_for_readme</name></member>
+    <member refid="valida__projeto_8py_1aa4c0fde2cda2a2a677dc8fc4fc757f06" kind="function"><name>extrai</name></member>
+  </compound>
+  <compound refid="bot_2algorithms_8c" kind="file"><name>algorithms.c</name>
+    <member refid="bot_2algorithms_8c_1a2f72f31bf325f0df4de4c83205568509" kind="function"><name>max</name></member>
+    <member refid="bot_2algorithms_8c_1aebfa23dbf6ec30f35f2986a654bd47c1" kind="function"><name>min</name></member>
+    <member refid="bot_2algorithms_8c_1a0b7c84e35701b80da23cdd3efe5b1401" kind="function"><name>possible_coordinates</name></member>
+    <member refid="bot_2algorithms_8c_1afbd8632fa3325380d2c65bc5a4610e44" kind="function"><name>value_of</name></member>
+    <member refid="bot_2algorithms_8c_1a767afd95b0509dc71865eeda48bde86d" kind="function"><name>minimax</name></member>
+    <member refid="bot_2algorithms_8c_1ad05a1b79e2e5267851ccc119751de2fc" kind="function"><name>decide_between_equals</name></member>
+    <member refid="bot_2algorithms_8c_1ab340fc7b03fa64aacdcd8f606db13106" kind="function"><name>free_coordinates</name></member>
+    <member refid="bot_2algorithms_8c_1af561e8d42f3c98a476dd1931339ef95d" kind="function"><name>num_free_coordinates</name></member>
+    <member refid="bot_2algorithms_8c_1aee6079aa290aac68959a53b76cbf9ff6" kind="function"><name>decide_depth</name></member>
+    <member refid="bot_2algorithms_8c_1a2cdc96ab683123ede90d1ca6961ddddc" kind="function"><name>find_best_coordinate</name></member>
+    <member refid="bot_2algorithms_8c_1aaea85044d887ae40719608d612ff90ae" kind="function"><name>numbEmpty</name></member>
+    <member refid="bot_2algorithms_8c_1a7d30bc8a083bd9a3d9dadc87ff29c119" kind="function"><name>pairity</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2bot_2algorithms_8c" kind="file"><name>algorithms.c</name>
+    <member refid="li2PL1G05_2bot_2algorithms_8c_1a2f72f31bf325f0df4de4c83205568509" kind="function"><name>max</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8c_1aebfa23dbf6ec30f35f2986a654bd47c1" kind="function"><name>min</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8c_1a0b7c84e35701b80da23cdd3efe5b1401" kind="function"><name>possible_coordinates</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8c_1afbd8632fa3325380d2c65bc5a4610e44" kind="function"><name>value_of</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8c_1a767afd95b0509dc71865eeda48bde86d" kind="function"><name>minimax</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8c_1ad05a1b79e2e5267851ccc119751de2fc" kind="function"><name>decide_between_equals</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8c_1ab340fc7b03fa64aacdcd8f606db13106" kind="function"><name>free_coordinates</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8c_1af561e8d42f3c98a476dd1931339ef95d" kind="function"><name>num_free_coordinates</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8c_1aee6079aa290aac68959a53b76cbf9ff6" kind="function"><name>decide_depth</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8c_1a2cdc96ab683123ede90d1ca6961ddddc" kind="function"><name>find_best_coordinate</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8c_1aaea85044d887ae40719608d612ff90ae" kind="function"><name>numbEmpty</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8c_1a7d30bc8a083bd9a3d9dadc87ff29c119" kind="function"><name>pairity</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2projeto_2algorithms_8c" kind="file"><name>algorithms.c</name>
+    <member refid="li2PL1G05_2projeto_2algorithms_8c_1a2f72f31bf325f0df4de4c83205568509" kind="function"><name>max</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8c_1aebfa23dbf6ec30f35f2986a654bd47c1" kind="function"><name>min</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8c_1a0b7c84e35701b80da23cdd3efe5b1401" kind="function"><name>possible_coordinates</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8c_1afbd8632fa3325380d2c65bc5a4610e44" kind="function"><name>value_of</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8c_1a767afd95b0509dc71865eeda48bde86d" kind="function"><name>minimax</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8c_1ad05a1b79e2e5267851ccc119751de2fc" kind="function"><name>decide_between_equals</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8c_1ab340fc7b03fa64aacdcd8f606db13106" kind="function"><name>free_coordinates</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8c_1af561e8d42f3c98a476dd1931339ef95d" kind="function"><name>num_free_coordinates</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8c_1aee6079aa290aac68959a53b76cbf9ff6" kind="function"><name>decide_depth</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8c_1a2cdc96ab683123ede90d1ca6961ddddc" kind="function"><name>find_best_coordinate</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8c_1aaea85044d887ae40719608d612ff90ae" kind="function"><name>numbEmpty</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8c_1a7d30bc8a083bd9a3d9dadc87ff29c119" kind="function"><name>pairity</name></member>
+  </compound>
+  <compound refid="projeto_2algorithms_8c" kind="file"><name>algorithms.c</name>
+    <member refid="projeto_2algorithms_8c_1a2f72f31bf325f0df4de4c83205568509" kind="function"><name>max</name></member>
+    <member refid="projeto_2algorithms_8c_1aebfa23dbf6ec30f35f2986a654bd47c1" kind="function"><name>min</name></member>
+    <member refid="projeto_2algorithms_8c_1a0b7c84e35701b80da23cdd3efe5b1401" kind="function"><name>possible_coordinates</name></member>
+    <member refid="projeto_2algorithms_8c_1afbd8632fa3325380d2c65bc5a4610e44" kind="function"><name>value_of</name></member>
+    <member refid="projeto_2algorithms_8c_1a767afd95b0509dc71865eeda48bde86d" kind="function"><name>minimax</name></member>
+    <member refid="projeto_2algorithms_8c_1ad05a1b79e2e5267851ccc119751de2fc" kind="function"><name>decide_between_equals</name></member>
+    <member refid="projeto_2algorithms_8c_1ab340fc7b03fa64aacdcd8f606db13106" kind="function"><name>free_coordinates</name></member>
+    <member refid="projeto_2algorithms_8c_1af561e8d42f3c98a476dd1931339ef95d" kind="function"><name>num_free_coordinates</name></member>
+    <member refid="projeto_2algorithms_8c_1aee6079aa290aac68959a53b76cbf9ff6" kind="function"><name>decide_depth</name></member>
+    <member refid="projeto_2algorithms_8c_1a2cdc96ab683123ede90d1ca6961ddddc" kind="function"><name>find_best_coordinate</name></member>
+    <member refid="projeto_2algorithms_8c_1aaea85044d887ae40719608d612ff90ae" kind="function"><name>numbEmpty</name></member>
+    <member refid="projeto_2algorithms_8c_1a7d30bc8a083bd9a3d9dadc87ff29c119" kind="function"><name>pairity</name></member>
+  </compound>
+  <compound refid="bot_2algorithms_8h" kind="file"><name>algorithms.h</name>
+    <member refid="bot_2algorithms_8h_1a2f72f31bf325f0df4de4c83205568509" kind="function"><name>max</name></member>
+    <member refid="bot_2algorithms_8h_1aebfa23dbf6ec30f35f2986a654bd47c1" kind="function"><name>min</name></member>
+    <member refid="bot_2algorithms_8h_1a839360b010c666f2422f64d8413b502c" kind="function"><name>possible_coordinates</name></member>
+    <member refid="bot_2algorithms_8h_1afbd8632fa3325380d2c65bc5a4610e44" kind="function"><name>value_of</name></member>
+    <member refid="bot_2algorithms_8h_1a40f43ac82ea17bd32a870cc96402b4c4" kind="function"><name>minmax</name></member>
+    <member refid="bot_2algorithms_8h_1af364734ddd7bc1054a49fde31ffa5cdd" kind="function"><name>decide_between_equals</name></member>
+    <member refid="bot_2algorithms_8h_1af611b278d54aee5fcbd5135a10d3117a" kind="function"><name>free_coordinates</name></member>
+    <member refid="bot_2algorithms_8h_1a5a903bfff767d3ffb1d2d29d4205be03" kind="function"><name>num_free_coordinates</name></member>
+    <member refid="bot_2algorithms_8h_1ab66af7501b95decc80304824bc140cf9" kind="function"><name>find_best_coordinate</name></member>
+    <member refid="bot_2algorithms_8h_1aff4ac3ac9d341aaa61d2be9be72fedbc" kind="function"><name>pairity</name></member>
+    <member refid="bot_2algorithms_8h_1af1091f694c3cf498e56516d593417fdc" kind="function"><name>numbEmpty</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2bot_2algorithms_8h" kind="file"><name>algorithms.h</name>
+    <member refid="li2PL1G05_2bot_2algorithms_8h_1a2f72f31bf325f0df4de4c83205568509" kind="function"><name>max</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8h_1aebfa23dbf6ec30f35f2986a654bd47c1" kind="function"><name>min</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8h_1a839360b010c666f2422f64d8413b502c" kind="function"><name>possible_coordinates</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8h_1afbd8632fa3325380d2c65bc5a4610e44" kind="function"><name>value_of</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8h_1a40f43ac82ea17bd32a870cc96402b4c4" kind="function"><name>minmax</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8h_1af364734ddd7bc1054a49fde31ffa5cdd" kind="function"><name>decide_between_equals</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8h_1af611b278d54aee5fcbd5135a10d3117a" kind="function"><name>free_coordinates</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8h_1a5a903bfff767d3ffb1d2d29d4205be03" kind="function"><name>num_free_coordinates</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8h_1ab66af7501b95decc80304824bc140cf9" kind="function"><name>find_best_coordinate</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8h_1aff4ac3ac9d341aaa61d2be9be72fedbc" kind="function"><name>pairity</name></member>
+    <member refid="li2PL1G05_2bot_2algorithms_8h_1af1091f694c3cf498e56516d593417fdc" kind="function"><name>numbEmpty</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2projeto_2algorithms_8h" kind="file"><name>algorithms.h</name>
+    <member refid="li2PL1G05_2projeto_2algorithms_8h_1a2f72f31bf325f0df4de4c83205568509" kind="function"><name>max</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8h_1aebfa23dbf6ec30f35f2986a654bd47c1" kind="function"><name>min</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8h_1a839360b010c666f2422f64d8413b502c" kind="function"><name>possible_coordinates</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8h_1afbd8632fa3325380d2c65bc5a4610e44" kind="function"><name>value_of</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8h_1a40f43ac82ea17bd32a870cc96402b4c4" kind="function"><name>minmax</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8h_1af364734ddd7bc1054a49fde31ffa5cdd" kind="function"><name>decide_between_equals</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8h_1af611b278d54aee5fcbd5135a10d3117a" kind="function"><name>free_coordinates</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8h_1a5a903bfff767d3ffb1d2d29d4205be03" kind="function"><name>num_free_coordinates</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8h_1ab66af7501b95decc80304824bc140cf9" kind="function"><name>find_best_coordinate</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8h_1aff4ac3ac9d341aaa61d2be9be72fedbc" kind="function"><name>pairity</name></member>
+    <member refid="li2PL1G05_2projeto_2algorithms_8h_1af1091f694c3cf498e56516d593417fdc" kind="function"><name>numbEmpty</name></member>
+  </compound>
+  <compound refid="projeto_2algorithms_8h" kind="file"><name>algorithms.h</name>
+    <member refid="projeto_2algorithms_8h_1a2f72f31bf325f0df4de4c83205568509" kind="function"><name>max</name></member>
+    <member refid="projeto_2algorithms_8h_1aebfa23dbf6ec30f35f2986a654bd47c1" kind="function"><name>min</name></member>
+    <member refid="projeto_2algorithms_8h_1a839360b010c666f2422f64d8413b502c" kind="function"><name>possible_coordinates</name></member>
+    <member refid="projeto_2algorithms_8h_1afbd8632fa3325380d2c65bc5a4610e44" kind="function"><name>value_of</name></member>
+    <member refid="projeto_2algorithms_8h_1a40f43ac82ea17bd32a870cc96402b4c4" kind="function"><name>minmax</name></member>
+    <member refid="projeto_2algorithms_8h_1af364734ddd7bc1054a49fde31ffa5cdd" kind="function"><name>decide_between_equals</name></member>
+    <member refid="projeto_2algorithms_8h_1af611b278d54aee5fcbd5135a10d3117a" kind="function"><name>free_coordinates</name></member>
+    <member refid="projeto_2algorithms_8h_1a5a903bfff767d3ffb1d2d29d4205be03" kind="function"><name>num_free_coordinates</name></member>
+    <member refid="projeto_2algorithms_8h_1ab66af7501b95decc80304824bc140cf9" kind="function"><name>find_best_coordinate</name></member>
+    <member refid="projeto_2algorithms_8h_1aff4ac3ac9d341aaa61d2be9be72fedbc" kind="function"><name>pairity</name></member>
+    <member refid="projeto_2algorithms_8h_1af1091f694c3cf498e56516d593417fdc" kind="function"><name>numbEmpty</name></member>
+  </compound>
+  <compound refid="bot_2bot_8c" kind="file"><name>bot.c</name>
+    <member refid="bot_2bot_8c_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2bot_2bot_8c" kind="file"><name>bot.c</name>
+    <member refid="li2PL1G05_2bot_2bot_8c_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="bot_2bot_8h" kind="file"><name>bot.h</name>
+    <member refid="bot_2bot_8h_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2bot_2bot_8h" kind="file"><name>bot.h</name>
+    <member refid="li2PL1G05_2bot_2bot_8h_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="bot_2data_8c" kind="file"><name>data.c</name>
+    <member refid="bot_2data_8c_1a17e5ae320d513dc211faa71624d6ef8f" kind="function"><name>empty_board</name></member>
+    <member refid="bot_2data_8c_1a7f5845c0422715df4f2ebab7cd9fd6ad" kind="function"><name>starting_state</name></member>
+    <member refid="bot_2data_8c_1a9a22fdc15d17cbee9741edafc7049ecf" kind="function"><name>clear_state</name></member>
+    <member refid="bot_2data_8c_1acc7272ca6071b154e4b5ba4abd639102" kind="function"><name>get_current_player</name></member>
+    <member refid="bot_2data_8c_1ae9732ca1fe9f76dda118295ccd9d4a2c" kind="function"><name>get_house</name></member>
+    <member refid="bot_2data_8c_1a1d5cb836439e1696a21c35c2fb66682b" kind="function"><name>get_num_moves</name></member>
+    <member refid="bot_2data_8c_1abb59e73fe191078d67db453b250a3bce" kind="function"><name>get_previous_move</name></member>
+    <member refid="bot_2data_8c_1a0288fd61fc5f280bfad6ba32066f52b1" kind="function"><name>get_move</name></member>
+    <member refid="bot_2data_8c_1ae7eccc4dbc76055132f92dbb6e1de5f9" kind="function"><name>change_house</name></member>
+    <member refid="bot_2data_8c_1af2a6953a9bee3337d2ab58f083e6ec32" kind="function"><name>update_previous_move</name></member>
+    <member refid="bot_2data_8c_1af773a56371db5092fc35fb3898116843" kind="function"><name>next_player</name></member>
+    <member refid="bot_2data_8c_1a5796659fcdf4cd49e67402bf6c01c3e9" kind="function"><name>set_player1</name></member>
+    <member refid="bot_2data_8c_1af711011e0ec0b895a75c4ae4548c5fec" kind="function"><name>set_player2</name></member>
+    <member refid="bot_2data_8c_1aa822db5814f4bd5274bf82ba2f97dfad" kind="function"><name>next_move</name></member>
+    <member refid="bot_2data_8c_1a4cca1db6aae6a1db60e30d1eaa490741" kind="function"><name>store_p1_coordinate</name></member>
+    <member refid="bot_2data_8c_1ab78dcd24ca799611cded6e3de19b72ec" kind="function"><name>store_p2_coordinate</name></member>
+    <member refid="bot_2data_8c_1aef7955bf07f1c7a5f0dbd73c0cbebe20" kind="function"><name>get_player_coordinate</name></member>
+    <member refid="bot_2data_8c_1aa20725a938220bd22635712776edbcc2" kind="function"><name>get_player_point</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2bot_2data_8c" kind="file"><name>data.c</name>
+    <member refid="li2PL1G05_2bot_2data_8c_1a17e5ae320d513dc211faa71624d6ef8f" kind="function"><name>empty_board</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1a7f5845c0422715df4f2ebab7cd9fd6ad" kind="function"><name>starting_state</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1a9a22fdc15d17cbee9741edafc7049ecf" kind="function"><name>clear_state</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1acc7272ca6071b154e4b5ba4abd639102" kind="function"><name>get_current_player</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1ae9732ca1fe9f76dda118295ccd9d4a2c" kind="function"><name>get_house</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1a1d5cb836439e1696a21c35c2fb66682b" kind="function"><name>get_num_moves</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1abb59e73fe191078d67db453b250a3bce" kind="function"><name>get_previous_move</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1a0288fd61fc5f280bfad6ba32066f52b1" kind="function"><name>get_move</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1ae7eccc4dbc76055132f92dbb6e1de5f9" kind="function"><name>change_house</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1af2a6953a9bee3337d2ab58f083e6ec32" kind="function"><name>update_previous_move</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1af773a56371db5092fc35fb3898116843" kind="function"><name>next_player</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1a5796659fcdf4cd49e67402bf6c01c3e9" kind="function"><name>set_player1</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1af711011e0ec0b895a75c4ae4548c5fec" kind="function"><name>set_player2</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1aa822db5814f4bd5274bf82ba2f97dfad" kind="function"><name>next_move</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1a4cca1db6aae6a1db60e30d1eaa490741" kind="function"><name>store_p1_coordinate</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1ab78dcd24ca799611cded6e3de19b72ec" kind="function"><name>store_p2_coordinate</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1aef7955bf07f1c7a5f0dbd73c0cbebe20" kind="function"><name>get_player_coordinate</name></member>
+    <member refid="li2PL1G05_2bot_2data_8c_1aa20725a938220bd22635712776edbcc2" kind="function"><name>get_player_point</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2projeto_2data_8c" kind="file"><name>data.c</name>
+    <member refid="li2PL1G05_2projeto_2data_8c_1a17e5ae320d513dc211faa71624d6ef8f" kind="function"><name>empty_board</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1a7f5845c0422715df4f2ebab7cd9fd6ad" kind="function"><name>starting_state</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1a9a22fdc15d17cbee9741edafc7049ecf" kind="function"><name>clear_state</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1acc7272ca6071b154e4b5ba4abd639102" kind="function"><name>get_current_player</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1ae9732ca1fe9f76dda118295ccd9d4a2c" kind="function"><name>get_house</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1a1d5cb836439e1696a21c35c2fb66682b" kind="function"><name>get_num_moves</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1abb59e73fe191078d67db453b250a3bce" kind="function"><name>get_previous_move</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1a0288fd61fc5f280bfad6ba32066f52b1" kind="function"><name>get_move</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1ae7eccc4dbc76055132f92dbb6e1de5f9" kind="function"><name>change_house</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1af2a6953a9bee3337d2ab58f083e6ec32" kind="function"><name>update_previous_move</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1af773a56371db5092fc35fb3898116843" kind="function"><name>next_player</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1a5796659fcdf4cd49e67402bf6c01c3e9" kind="function"><name>set_player1</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1af711011e0ec0b895a75c4ae4548c5fec" kind="function"><name>set_player2</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1aa822db5814f4bd5274bf82ba2f97dfad" kind="function"><name>next_move</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1a4cca1db6aae6a1db60e30d1eaa490741" kind="function"><name>store_p1_coordinate</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1ab78dcd24ca799611cded6e3de19b72ec" kind="function"><name>store_p2_coordinate</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1aef7955bf07f1c7a5f0dbd73c0cbebe20" kind="function"><name>get_player_coordinate</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8c_1aa20725a938220bd22635712776edbcc2" kind="function"><name>get_player_point</name></member>
+  </compound>
+  <compound refid="projeto_2data_8c" kind="file"><name>data.c</name>
+    <member refid="projeto_2data_8c_1a17e5ae320d513dc211faa71624d6ef8f" kind="function"><name>empty_board</name></member>
+    <member refid="projeto_2data_8c_1a7f5845c0422715df4f2ebab7cd9fd6ad" kind="function"><name>starting_state</name></member>
+    <member refid="projeto_2data_8c_1a9a22fdc15d17cbee9741edafc7049ecf" kind="function"><name>clear_state</name></member>
+    <member refid="projeto_2data_8c_1acc7272ca6071b154e4b5ba4abd639102" kind="function"><name>get_current_player</name></member>
+    <member refid="projeto_2data_8c_1ae9732ca1fe9f76dda118295ccd9d4a2c" kind="function"><name>get_house</name></member>
+    <member refid="projeto_2data_8c_1a1d5cb836439e1696a21c35c2fb66682b" kind="function"><name>get_num_moves</name></member>
+    <member refid="projeto_2data_8c_1abb59e73fe191078d67db453b250a3bce" kind="function"><name>get_previous_move</name></member>
+    <member refid="projeto_2data_8c_1a0288fd61fc5f280bfad6ba32066f52b1" kind="function"><name>get_move</name></member>
+    <member refid="projeto_2data_8c_1ae7eccc4dbc76055132f92dbb6e1de5f9" kind="function"><name>change_house</name></member>
+    <member refid="projeto_2data_8c_1af2a6953a9bee3337d2ab58f083e6ec32" kind="function"><name>update_previous_move</name></member>
+    <member refid="projeto_2data_8c_1af773a56371db5092fc35fb3898116843" kind="function"><name>next_player</name></member>
+    <member refid="projeto_2data_8c_1a5796659fcdf4cd49e67402bf6c01c3e9" kind="function"><name>set_player1</name></member>
+    <member refid="projeto_2data_8c_1af711011e0ec0b895a75c4ae4548c5fec" kind="function"><name>set_player2</name></member>
+    <member refid="projeto_2data_8c_1aa822db5814f4bd5274bf82ba2f97dfad" kind="function"><name>next_move</name></member>
+    <member refid="projeto_2data_8c_1a4cca1db6aae6a1db60e30d1eaa490741" kind="function"><name>store_p1_coordinate</name></member>
+    <member refid="projeto_2data_8c_1ab78dcd24ca799611cded6e3de19b72ec" kind="function"><name>store_p2_coordinate</name></member>
+    <member refid="projeto_2data_8c_1aef7955bf07f1c7a5f0dbd73c0cbebe20" kind="function"><name>get_player_coordinate</name></member>
+    <member refid="projeto_2data_8c_1aa20725a938220bd22635712776edbcc2" kind="function"><name>get_player_point</name></member>
+  </compound>
+  <compound refid="bot_2data_8h" kind="file"><name>data.h</name>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" kind="enum"><name>HOUSE</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="bot_2data_8h_1abea336e51b9e60c4d4a3752105b05c67" kind="typedef"><name>MOVES</name></member>
+    <member refid="bot_2data_8h_1a6f9078a7c6336dfbb2ab5a414ffe84da" kind="function"><name>empty_board</name></member>
+    <member refid="bot_2data_8h_1a7f5845c0422715df4f2ebab7cd9fd6ad" kind="function"><name>starting_state</name></member>
+    <member refid="bot_2data_8h_1a73c58ce464546440c7ac842eb9cb0146" kind="function"><name>get_current_player</name></member>
+    <member refid="bot_2data_8h_1a38ac8382815348fe79ffd0947eafbaf9" kind="function"><name>get_house</name></member>
+    <member refid="bot_2data_8h_1aaf7ad647219c432a49efdd5b7e971a80" kind="function"><name>get_num_moves</name></member>
+    <member refid="bot_2data_8h_1a914ad07e2e3c130cb6bb4d022166ada2" kind="function"><name>get_previous_move</name></member>
+    <member refid="bot_2data_8h_1ab7b9dc4f9bdb23de75f80c1844ecd8b8" kind="function"><name>get_move</name></member>
+    <member refid="bot_2data_8h_1a4ad699323014715baa43695eeea01471" kind="function"><name>change_house</name></member>
+    <member refid="bot_2data_8h_1a13eb82dd09bcb25c2572f8c2d01b45c3" kind="function"><name>update_previous_move</name></member>
+    <member refid="bot_2data_8h_1ad011353bcb4b499763e84aea4261a19f" kind="function"><name>next_player</name></member>
+    <member refid="bot_2data_8h_1a012fd6da3d2378ef9bfd8ba26395dad4" kind="function"><name>set_player1</name></member>
+    <member refid="bot_2data_8h_1adc8511745f803f10ab3415f82f0bdbc3" kind="function"><name>set_player2</name></member>
+    <member refid="bot_2data_8h_1a27de50e8fbc3f51dde428d34ea403587" kind="function"><name>next_move</name></member>
+    <member refid="bot_2data_8h_1a9358404c8116749631485d96d8e0040e" kind="function"><name>store_p1_coordinate</name></member>
+    <member refid="bot_2data_8h_1a8d75498054a6d8ce5528eb571f1c226e" kind="function"><name>store_p2_coordinate</name></member>
+    <member refid="bot_2data_8h_1a197f00b56f55587d8973c8e03c3c374a" kind="function"><name>clear_state</name></member>
+    <member refid="bot_2data_8h_1aa8d2c926dee8f8c40cc1da25b5a22a18" kind="function"><name>get_player_coordinate</name></member>
+    <member refid="bot_2data_8h_1aa20725a938220bd22635712776edbcc2" kind="function"><name>get_player_point</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2bot_2data_8h" kind="file"><name>data.h</name>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" kind="enum"><name>HOUSE</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1abea336e51b9e60c4d4a3752105b05c67" kind="typedef"><name>MOVES</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a6f9078a7c6336dfbb2ab5a414ffe84da" kind="function"><name>empty_board</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a7f5845c0422715df4f2ebab7cd9fd6ad" kind="function"><name>starting_state</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a73c58ce464546440c7ac842eb9cb0146" kind="function"><name>get_current_player</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a38ac8382815348fe79ffd0947eafbaf9" kind="function"><name>get_house</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1aaf7ad647219c432a49efdd5b7e971a80" kind="function"><name>get_num_moves</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a914ad07e2e3c130cb6bb4d022166ada2" kind="function"><name>get_previous_move</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1ab7b9dc4f9bdb23de75f80c1844ecd8b8" kind="function"><name>get_move</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a4ad699323014715baa43695eeea01471" kind="function"><name>change_house</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a13eb82dd09bcb25c2572f8c2d01b45c3" kind="function"><name>update_previous_move</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1ad011353bcb4b499763e84aea4261a19f" kind="function"><name>next_player</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a012fd6da3d2378ef9bfd8ba26395dad4" kind="function"><name>set_player1</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1adc8511745f803f10ab3415f82f0bdbc3" kind="function"><name>set_player2</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a27de50e8fbc3f51dde428d34ea403587" kind="function"><name>next_move</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a9358404c8116749631485d96d8e0040e" kind="function"><name>store_p1_coordinate</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a8d75498054a6d8ce5528eb571f1c226e" kind="function"><name>store_p2_coordinate</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1a197f00b56f55587d8973c8e03c3c374a" kind="function"><name>clear_state</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1aa8d2c926dee8f8c40cc1da25b5a22a18" kind="function"><name>get_player_coordinate</name></member>
+    <member refid="li2PL1G05_2bot_2data_8h_1aa20725a938220bd22635712776edbcc2" kind="function"><name>get_player_point</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2projeto_2data_8h" kind="file"><name>data.h</name>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" kind="enum"><name>HOUSE</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1abea336e51b9e60c4d4a3752105b05c67" kind="typedef"><name>MOVES</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a6f9078a7c6336dfbb2ab5a414ffe84da" kind="function"><name>empty_board</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a7f5845c0422715df4f2ebab7cd9fd6ad" kind="function"><name>starting_state</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a73c58ce464546440c7ac842eb9cb0146" kind="function"><name>get_current_player</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a38ac8382815348fe79ffd0947eafbaf9" kind="function"><name>get_house</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1aaf7ad647219c432a49efdd5b7e971a80" kind="function"><name>get_num_moves</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a914ad07e2e3c130cb6bb4d022166ada2" kind="function"><name>get_previous_move</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1ab7b9dc4f9bdb23de75f80c1844ecd8b8" kind="function"><name>get_move</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a4ad699323014715baa43695eeea01471" kind="function"><name>change_house</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a13eb82dd09bcb25c2572f8c2d01b45c3" kind="function"><name>update_previous_move</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1ad011353bcb4b499763e84aea4261a19f" kind="function"><name>next_player</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a012fd6da3d2378ef9bfd8ba26395dad4" kind="function"><name>set_player1</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1adc8511745f803f10ab3415f82f0bdbc3" kind="function"><name>set_player2</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a27de50e8fbc3f51dde428d34ea403587" kind="function"><name>next_move</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a9358404c8116749631485d96d8e0040e" kind="function"><name>store_p1_coordinate</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a8d75498054a6d8ce5528eb571f1c226e" kind="function"><name>store_p2_coordinate</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1a197f00b56f55587d8973c8e03c3c374a" kind="function"><name>clear_state</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1aa8d2c926dee8f8c40cc1da25b5a22a18" kind="function"><name>get_player_coordinate</name></member>
+    <member refid="li2PL1G05_2projeto_2data_8h_1aa20725a938220bd22635712776edbcc2" kind="function"><name>get_player_point</name></member>
+  </compound>
+  <compound refid="projeto_2data_8h" kind="file"><name>data.h</name>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" kind="enum"><name>HOUSE</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kind="enumvalue"><name>EMPTY</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kind="enumvalue"><name>WHITE</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kind="enumvalue"><name>BLACK</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kind="enumvalue"><name>H1</name></member>
+    <member refid="projeto_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kind="enumvalue"><name>H2</name></member>
+    <member refid="projeto_2data_8h_1abea336e51b9e60c4d4a3752105b05c67" kind="typedef"><name>MOVES</name></member>
+    <member refid="projeto_2data_8h_1a6f9078a7c6336dfbb2ab5a414ffe84da" kind="function"><name>empty_board</name></member>
+    <member refid="projeto_2data_8h_1a7f5845c0422715df4f2ebab7cd9fd6ad" kind="function"><name>starting_state</name></member>
+    <member refid="projeto_2data_8h_1a73c58ce464546440c7ac842eb9cb0146" kind="function"><name>get_current_player</name></member>
+    <member refid="projeto_2data_8h_1a38ac8382815348fe79ffd0947eafbaf9" kind="function"><name>get_house</name></member>
+    <member refid="projeto_2data_8h_1aaf7ad647219c432a49efdd5b7e971a80" kind="function"><name>get_num_moves</name></member>
+    <member refid="projeto_2data_8h_1a914ad07e2e3c130cb6bb4d022166ada2" kind="function"><name>get_previous_move</name></member>
+    <member refid="projeto_2data_8h_1ab7b9dc4f9bdb23de75f80c1844ecd8b8" kind="function"><name>get_move</name></member>
+    <member refid="projeto_2data_8h_1a4ad699323014715baa43695eeea01471" kind="function"><name>change_house</name></member>
+    <member refid="projeto_2data_8h_1a13eb82dd09bcb25c2572f8c2d01b45c3" kind="function"><name>update_previous_move</name></member>
+    <member refid="projeto_2data_8h_1ad011353bcb4b499763e84aea4261a19f" kind="function"><name>next_player</name></member>
+    <member refid="projeto_2data_8h_1a012fd6da3d2378ef9bfd8ba26395dad4" kind="function"><name>set_player1</name></member>
+    <member refid="projeto_2data_8h_1adc8511745f803f10ab3415f82f0bdbc3" kind="function"><name>set_player2</name></member>
+    <member refid="projeto_2data_8h_1a27de50e8fbc3f51dde428d34ea403587" kind="function"><name>next_move</name></member>
+    <member refid="projeto_2data_8h_1a9358404c8116749631485d96d8e0040e" kind="function"><name>store_p1_coordinate</name></member>
+    <member refid="projeto_2data_8h_1a8d75498054a6d8ce5528eb571f1c226e" kind="function"><name>store_p2_coordinate</name></member>
+    <member refid="projeto_2data_8h_1a197f00b56f55587d8973c8e03c3c374a" kind="function"><name>clear_state</name></member>
+    <member refid="projeto_2data_8h_1aa8d2c926dee8f8c40cc1da25b5a22a18" kind="function"><name>get_player_coordinate</name></member>
+    <member refid="projeto_2data_8h_1aa20725a938220bd22635712776edbcc2" kind="function"><name>get_player_point</name></member>
+  </compound>
+  <compound refid="bot_2interface_8c" kind="file"><name>interface.c</name>
+    <member refid="bot_2interface_8c_1a76555a3bd437d587a1ef442cc5678d91" kind="function"><name>CMD</name></member>
+    <member refid="bot_2interface_8c_1a83e86058ec878c01ecc4d6bdb261760a" kind="function"><name>draw</name></member>
+    <member refid="bot_2interface_8c_1a635304fd39d2875a0d97e81eef1e44e8" kind="function"><name>draw_moves</name></member>
+    <member refid="bot_2interface_8c_1ac444cb2b8a3f3193ee07021255f8419b" kind="function"><name>save</name></member>
+    <member refid="bot_2interface_8c_1a3d0769de48bd8dab8420f207dd500d89" kind="function"><name>read</name></member>
+    <member refid="bot_2interface_8c_1ade7e81ec20062ddad68940535d60318a" kind="function"><name>prompt</name></member>
+    <member refid="bot_2interface_8c_1a705eec6ec3ce92c1bddfe04cbe0ffeec" kind="function"><name>rollback</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2bot_2interface_8c" kind="file"><name>interface.c</name>
+    <member refid="li2PL1G05_2bot_2interface_8c_1a76555a3bd437d587a1ef442cc5678d91" kind="function"><name>CMD</name></member>
+    <member refid="li2PL1G05_2bot_2interface_8c_1a83e86058ec878c01ecc4d6bdb261760a" kind="function"><name>draw</name></member>
+    <member refid="li2PL1G05_2bot_2interface_8c_1a635304fd39d2875a0d97e81eef1e44e8" kind="function"><name>draw_moves</name></member>
+    <member refid="li2PL1G05_2bot_2interface_8c_1ac444cb2b8a3f3193ee07021255f8419b" kind="function"><name>save</name></member>
+    <member refid="li2PL1G05_2bot_2interface_8c_1a3d0769de48bd8dab8420f207dd500d89" kind="function"><name>read</name></member>
+    <member refid="li2PL1G05_2bot_2interface_8c_1ade7e81ec20062ddad68940535d60318a" kind="function"><name>prompt</name></member>
+    <member refid="li2PL1G05_2bot_2interface_8c_1a705eec6ec3ce92c1bddfe04cbe0ffeec" kind="function"><name>rollback</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2projeto_2interface_8c" kind="file"><name>interface.c</name>
+    <member refid="li2PL1G05_2projeto_2interface_8c_1a76555a3bd437d587a1ef442cc5678d91" kind="function"><name>CMD</name></member>
+    <member refid="li2PL1G05_2projeto_2interface_8c_1a83e86058ec878c01ecc4d6bdb261760a" kind="function"><name>draw</name></member>
+    <member refid="li2PL1G05_2projeto_2interface_8c_1a635304fd39d2875a0d97e81eef1e44e8" kind="function"><name>draw_moves</name></member>
+    <member refid="li2PL1G05_2projeto_2interface_8c_1ac444cb2b8a3f3193ee07021255f8419b" kind="function"><name>save</name></member>
+    <member refid="li2PL1G05_2projeto_2interface_8c_1a3d0769de48bd8dab8420f207dd500d89" kind="function"><name>read</name></member>
+    <member refid="li2PL1G05_2projeto_2interface_8c_1ade7e81ec20062ddad68940535d60318a" kind="function"><name>prompt</name></member>
+    <member refid="li2PL1G05_2projeto_2interface_8c_1a705eec6ec3ce92c1bddfe04cbe0ffeec" kind="function"><name>rollback</name></member>
+  </compound>
+  <compound refid="projeto_2interface_8c" kind="file"><name>interface.c</name>
+    <member refid="projeto_2interface_8c_1a76555a3bd437d587a1ef442cc5678d91" kind="function"><name>CMD</name></member>
+    <member refid="projeto_2interface_8c_1a83e86058ec878c01ecc4d6bdb261760a" kind="function"><name>draw</name></member>
+    <member refid="projeto_2interface_8c_1a635304fd39d2875a0d97e81eef1e44e8" kind="function"><name>draw_moves</name></member>
+    <member refid="projeto_2interface_8c_1ac444cb2b8a3f3193ee07021255f8419b" kind="function"><name>save</name></member>
+    <member refid="projeto_2interface_8c_1a3d0769de48bd8dab8420f207dd500d89" kind="function"><name>read</name></member>
+    <member refid="projeto_2interface_8c_1ade7e81ec20062ddad68940535d60318a" kind="function"><name>prompt</name></member>
+    <member refid="projeto_2interface_8c_1a705eec6ec3ce92c1bddfe04cbe0ffeec" kind="function"><name>rollback</name></member>
+  </compound>
+  <compound refid="bot_2interface_8h" kind="file"><name>interface.h</name>
+    <member refid="bot_2interface_8h_1a6821bafc3c88dfb2e433a095df9940c6" kind="define"><name>BUF_SIZE</name></member>
+    <member refid="bot_2interface_8h_1a120d3a401e0a2ba80243c36d4922a8f1" kind="function"><name>CMD</name></member>
+    <member refid="bot_2interface_8h_1ae152bba1db1c792dd65a898274be5acb" kind="function"><name>draw</name></member>
+    <member refid="bot_2interface_8h_1a61e3f1220543744b06e2e2012b23d008" kind="function"><name>draw_moves</name></member>
+    <member refid="bot_2interface_8h_1a093c3d7f02075726ef7ccd48e7570624" kind="function"><name>save</name></member>
+    <member refid="bot_2interface_8h_1a4cf3a85fac666da32e84f8cf628e6be7" kind="function"><name>read</name></member>
+    <member refid="bot_2interface_8h_1a0698b3c16988e8e8c871a85a3293c156" kind="function"><name>prompt</name></member>
+    <member refid="bot_2interface_8h_1a58f6a0f11abebbe7ec78bf48dadd7347" kind="function"><name>rollback</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2bot_2interface_8h" kind="file"><name>interface.h</name>
+    <member refid="li2PL1G05_2bot_2interface_8h_1a6821bafc3c88dfb2e433a095df9940c6" kind="define"><name>BUF_SIZE</name></member>
+    <member refid="li2PL1G05_2bot_2interface_8h_1a120d3a401e0a2ba80243c36d4922a8f1" kind="function"><name>CMD</name></member>
+    <member refid="li2PL1G05_2bot_2interface_8h_1ae152bba1db1c792dd65a898274be5acb" kind="function"><name>draw</name></member>
+    <member refid="li2PL1G05_2bot_2interface_8h_1a61e3f1220543744b06e2e2012b23d008" kind="function"><name>draw_moves</name></member>
+    <member refid="li2PL1G05_2bot_2interface_8h_1a093c3d7f02075726ef7ccd48e7570624" kind="function"><name>save</name></member>
+    <member refid="li2PL1G05_2bot_2interface_8h_1a4cf3a85fac666da32e84f8cf628e6be7" kind="function"><name>read</name></member>
+    <member refid="li2PL1G05_2bot_2interface_8h_1a0698b3c16988e8e8c871a85a3293c156" kind="function"><name>prompt</name></member>
+    <member refid="li2PL1G05_2bot_2interface_8h_1a58f6a0f11abebbe7ec78bf48dadd7347" kind="function"><name>rollback</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2projeto_2interface_8h" kind="file"><name>interface.h</name>
+    <member refid="li2PL1G05_2projeto_2interface_8h_1a6821bafc3c88dfb2e433a095df9940c6" kind="define"><name>BUF_SIZE</name></member>
+    <member refid="li2PL1G05_2projeto_2interface_8h_1a120d3a401e0a2ba80243c36d4922a8f1" kind="function"><name>CMD</name></member>
+    <member refid="li2PL1G05_2projeto_2interface_8h_1ae152bba1db1c792dd65a898274be5acb" kind="function"><name>draw</name></member>
+    <member refid="li2PL1G05_2projeto_2interface_8h_1a61e3f1220543744b06e2e2012b23d008" kind="function"><name>draw_moves</name></member>
+    <member refid="li2PL1G05_2projeto_2interface_8h_1a093c3d7f02075726ef7ccd48e7570624" kind="function"><name>save</name></member>
+    <member refid="li2PL1G05_2projeto_2interface_8h_1a4cf3a85fac666da32e84f8cf628e6be7" kind="function"><name>read</name></member>
+    <member refid="li2PL1G05_2projeto_2interface_8h_1a0698b3c16988e8e8c871a85a3293c156" kind="function"><name>prompt</name></member>
+    <member refid="li2PL1G05_2projeto_2interface_8h_1a58f6a0f11abebbe7ec78bf48dadd7347" kind="function"><name>rollback</name></member>
+  </compound>
+  <compound refid="projeto_2interface_8h" kind="file"><name>interface.h</name>
+    <member refid="projeto_2interface_8h_1a6821bafc3c88dfb2e433a095df9940c6" kind="define"><name>BUF_SIZE</name></member>
+    <member refid="projeto_2interface_8h_1a120d3a401e0a2ba80243c36d4922a8f1" kind="function"><name>CMD</name></member>
+    <member refid="projeto_2interface_8h_1ae152bba1db1c792dd65a898274be5acb" kind="function"><name>draw</name></member>
+    <member refid="projeto_2interface_8h_1a61e3f1220543744b06e2e2012b23d008" kind="function"><name>draw_moves</name></member>
+    <member refid="projeto_2interface_8h_1a093c3d7f02075726ef7ccd48e7570624" kind="function"><name>save</name></member>
+    <member refid="projeto_2interface_8h_1a4cf3a85fac666da32e84f8cf628e6be7" kind="function"><name>read</name></member>
+    <member refid="projeto_2interface_8h_1a0698b3c16988e8e8c871a85a3293c156" kind="function"><name>prompt</name></member>
+    <member refid="projeto_2interface_8h_1a58f6a0f11abebbe7ec78bf48dadd7347" kind="function"><name>rollback</name></member>
+  </compound>
+  <compound refid="bot_2linked__lists_8c" kind="file"><name>linked_lists.c</name>
+    <member refid="bot_2linked__lists_8c_1a44d30a3a13a3bcf8a9b83fb222541818" kind="function"><name>initialize_list</name></member>
+    <member refid="bot_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kind="function"><name>insert_head</name></member>
+    <member refid="bot_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" kind="function"><name>get_head</name></member>
+    <member refid="bot_2linked__lists_8c_1ade529e47d7dc09f69454a4f49f873457" kind="function"><name>next</name></member>
+    <member refid="bot_2linked__lists_8c_1a1ea1edabba84e02dcefc77f948be307a" kind="function"><name>remove_head</name></member>
+    <member refid="bot_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" kind="function"><name>is_list_empty</name></member>
+    <member refid="bot_2linked__lists_8c_1a255458d0a7974cd11ef98887b6c2b8e4" kind="function"><name>length</name></member>
+    <member refid="bot_2linked__lists_8c_1a002df25972494eb7c280499a9042f94d" kind="function"><name>elem</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2bot_2linked__lists_8c" kind="file"><name>linked_lists.c</name>
+    <member refid="li2PL1G05_2bot_2linked__lists_8c_1a44d30a3a13a3bcf8a9b83fb222541818" kind="function"><name>initialize_list</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kind="function"><name>insert_head</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" kind="function"><name>get_head</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8c_1ade529e47d7dc09f69454a4f49f873457" kind="function"><name>next</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8c_1a1ea1edabba84e02dcefc77f948be307a" kind="function"><name>remove_head</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" kind="function"><name>is_list_empty</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8c_1a255458d0a7974cd11ef98887b6c2b8e4" kind="function"><name>length</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8c_1a002df25972494eb7c280499a9042f94d" kind="function"><name>elem</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2projeto_2linked__lists_8c" kind="file"><name>linked_lists.c</name>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8c_1a44d30a3a13a3bcf8a9b83fb222541818" kind="function"><name>initialize_list</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kind="function"><name>insert_head</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" kind="function"><name>get_head</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8c_1ade529e47d7dc09f69454a4f49f873457" kind="function"><name>next</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8c_1a1ea1edabba84e02dcefc77f948be307a" kind="function"><name>remove_head</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" kind="function"><name>is_list_empty</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8c_1a255458d0a7974cd11ef98887b6c2b8e4" kind="function"><name>length</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8c_1a002df25972494eb7c280499a9042f94d" kind="function"><name>elem</name></member>
+  </compound>
+  <compound refid="projeto_2linked__lists_8c" kind="file"><name>linked_lists.c</name>
+    <member refid="projeto_2linked__lists_8c_1a44d30a3a13a3bcf8a9b83fb222541818" kind="function"><name>initialize_list</name></member>
+    <member refid="projeto_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kind="function"><name>insert_head</name></member>
+    <member refid="projeto_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" kind="function"><name>get_head</name></member>
+    <member refid="projeto_2linked__lists_8c_1ade529e47d7dc09f69454a4f49f873457" kind="function"><name>next</name></member>
+    <member refid="projeto_2linked__lists_8c_1a1ea1edabba84e02dcefc77f948be307a" kind="function"><name>remove_head</name></member>
+    <member refid="projeto_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" kind="function"><name>is_list_empty</name></member>
+    <member refid="projeto_2linked__lists_8c_1a255458d0a7974cd11ef98887b6c2b8e4" kind="function"><name>length</name></member>
+    <member refid="projeto_2linked__lists_8c_1a002df25972494eb7c280499a9042f94d" kind="function"><name>elem</name></member>
+  </compound>
+  <compound refid="bot_2linked__lists_8h" kind="file"><name>linked_lists.h</name>
+    <member refid="bot_2linked__lists_8h_1a033767905a5074a8ba2f23b740e7ece5" kind="typedef"><name>LIST</name></member>
+    <member refid="bot_2linked__lists_8h_1a44d30a3a13a3bcf8a9b83fb222541818" kind="function"><name>initialize_list</name></member>
+    <member refid="bot_2linked__lists_8h_1a8ca035235d649368cd4de4e03aef9d44" kind="function"><name>insert_head</name></member>
+    <member refid="bot_2linked__lists_8h_1aaeb656d3204a3de7bfc2e0960cdf256f" kind="function"><name>get_head</name></member>
+    <member refid="bot_2linked__lists_8h_1ade529e47d7dc09f69454a4f49f873457" kind="function"><name>next</name></member>
+    <member refid="bot_2linked__lists_8h_1a1ea1edabba84e02dcefc77f948be307a" kind="function"><name>remove_head</name></member>
+    <member refid="bot_2linked__lists_8h_1a952a8e03e69fc585aea516d32a78257f" kind="function"><name>is_list_empty</name></member>
+    <member refid="bot_2linked__lists_8h_1a255458d0a7974cd11ef98887b6c2b8e4" kind="function"><name>length</name></member>
+    <member refid="bot_2linked__lists_8h_1ae1a80475c119378604652511507c2bf3" kind="function"><name>elem</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2bot_2linked__lists_8h" kind="file"><name>linked_lists.h</name>
+    <member refid="li2PL1G05_2bot_2linked__lists_8h_1a033767905a5074a8ba2f23b740e7ece5" kind="typedef"><name>LIST</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8h_1a44d30a3a13a3bcf8a9b83fb222541818" kind="function"><name>initialize_list</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8h_1a8ca035235d649368cd4de4e03aef9d44" kind="function"><name>insert_head</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8h_1aaeb656d3204a3de7bfc2e0960cdf256f" kind="function"><name>get_head</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8h_1ade529e47d7dc09f69454a4f49f873457" kind="function"><name>next</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8h_1a1ea1edabba84e02dcefc77f948be307a" kind="function"><name>remove_head</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8h_1a952a8e03e69fc585aea516d32a78257f" kind="function"><name>is_list_empty</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8h_1a255458d0a7974cd11ef98887b6c2b8e4" kind="function"><name>length</name></member>
+    <member refid="li2PL1G05_2bot_2linked__lists_8h_1ae1a80475c119378604652511507c2bf3" kind="function"><name>elem</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2projeto_2linked__lists_8h" kind="file"><name>linked_lists.h</name>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8h_1a033767905a5074a8ba2f23b740e7ece5" kind="typedef"><name>LIST</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8h_1a44d30a3a13a3bcf8a9b83fb222541818" kind="function"><name>initialize_list</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8h_1a8ca035235d649368cd4de4e03aef9d44" kind="function"><name>insert_head</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8h_1aaeb656d3204a3de7bfc2e0960cdf256f" kind="function"><name>get_head</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8h_1ade529e47d7dc09f69454a4f49f873457" kind="function"><name>next</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8h_1a1ea1edabba84e02dcefc77f948be307a" kind="function"><name>remove_head</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8h_1a952a8e03e69fc585aea516d32a78257f" kind="function"><name>is_list_empty</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8h_1a255458d0a7974cd11ef98887b6c2b8e4" kind="function"><name>length</name></member>
+    <member refid="li2PL1G05_2projeto_2linked__lists_8h_1ae1a80475c119378604652511507c2bf3" kind="function"><name>elem</name></member>
+  </compound>
+  <compound refid="projeto_2linked__lists_8h" kind="file"><name>linked_lists.h</name>
+    <member refid="projeto_2linked__lists_8h_1a033767905a5074a8ba2f23b740e7ece5" kind="typedef"><name>LIST</name></member>
+    <member refid="projeto_2linked__lists_8h_1a44d30a3a13a3bcf8a9b83fb222541818" kind="function"><name>initialize_list</name></member>
+    <member refid="projeto_2linked__lists_8h_1a8ca035235d649368cd4de4e03aef9d44" kind="function"><name>insert_head</name></member>
+    <member refid="projeto_2linked__lists_8h_1aaeb656d3204a3de7bfc2e0960cdf256f" kind="function"><name>get_head</name></member>
+    <member refid="projeto_2linked__lists_8h_1ade529e47d7dc09f69454a4f49f873457" kind="function"><name>next</name></member>
+    <member refid="projeto_2linked__lists_8h_1a1ea1edabba84e02dcefc77f948be307a" kind="function"><name>remove_head</name></member>
+    <member refid="projeto_2linked__lists_8h_1a952a8e03e69fc585aea516d32a78257f" kind="function"><name>is_list_empty</name></member>
+    <member refid="projeto_2linked__lists_8h_1a255458d0a7974cd11ef98887b6c2b8e4" kind="function"><name>length</name></member>
+    <member refid="projeto_2linked__lists_8h_1ae1a80475c119378604652511507c2bf3" kind="function"><name>elem</name></member>
+  </compound>
+  <compound refid="bot_2logic_8c" kind="file"><name>logic.c</name>
+    <member refid="bot_2logic_8c_1a91ea696ef2f7c89f3bcf51ca693ead25" kind="function"><name>make_move</name></member>
+    <member refid="bot_2logic_8c_1ad33a74f125051e78f584bacdcc5138ef" kind="function"><name>validate_move</name></member>
+    <member refid="bot_2logic_8c_1a76ba9bd5bc7f6db8473a13e26d28c4b0" kind="function"><name>check_winner</name></member>
+    <member refid="bot_2logic_8c_1a0611e0716126cf4527e96666d8b78ace" kind="function"><name>valid_moves</name></member>
+    <member refid="bot_2logic_8c_1ac040c536402d81b0203f69603da33937" kind="function"><name>move</name></member>
+    <member refid="bot_2logic_8c_1af55c0b888aec4950f295cefc6c79856f" kind="function"><name>store_coordinate</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2bot_2logic_8c" kind="file"><name>logic.c</name>
+    <member refid="li2PL1G05_2bot_2logic_8c_1a91ea696ef2f7c89f3bcf51ca693ead25" kind="function"><name>make_move</name></member>
+    <member refid="li2PL1G05_2bot_2logic_8c_1ad33a74f125051e78f584bacdcc5138ef" kind="function"><name>validate_move</name></member>
+    <member refid="li2PL1G05_2bot_2logic_8c_1a76ba9bd5bc7f6db8473a13e26d28c4b0" kind="function"><name>check_winner</name></member>
+    <member refid="li2PL1G05_2bot_2logic_8c_1a0611e0716126cf4527e96666d8b78ace" kind="function"><name>valid_moves</name></member>
+    <member refid="li2PL1G05_2bot_2logic_8c_1ac040c536402d81b0203f69603da33937" kind="function"><name>move</name></member>
+    <member refid="li2PL1G05_2bot_2logic_8c_1af55c0b888aec4950f295cefc6c79856f" kind="function"><name>store_coordinate</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2projeto_2logic_8c" kind="file"><name>logic.c</name>
+    <member refid="li2PL1G05_2projeto_2logic_8c_1a91ea696ef2f7c89f3bcf51ca693ead25" kind="function"><name>make_move</name></member>
+    <member refid="li2PL1G05_2projeto_2logic_8c_1ad33a74f125051e78f584bacdcc5138ef" kind="function"><name>validate_move</name></member>
+    <member refid="li2PL1G05_2projeto_2logic_8c_1a76ba9bd5bc7f6db8473a13e26d28c4b0" kind="function"><name>check_winner</name></member>
+    <member refid="li2PL1G05_2projeto_2logic_8c_1a0611e0716126cf4527e96666d8b78ace" kind="function"><name>valid_moves</name></member>
+    <member refid="li2PL1G05_2projeto_2logic_8c_1ac040c536402d81b0203f69603da33937" kind="function"><name>move</name></member>
+    <member refid="li2PL1G05_2projeto_2logic_8c_1af55c0b888aec4950f295cefc6c79856f" kind="function"><name>store_coordinate</name></member>
+  </compound>
+  <compound refid="projeto_2logic_8c" kind="file"><name>logic.c</name>
+    <member refid="projeto_2logic_8c_1a91ea696ef2f7c89f3bcf51ca693ead25" kind="function"><name>make_move</name></member>
+    <member refid="projeto_2logic_8c_1ad33a74f125051e78f584bacdcc5138ef" kind="function"><name>validate_move</name></member>
+    <member refid="projeto_2logic_8c_1a76ba9bd5bc7f6db8473a13e26d28c4b0" kind="function"><name>check_winner</name></member>
+    <member refid="projeto_2logic_8c_1a0611e0716126cf4527e96666d8b78ace" kind="function"><name>valid_moves</name></member>
+    <member refid="projeto_2logic_8c_1ac040c536402d81b0203f69603da33937" kind="function"><name>move</name></member>
+    <member refid="projeto_2logic_8c_1af55c0b888aec4950f295cefc6c79856f" kind="function"><name>store_coordinate</name></member>
+  </compound>
+  <compound refid="bot_2logic_8h" kind="file"><name>logic.h</name>
+    <member refid="bot_2logic_8h_1adab68be6b8ea39836c4c025062f20d38" kind="function"><name>make_move</name></member>
+    <member refid="bot_2logic_8h_1a4a2325a34f3f8446cb55e2d0fedcbb3e" kind="function"><name>validate_move</name></member>
+    <member refid="bot_2logic_8h_1a060defdcb37184c32f63e83fcbcc2248" kind="function"><name>check_winner</name></member>
+    <member refid="bot_2logic_8h_1a5b78655b5622c15b461f0795aa94a283" kind="function"><name>valid_moves</name></member>
+    <member refid="bot_2logic_8h_1aa0461afd8a74410bc4acb58d414bedb9" kind="function"><name>move</name></member>
+    <member refid="bot_2logic_8h_1a8c78c682054830ffd7c1d2ba33c24176" kind="function"><name>store_coordinate</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2bot_2logic_8h" kind="file"><name>logic.h</name>
+    <member refid="li2PL1G05_2bot_2logic_8h_1adab68be6b8ea39836c4c025062f20d38" kind="function"><name>make_move</name></member>
+    <member refid="li2PL1G05_2bot_2logic_8h_1a4a2325a34f3f8446cb55e2d0fedcbb3e" kind="function"><name>validate_move</name></member>
+    <member refid="li2PL1G05_2bot_2logic_8h_1a060defdcb37184c32f63e83fcbcc2248" kind="function"><name>check_winner</name></member>
+    <member refid="li2PL1G05_2bot_2logic_8h_1a5b78655b5622c15b461f0795aa94a283" kind="function"><name>valid_moves</name></member>
+    <member refid="li2PL1G05_2bot_2logic_8h_1aa0461afd8a74410bc4acb58d414bedb9" kind="function"><name>move</name></member>
+    <member refid="li2PL1G05_2bot_2logic_8h_1a8c78c682054830ffd7c1d2ba33c24176" kind="function"><name>store_coordinate</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2projeto_2logic_8h" kind="file"><name>logic.h</name>
+    <member refid="li2PL1G05_2projeto_2logic_8h_1adab68be6b8ea39836c4c025062f20d38" kind="function"><name>make_move</name></member>
+    <member refid="li2PL1G05_2projeto_2logic_8h_1a4a2325a34f3f8446cb55e2d0fedcbb3e" kind="function"><name>validate_move</name></member>
+    <member refid="li2PL1G05_2projeto_2logic_8h_1a060defdcb37184c32f63e83fcbcc2248" kind="function"><name>check_winner</name></member>
+    <member refid="li2PL1G05_2projeto_2logic_8h_1a5b78655b5622c15b461f0795aa94a283" kind="function"><name>valid_moves</name></member>
+    <member refid="li2PL1G05_2projeto_2logic_8h_1aa0461afd8a74410bc4acb58d414bedb9" kind="function"><name>move</name></member>
+    <member refid="li2PL1G05_2projeto_2logic_8h_1a8c78c682054830ffd7c1d2ba33c24176" kind="function"><name>store_coordinate</name></member>
+  </compound>
+  <compound refid="projeto_2logic_8h" kind="file"><name>logic.h</name>
+    <member refid="projeto_2logic_8h_1adab68be6b8ea39836c4c025062f20d38" kind="function"><name>make_move</name></member>
+    <member refid="projeto_2logic_8h_1a4a2325a34f3f8446cb55e2d0fedcbb3e" kind="function"><name>validate_move</name></member>
+    <member refid="projeto_2logic_8h_1a060defdcb37184c32f63e83fcbcc2248" kind="function"><name>check_winner</name></member>
+    <member refid="projeto_2logic_8h_1a5b78655b5622c15b461f0795aa94a283" kind="function"><name>valid_moves</name></member>
+    <member refid="projeto_2logic_8h_1aa0461afd8a74410bc4acb58d414bedb9" kind="function"><name>move</name></member>
+    <member refid="projeto_2logic_8h_1a8c78c682054830ffd7c1d2ba33c24176" kind="function"><name>store_coordinate</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2projeto_2main_8c" kind="file"><name>main.c</name>
+    <member refid="li2PL1G05_2projeto_2main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="projeto_2main_8c" kind="file"><name>main.c</name>
+    <member refid="projeto_2main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2projeto_2main_8h" kind="file"><name>main.h</name>
+    <member refid="li2PL1G05_2projeto_2main_8h_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="projeto_2main_8h" kind="file"><name>main.h</name>
+    <member refid="projeto_2main_8h_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="li2PL1G05_2README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="Report_8md" kind="file"><name>Report.md</name>
+  </compound>
+  <compound refid="valida__projeto_8py" kind="file"><name>valida_projeto.py</name>
+  </compound>
+  <compound refid="md_li2PL1G05_README" kind="page"><name>md_li2PL1G05_README</name>
+  </compound>
+  <compound refid="md_README" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="md_Report" kind="page"><name>md_Report</name>
+  </compound>
+  <compound refid="dir_30f56cd85179c0aaeec6f92fdf9f3471" kind="dir"><name>bot</name>
+  </compound>
+  <compound refid="dir_96fa01e362dbdfc0d3909a3a28a99f9d" kind="dir"><name>li2PL1G05/bot</name>
+  </compound>
+  <compound refid="dir_e376cc3f5264a6d18bc975e3846d351f" kind="dir"><name>li2PL1G05</name>
+  </compound>
+  <compound refid="dir_7e5d7e004b344f685f59d01929914aa0" kind="dir"><name>projeto</name>
+  </compound>
+  <compound refid="dir_6f305ac7ce74daa56ac046a8631ef7bd" kind="dir"><name>li2PL1G05/projeto</name>
+  </compound>
+</doxygenindex>

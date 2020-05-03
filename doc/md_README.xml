@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="md_README" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>Rastros - LI2</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Um jogo baseado no jogo &quot;Rastros&quot;, criado em C no âmbito da cadeira de Laboratórios de Informática II 2019/2020, no mestrado integrado em Engenharia Informática da Universidade do Minho.</para>
+<para>Turno - PL1</para>
+<para>Grupo - 005</para>
+<para>Elementos :<itemizedlist>
+<listitem><para>A93294 - Pedro Miguel Rodrigues Gomes</para>
+</listitem><listitem><para>A93216 - Guilherme Lima Barros Gomes Fernandes</para>
+</listitem></itemizedlist>
+</para>
+<sect1 id="md_README_1autotoc_md3">
+<title>SlimeTrail - LI2</title>
+<para>A game based on the game &quot;SlimeTrail&quot;, created in C under the course of Computer Laboratories II 2019/2020, in the integrated master&apos;s degree in Software Engineering at the University of Minho.</para>
+<para>Turn - PL1</para>
+<para>Group - 005</para>
+<para>Elements :<itemizedlist>
+<listitem><para>A93294 - Pedro Miguel Rodrigues Gomes</para>
+</listitem><listitem><para>A93216 - Guilherme Lima Barros Gomes Fernandes </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

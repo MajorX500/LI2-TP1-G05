@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structSTATE" kind="struct" language="C++" prot="public">
+    <compoundname>STATE</compoundname>
+    <includes refid="bot_2data_8h" local="no">data.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structSTATE_1af1d03dd04058d7c57a4029abeae701f1" prot="public" static="no" mutable="no">
+        <type><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" kindref="member">HOUSE</ref></type>
+        <definition>HOUSE STATE::board</definition>
+        <argsstring>[8][8]</argsstring>
+        <name>board</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>O tabuleiro</para>
+<para>Member &apos;board&apos; Tabuleiro de Jogo </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="64" column="11" bodyfile="bot/data.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSTATE_1ab058fa820cbb60d2138b762e2cc258ab" prot="public" static="no" mutable="no">
+        <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+        <definition>COORDINATE STATE::previous_move</definition>
+        <argsstring></argsstring>
+        <name>previous_move</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A coordenada da última jogada</para>
+<para>Member &apos;previous_move&apos; Jogada anterior </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="66" column="16" bodyfile="bot/data.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSTATE_1ac8e19f87314fe850d57487a27b3df0e8" prot="public" static="no" mutable="no">
+        <type><ref refid="projeto_2data_8h_1abea336e51b9e60c4d4a3752105b05c67" kindref="member">MOVES</ref></type>
+        <definition>MOVES STATE::moves</definition>
+        <argsstring></argsstring>
+        <name>moves</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>As jogadas</para>
+<para>Member &apos;moves&apos; Lista de Jogadas anteriores </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="68" column="11" bodyfile="bot/data.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSTATE_1a815121cea9f6fd1fffb97ab8d2f623db" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int STATE::num_moves</definition>
+        <argsstring></argsstring>
+        <name>num_moves</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>O número das jogadas</para>
+<para>Member &apos;num_moves&apos; Numero de jogadas </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="70" column="9" bodyfile="bot/data.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSTATE_1af6129f7baf3c348badfee5147a6aacfb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int STATE::current_player</definition>
+        <argsstring></argsstring>
+        <name>current_player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>O jogador atual</para>
+<para>Member &apos;current_player&apos; jogador atual </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="72" column="9" bodyfile="bot/data.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Estado do jogo. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>COORDINATE</label>
+        <link refid="structCOORDINATE"/>
+      </node>
+      <node id="2">
+        <label>MOVE</label>
+        <link refid="structMOVE"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>player1</edgelabel>
+          <edgelabel>player2</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>STATE</label>
+        <link refid="structSTATE"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>moves</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>previous_move</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="bot/data.h" line="62" column="1" bodyfile="bot/data.h" bodystart="62" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structSTATE_1af1d03dd04058d7c57a4029abeae701f1" prot="public" virt="non-virtual"><scope>STATE</scope><name>board</name></member>
+      <member refid="structSTATE_1af6129f7baf3c348badfee5147a6aacfb" prot="public" virt="non-virtual"><scope>STATE</scope><name>current_player</name></member>
+      <member refid="structSTATE_1ac8e19f87314fe850d57487a27b3df0e8" prot="public" virt="non-virtual"><scope>STATE</scope><name>moves</name></member>
+      <member refid="structSTATE_1a815121cea9f6fd1fffb97ab8d2f623db" prot="public" virt="non-virtual"><scope>STATE</scope><name>num_moves</name></member>
+      <member refid="structSTATE_1ab058fa820cbb60d2138b762e2cc258ab" prot="public" virt="non-virtual"><scope>STATE</scope><name>previous_move</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_96fa01e362dbdfc0d3909a3a28a99f9d" kind="dir">
+    <compoundname>li2PL1G05/bot</compoundname>
+    <innerfile refid="li2PL1G05_2bot_2algorithms_8c">algorithms.c</innerfile>
+    <innerfile refid="li2PL1G05_2bot_2algorithms_8h">algorithms.h</innerfile>
+    <innerfile refid="li2PL1G05_2bot_2bot_8c">bot.c</innerfile>
+    <innerfile refid="li2PL1G05_2bot_2bot_8h">bot.h</innerfile>
+    <innerfile refid="li2PL1G05_2bot_2data_8c">data.c</innerfile>
+    <innerfile refid="li2PL1G05_2bot_2data_8h">data.h</innerfile>
+    <innerfile refid="li2PL1G05_2bot_2interface_8c">interface.c</innerfile>
+    <innerfile refid="li2PL1G05_2bot_2interface_8h">interface.h</innerfile>
+    <innerfile refid="li2PL1G05_2bot_2linked__lists_8c">linked_lists.c</innerfile>
+    <innerfile refid="li2PL1G05_2bot_2linked__lists_8h">linked_lists.h</innerfile>
+    <innerfile refid="li2PL1G05_2bot_2logic_8c">logic.c</innerfile>
+    <innerfile refid="li2PL1G05_2bot_2logic_8h">logic.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="li2PL1G05/bot/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,684 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="bot_2algorithms_8c" kind="file" language="C++">
+    <compoundname>algorithms.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="bot_2data_8h" local="yes">data.h</includes>
+    <includes refid="bot_2logic_8h" local="yes">logic.h</includes>
+    <includes refid="bot_2linked__lists_8h" local="yes">linked_lists.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>linked_lists.h</label>
+        <link refid="bot_2linked__lists_8h"/>
+      </node>
+      <node id="4">
+        <label>logic.h</label>
+        <link refid="bot_2logic_8h"/>
+      </node>
+      <node id="1">
+        <label>bot/algorithms.c</label>
+        <link refid="bot_2algorithms_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>data.h</label>
+        <link refid="bot_2data_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bot_2algorithms_8c_1a2f72f31bf325f0df4de4c83205568509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int max</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>max</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Max Esta função calcula o maior de dois números. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero 1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero 2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O maior numero </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/algorithms.c" line="10" column="5" bodyfile="bot/algorithms.c" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2algorithms_8c_1aebfa23dbf6ec30f35f2986a654bd47c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int min</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>min</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Min Esta função calcula o menor de dois números. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero 1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero 2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O menor numero </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/algorithms.c" line="14" column="5" bodyfile="bot/algorithms.c" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2algorithms_8c_1a0b7c84e35701b80da23cdd3efe5b1401" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bot_2linked__lists_8h_1a033767905a5074a8ba2f23b740e7ece5" kindref="member">LIST</ref></type>
+        <definition>LIST possible_coordinates</definition>
+        <argsstring>(STATE *s)</argsstring>
+        <name>possible_coordinates</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+<para>Jogadas possiveis Esta função verifica as jogadas/casa que são possiveis efectuar a partir de uma certa coordenada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Uma Lista Ligada de coordenadas </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/algorithms.c" line="18" column="6" bodyfile="bot/algorithms.c" bodystart="18" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2algorithms_8c_1afbd8632fa3325380d2c65bc5a4610e44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int value_of</definition>
+        <argsstring>(COORDINATE c)</argsstring>
+        <name>value_of</name>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Valor da Casa Esta função devolve o valor de uma casa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uma Coordenada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O valor da casa </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/algorithms.c" line="64" column="5" bodyfile="bot/algorithms.c" bodystart="64" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2algorithms_8c_1a767afd95b0509dc71865eeda48bde86d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int minimax</definition>
+        <argsstring>(STATE *s, COORDINATE c, int depth, int alpha, int beta, int maximizing_player)</argsstring>
+        <name>minimax</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maximizing_player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/algorithms.c" line="78" column="5" bodyfile="bot/algorithms.c" bodystart="78" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2algorithms_8c_1ad05a1b79e2e5267851ccc119751de2fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+        <definition>COORDINATE decide_between_equals</definition>
+        <argsstring>(STATE *s, COORDINATE c1, COORDINATE c2)</argsstring>
+        <name>decide_between_equals</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+          <defname>s</defname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+<para>Decide Iguais Esta função escolhe a melhor casa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para p estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uma coordenada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>outra coordenada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A melhor coordenada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/algorithms.c" line="117" column="12" bodyfile="bot/algorithms.c" bodystart="117" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2algorithms_8c_1ab340fc7b03fa64aacdcd8f606db13106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bot_2linked__lists_8h_1a033767905a5074a8ba2f23b740e7ece5" kindref="member">LIST</ref></type>
+        <definition>LIST free_coordinates</definition>
+        <argsstring>(STATE *s, LIST l)</argsstring>
+        <name>free_coordinates</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+          <defname>s</defname>
+        </param>
+        <param>
+          <type><ref refid="bot_2linked__lists_8h_1a033767905a5074a8ba2f23b740e7ece5" kindref="member">LIST</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>FreeCoord Esta função monta uma lista de coordenadas vazias. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lista de coordenadas </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Uma Lista de coordenadas </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/algorithms.c" line="124" column="6" bodyfile="bot/algorithms.c" bodystart="124" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2algorithms_8c_1af561e8d42f3c98a476dd1931339ef95d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int num_free_coordinates</definition>
+        <argsstring>(STATE *s)</argsstring>
+        <name>num_free_coordinates</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+<para>Número de vazias Esta função devolve o numero de casa vazias adjacentes ao jogador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>apontador paar um estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Número de casas </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/algorithms.c" line="137" column="5" bodyfile="bot/algorithms.c" bodystart="137" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2algorithms_8c_1aee6079aa290aac68959a53b76cbf9ff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int decide_depth</definition>
+        <argsstring>(STATE *s)</argsstring>
+        <name>decide_depth</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/algorithms.c" line="145" column="5" bodyfile="bot/algorithms.c" bodystart="145" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2algorithms_8c_1a2cdc96ab683123ede90d1ca6961ddddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+        <definition>COORDINATE find_best_coordinate</definition>
+        <argsstring>(STATE *s)</argsstring>
+        <name>find_best_coordinate</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+<para>Melhor coordenada Esta função calcula qual a melhor coordenada para aumentar a probabilidade de ganhar. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A melhor coordenada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/algorithms.c" line="154" column="12" bodyfile="bot/algorithms.c" bodystart="154" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2algorithms_8c_1aaea85044d887ae40719608d612ff90ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int numbEmpty</definition>
+        <argsstring>(STATE *s, COORDINATE c)</argsstring>
+        <name>numbEmpty</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+          <defname>s</defname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>ContaVazio Esta função conta o numero de casa vazias no tabuleiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada Atual </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Numero de Vazios </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/algorithms.c" line="187" column="5" bodyfile="bot/algorithms.c" bodystart="187" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2algorithms_8c_1a7d30bc8a083bd9a3d9dadc87ff29c119" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+        <definition>COORDINATE pairity</definition>
+        <argsstring>(STATE *s)</argsstring>
+        <name>pairity</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+<para>Paridade Esta função é o algoritmo da Paridade. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A melhor coordenada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/algorithms.c" line="196" column="12" bodyfile="bot/algorithms.c" bodystart="196" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="projeto_2data_8h" kindref="compound">data.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="projeto_2logic_8h" kindref="compound">logic.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="projeto_2linked__lists_8h" kindref="compound">linked_lists.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2algorithms_8c_1a2f72f31bf325f0df4de4c83205568509" kindref="member">max</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>&gt;<sp/>y<sp/>?<sp/>x<sp/>:<sp/>y;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2algorithms_8c_1aebfa23dbf6ec30f35f2986a654bd47c1" kindref="member">min</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>&lt;<sp/>y<sp/>?<sp/>x<sp/>:<sp/>y;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="structNODE" kindref="compound">LIST</ref><sp/><ref refid="bot_2algorithms_8c_1a0b7c84e35701b80da23cdd3efe5b1401" kindref="member">possible_coordinates</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*s)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c<sp/>=<sp/><ref refid="bot_2data_8c_1abb59e73fe191078d67db453b250a3bce" kindref="member">get_previous_move</ref>(s);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structNODE" kindref="compound">LIST</ref><sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1a44d30a3a13a3bcf8a9b83fb222541818" kindref="member">initialize_list</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>&gt;=<sp/>1<sp/>&amp;&amp;<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>&gt;=<sp/>1<sp/>&amp;&amp;<sp/><ref refid="bot_2data_8c_1ae9732ca1fe9f76dda118295ccd9d4a2c" kindref="member">get_house</ref>(s,<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>-<sp/>1,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>-<sp/>1})<sp/>!=<sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kindref="member">BLACK</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>*tl<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*tl<sp/>=<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>-<sp/>1,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>-<sp/>1};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kindref="member">insert_head</ref>(l,<sp/>tl);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>&gt;=<sp/>1<sp/>&amp;&amp;<sp/><ref refid="bot_2data_8c_1ae9732ca1fe9f76dda118295ccd9d4a2c" kindref="member">get_house</ref>(s,<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>-<sp/>1,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref>})<sp/>!=<sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kindref="member">BLACK</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>*ml<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>));</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*ml<sp/>=<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>-<sp/>1,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref>};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kindref="member">insert_head</ref>(l,<sp/>ml);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>&gt;=<sp/>1<sp/>&amp;&amp;<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>&lt;=<sp/>6<sp/>&amp;&amp;<sp/><ref refid="bot_2data_8c_1ae9732ca1fe9f76dda118295ccd9d4a2c" kindref="member">get_house</ref>(s,<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>-<sp/>1,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>+<sp/>1})<sp/>!=<sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kindref="member">BLACK</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>*bl<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bl<sp/>=<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>-<sp/>1,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>+<sp/>1};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kindref="member">insert_head</ref>(l,<sp/>bl);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>&lt;=<sp/>6<sp/><sp/>&amp;&amp;<sp/><ref refid="bot_2data_8c_1ae9732ca1fe9f76dda118295ccd9d4a2c" kindref="member">get_house</ref>(s,<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>+<sp/>1,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref>})<sp/>!=<sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kindref="member">BLACK</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>*mr<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*mr<sp/>=<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>+<sp/>1,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref>};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kindref="member">insert_head</ref>(l,<sp/>mr);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>&gt;=<sp/>1<sp/>&amp;&amp;<sp/><ref refid="bot_2data_8c_1ae9732ca1fe9f76dda118295ccd9d4a2c" kindref="member">get_house</ref>(s,<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref>,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>-<sp/>1})<sp/>!=<sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kindref="member">BLACK</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>*tm<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*tm<sp/>=<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref>,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>-<sp/>1};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kindref="member">insert_head</ref>(l,<sp/>tm);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>&gt;=<sp/>1<sp/>&amp;&amp;<sp/>c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>&lt;=<sp/>6<sp/>&amp;&amp;<sp/><ref refid="bot_2data_8c_1ae9732ca1fe9f76dda118295ccd9d4a2c" kindref="member">get_house</ref>(s,<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>+<sp/>1,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>-<sp/>1})<sp/>!=<sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kindref="member">BLACK</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>*tr<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*tr<sp/>=<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>+<sp/>1,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>-<sp/>1};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kindref="member">insert_head</ref>(l,<sp/>tr);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>&lt;=<sp/>6<sp/>&amp;&amp;<sp/><ref refid="bot_2data_8c_1ae9732ca1fe9f76dda118295ccd9d4a2c" kindref="member">get_house</ref>(s,<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref>,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>+<sp/>1})<sp/>!=<sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kindref="member">BLACK</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>*bm<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bm<sp/>=<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref>,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>+<sp/>1};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kindref="member">insert_head</ref>(l,<sp/>bm);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>&lt;=<sp/>6<sp/>&amp;&amp;<sp/>c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>&lt;=<sp/>6<sp/>&amp;&amp;<sp/><ref refid="bot_2data_8c_1ae9732ca1fe9f76dda118295ccd9d4a2c" kindref="member">get_house</ref>(s,<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>+<sp/>1,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>+<sp/>1})<sp/>!=<sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kindref="member">BLACK</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>*br<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*br<sp/>=<sp/>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>){c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref><sp/>+<sp/>1,<sp/>c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref><sp/>+<sp/>1};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kindref="member">insert_head</ref>(l,<sp/>br);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2algorithms_8c_1afbd8632fa3325380d2c65bc5a4610e44" kindref="member">value_of</ref>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value[8][8]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/>0,<sp/>-5,<sp/>-15,<sp/>-30,<sp/>-50,<sp/>-70,<sp/>-90,<sp/>-150<sp/>},</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>25,<sp/>15,<sp/>-20,<sp/>-35,<sp/>-55,<sp/>-75,<sp/>-95,<sp/><sp/>-90<sp/>},</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>30,<sp/>35,<sp/><sp/>15,<sp/>-40,<sp/>-60,<sp/>-80,<sp/>-75,<sp/><sp/>-70<sp/>},</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>40,<sp/>45,<sp/><sp/>50,<sp/><sp/>20,<sp/><sp/><sp/>0,<sp/>-60,<sp/>-55,<sp/><sp/>-50<sp/>},</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>60,<sp/>65,<sp/><sp/>70,<sp/><sp/>55,<sp/><sp/>20,<sp/>-40,<sp/>-35,<sp/><sp/>-30<sp/>},</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>75,<sp/>80,<sp/><sp/>85,<sp/><sp/>70,<sp/><sp/>50,<sp/><sp/>15,<sp/>-20,<sp/><sp/>-15<sp/>},</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>90,<sp/>95,<sp/><sp/>80,<sp/><sp/>65,<sp/><sp/>50,<sp/><sp/>40,<sp/><sp/>10,<sp/><sp/><sp/>-5<sp/>},</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>150,<sp/>90,<sp/><sp/>75,<sp/><sp/>60,<sp/><sp/>45,<sp/><sp/>35,<sp/><sp/>30,<sp/><sp/><sp/><sp/>0<sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value[c.<ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref>][c.<ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref>];</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minimax(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*s,<sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>depth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>alpha,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>beta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maximizing_player)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*ns<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structSTATE" kindref="compound">STATE</ref>));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>*ns<sp/>=<sp/>*s;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bot_2logic_8c_1a91ea696ef2f7c89f3bcf51ca693ead25" kindref="member">make_move</ref>(ns,<sp/>c);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="bot_2logic_8c_1a0611e0716126cf4527e96666d8b78ace" kindref="member">valid_moves</ref>(ns)<sp/>&amp;&amp;<sp/><ref refid="bot_2data_8c_1ae9732ca1fe9f76dda118295ccd9d4a2c" kindref="member">get_house</ref>(s,<sp/>c)<sp/>==<sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kindref="member">EMPTY</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(ns);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(maximizing_player)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>150;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-150;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!depth<sp/>||<sp/><ref refid="bot_2logic_8c_1a76ba9bd5bc7f6db8473a13e26d28c4b0" kindref="member">check_winner</ref>(s,<sp/>c)<sp/>||<sp/>!<ref refid="bot_2logic_8c_1a0611e0716126cf4527e96666d8b78ace" kindref="member">valid_moves</ref>(ns))<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(ns);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="bot_2algorithms_8c_1afbd8632fa3325380d2c65bc5a4610e44" kindref="member">value_of</ref>(c);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(maximizing_player)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxEval<sp/>=<sp/>-10000;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l<sp/>=<sp/><ref refid="bot_2algorithms_8c_1a0b7c84e35701b80da23cdd3efe5b1401" kindref="member">possible_coordinates</ref>(ns);<sp/>!<ref refid="bot_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" kindref="member">is_list_empty</ref>(l);<sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1a1ea1edabba84e02dcefc77f948be307a" kindref="member">remove_head</ref>(l))<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>*nc<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" kindref="member">get_head</ref>(l);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eval<sp/>=<sp/>minimax(ns,<sp/>*nc,<sp/>depth<sp/>-<sp/>1,<sp/>alpha,<sp/>beta,<sp/>0);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxEval<sp/>=<sp/><ref refid="bot_2algorithms_8c_1a2f72f31bf325f0df4de4c83205568509" kindref="member">max</ref>(eval,<sp/>maxEval);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alpha<sp/>=<sp/><ref refid="bot_2algorithms_8c_1a2f72f31bf325f0df4de4c83205568509" kindref="member">max</ref>(alpha,<sp/>eval);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(beta<sp/>&lt;=<sp/>alpha)<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(ns);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>maxEval;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minEval<sp/>=<sp/>10000;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l<sp/>=<sp/><ref refid="bot_2algorithms_8c_1a0b7c84e35701b80da23cdd3efe5b1401" kindref="member">possible_coordinates</ref>(ns);<sp/>!<ref refid="bot_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" kindref="member">is_list_empty</ref>(l);<sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1a1ea1edabba84e02dcefc77f948be307a" kindref="member">remove_head</ref>(l))<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>*nc<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" kindref="member">get_head</ref>(l);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eval<sp/>=<sp/>minimax(ns,<sp/>*nc,<sp/>depth<sp/>-<sp/>1,<sp/>alpha,<sp/>beta,<sp/>1);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minEval<sp/>=<sp/><ref refid="bot_2algorithms_8c_1aebfa23dbf6ec30f35f2986a654bd47c1" kindref="member">min</ref>(eval,<sp/>minEval);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>beta<sp/>=<sp/><ref refid="bot_2algorithms_8c_1aebfa23dbf6ec30f35f2986a654bd47c1" kindref="member">min</ref>(beta,<sp/>eval);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(beta<sp/>&lt;=<sp/>alpha)<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(ns);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>minEval;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/><ref refid="bot_2algorithms_8c_1ad05a1b79e2e5267851ccc119751de2fc" kindref="member">decide_between_equals</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*s,<sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c1,<sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c2)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="bot_2data_8c_1acc7272ca6071b154e4b5ba4abd639102" kindref="member">get_current_player</ref>(s)<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="bot_2algorithms_8c_1afbd8632fa3325380d2c65bc5a4610e44" kindref="member">value_of</ref>(c1)<sp/>&gt;<sp/><ref refid="bot_2algorithms_8c_1afbd8632fa3325380d2c65bc5a4610e44" kindref="member">value_of</ref>(c2)<sp/>?<sp/>c1<sp/>:<sp/>c2;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="bot_2algorithms_8c_1afbd8632fa3325380d2c65bc5a4610e44" kindref="member">value_of</ref>(c1)<sp/>&lt;<sp/><ref refid="bot_2algorithms_8c_1afbd8632fa3325380d2c65bc5a4610e44" kindref="member">value_of</ref>(c2)<sp/>?<sp/>c1<sp/>:<sp/>c2;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><ref refid="structNODE" kindref="compound">LIST</ref><sp/><ref refid="bot_2algorithms_8c_1ab340fc7b03fa64aacdcd8f606db13106" kindref="member">free_coordinates</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*s,<sp/><ref refid="structNODE" kindref="compound">LIST</ref><sp/>l)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>pl<sp/>=<sp/><ref refid="bot_2algorithms_8c_1a0b7c84e35701b80da23cdd3efe5b1401" kindref="member">possible_coordinates</ref>(s);<sp/>pl<sp/>!=<sp/>NULL;<sp/>pl<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1ade529e47d7dc09f69454a4f49f873457" kindref="member">next</ref>(pl))<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>*c<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" kindref="member">get_head</ref>(pl);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="bot_2linked__lists_8c_1a002df25972494eb7c280499a9042f94d" kindref="member">elem</ref>(l,<sp/>c))<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1ae42717e613a4a3915d623bb2101329cb" kindref="member">insert_head</ref>(l,<sp/>c);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bot_2logic_8c_1a91ea696ef2f7c89f3bcf51ca693ead25" kindref="member">make_move</ref>(s,<sp/>*c);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l<sp/>=<sp/><ref refid="bot_2algorithms_8c_1ab340fc7b03fa64aacdcd8f606db13106" kindref="member">free_coordinates</ref>(s,<sp/>l);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2algorithms_8c_1af561e8d42f3c98a476dd1931339ef95d" kindref="member">num_free_coordinates</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*s)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*ns<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structSTATE" kindref="compound">STATE</ref>));</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>*ns<sp/>=<sp/>*s;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structNODE" kindref="compound">LIST</ref><sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1a44d30a3a13a3bcf8a9b83fb222541818" kindref="member">initialize_list</ref>();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>l<sp/>=<sp/><ref refid="bot_2algorithms_8c_1ab340fc7b03fa64aacdcd8f606db13106" kindref="member">free_coordinates</ref>(ns,<sp/>l);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="bot_2linked__lists_8c_1a255458d0a7974cd11ef98887b6c2b8e4" kindref="member">length</ref>(l);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>decide_depth(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*s)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/><ref refid="bot_2algorithms_8c_1af561e8d42f3c98a476dd1931339ef95d" kindref="member">num_free_coordinates</ref>(s);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>&gt;<sp/>200)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>10;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>&gt;<sp/>130)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>11;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>n<sp/>/<sp/>10;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/><ref refid="bot_2algorithms_8c_1a2cdc96ab683123ede90d1ca6961ddddc" kindref="member">find_best_coordinate</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*s)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c<sp/>=<sp/><ref refid="bot_2data_8c_1abb59e73fe191078d67db453b250a3bce" kindref="member">get_previous_move</ref>(s);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maximizing_player<sp/>=<sp/>2<sp/>-<sp/><ref refid="bot_2data_8c_1acc7272ca6071b154e4b5ba4abd639102" kindref="member">get_current_player</ref>(s);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>bc<sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(maximizing_player)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxEval<sp/>=<sp/>-10000;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l<sp/>=<sp/><ref refid="bot_2algorithms_8c_1a0b7c84e35701b80da23cdd3efe5b1401" kindref="member">possible_coordinates</ref>(s);<sp/>!<ref refid="bot_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" kindref="member">is_list_empty</ref>(l);<sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1a1ea1edabba84e02dcefc77f948be307a" kindref="member">remove_head</ref>(l))<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>*nc<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" kindref="member">get_head</ref>(l);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eval<sp/>=<sp/>minimax(s,<sp/>*nc,<sp/>decide_depth(s),<sp/>-10000,<sp/>10000,<sp/>maximizing_player);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(eval<sp/>==<sp/>maxEval)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bc<sp/>=<sp/><ref refid="bot_2algorithms_8c_1ad05a1b79e2e5267851ccc119751de2fc" kindref="member">decide_between_equals</ref>(s,<sp/>bc,<sp/>*nc);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(eval<sp/>&gt;<sp/>maxEval)<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxEval<sp/>=<sp/>eval;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bc<sp/>=<sp/>*nc;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minEval<sp/>=<sp/>10000;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l<sp/>=<sp/><ref refid="bot_2algorithms_8c_1a0b7c84e35701b80da23cdd3efe5b1401" kindref="member">possible_coordinates</ref>(s);<sp/>!<ref refid="bot_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" kindref="member">is_list_empty</ref>(l);<sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1a1ea1edabba84e02dcefc77f948be307a" kindref="member">remove_head</ref>(l))<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>*nc<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" kindref="member">get_head</ref>(l);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eval<sp/>=<sp/>minimax(s,<sp/>*nc,<sp/>decide_depth(s),<sp/>-10000,<sp/>10000,<sp/>maximizing_player);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(eval<sp/>==<sp/>minEval)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bc<sp/>=<sp/><ref refid="bot_2algorithms_8c_1ad05a1b79e2e5267851ccc119751de2fc" kindref="member">decide_between_equals</ref>(s,<sp/>bc,<sp/>*nc);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(eval<sp/>&lt;<sp/>minEval)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minEval<sp/>=<sp/>eval;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bc<sp/>=<sp/>*nc;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bc;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2algorithms_8c_1aaea85044d887ae40719608d612ff90ae" kindref="member">numbEmpty</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*s,<sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*ns<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structSTATE" kindref="compound">STATE</ref>));</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>*ns<sp/>=<sp/>*s;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bot_2logic_8c_1a91ea696ef2f7c89f3bcf51ca693ead25" kindref="member">make_move</ref>(ns,<sp/>c);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numb<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l<sp/>=<sp/><ref refid="bot_2algorithms_8c_1a0b7c84e35701b80da23cdd3efe5b1401" kindref="member">possible_coordinates</ref>(ns);<sp/>!<ref refid="bot_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" kindref="member">is_list_empty</ref>(l);<sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1a1ea1edabba84e02dcefc77f948be307a" kindref="member">remove_head</ref>(l),<sp/>numb<sp/>++);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>numb<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/><ref refid="bot_2algorithms_8c_1a7d30bc8a083bd9a3d9dadc87ff29c119" kindref="member">pairity</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*s)<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c<sp/>=<sp/><ref refid="bot_2data_8c_1abb59e73fe191078d67db453b250a3bce" kindref="member">get_previous_move</ref>(s);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>bc<sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="structNODE" kindref="compound">LIST</ref><sp/>l<sp/>=<sp/><ref refid="bot_2algorithms_8c_1a0b7c84e35701b80da23cdd3efe5b1401" kindref="member">possible_coordinates</ref>(s);<sp/>!<ref refid="bot_2linked__lists_8c_1a952a8e03e69fc585aea516d32a78257f" kindref="member">is_list_empty</ref>(l);<sp/>l<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1a1ea1edabba84e02dcefc77f948be307a" kindref="member">remove_head</ref>(l))<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>*nc<sp/>=<sp/><ref refid="bot_2linked__lists_8c_1aaeb656d3204a3de7bfc2e0960cdf256f" kindref="member">get_head</ref>(l);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eval<sp/>=<sp/><ref refid="bot_2algorithms_8c_1aaea85044d887ae40719608d612ff90ae" kindref="member">numbEmpty</ref>(s,<sp/>*nc);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(eval<sp/>%<sp/>2))</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bc<sp/>=<sp/>*nc;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bc;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="bot/algorithms.c"/>
+  </compounddef>
+</doxygen>

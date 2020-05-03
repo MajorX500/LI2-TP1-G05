@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structCOORDINATE" kind="struct" language="C++" prot="public">
+    <compoundname>COORDINATE</compoundname>
+    <includes refid="bot_2data_8h" local="no">data.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int COORDINATE::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Member &apos;x&apos; Colunas </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="27" column="9" bodyfile="bot/data.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int COORDINATE::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Member &apos;y&apos; Linhas </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="28" column="9" bodyfile="bot/data.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Define as Cooredenadas. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="bot/data.h" line="26" column="1" bodyfile="bot/data.h" bodystart="26" bodyend="29"/>
+    <listofallmembers>
+      <member refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" prot="public" virt="non-virtual"><scope>COORDINATE</scope><name>x</name></member>
+      <member refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" prot="public" virt="non-virtual"><scope>COORDINATE</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="li2PL1G05_2bot_2algorithms_8h" kind="file" language="C++">
+    <compoundname>algorithms.h</compoundname>
+    <includedby refid="li2PL1G05_2bot_2bot_8c" local="yes">li2PL1G05/bot/bot.c</includedby>
+    <includedby refid="li2PL1G05_2bot_2interface_8c" local="yes">li2PL1G05/bot/interface.c</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>li2PL1G05/bot/bot.c</label>
+        <link refid="li2PL1G05_2bot_2bot_8c"/>
+      </node>
+      <node id="3">
+        <label>li2PL1G05/bot/interface.c</label>
+        <link refid="li2PL1G05_2bot_2interface_8c"/>
+      </node>
+      <node id="1">
+        <label>li2PL1G05/bot/algorithms.h</label>
+        <link refid="li2PL1G05_2bot_2algorithms_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="li2PL1G05_2bot_2algorithms_8h_1a2f72f31bf325f0df4de4c83205568509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int max</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>max</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Max Esta função calcula o maior de dois números. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero 1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero 2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O maior numero </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="li2PL1G05/bot/algorithms.h" line="18" column="5" bodyfile="bot/algorithms.c" bodystart="10" bodyend="12" declfile="li2PL1G05/bot/algorithms.h" declline="18" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="li2PL1G05_2bot_2algorithms_8h_1aebfa23dbf6ec30f35f2986a654bd47c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int min</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>min</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Min Esta função calcula o menor de dois números. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero 1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero 2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O menor numero </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="li2PL1G05/bot/algorithms.h" line="29" column="5" bodyfile="bot/algorithms.c" bodystart="14" bodyend="16" declfile="li2PL1G05/bot/algorithms.h" declline="29" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="li2PL1G05_2bot_2algorithms_8h_1a839360b010c666f2422f64d8413b502c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bot_2linked__lists_8h_1a033767905a5074a8ba2f23b740e7ece5" kindref="member">LIST</ref></type>
+        <definition>LIST possible_coordinates</definition>
+        <argsstring>(STATE *e)</argsstring>
+        <name>possible_coordinates</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+<para>Jogadas possiveis Esta função verifica as jogadas/casa que são possiveis efectuar a partir de uma certa coordenada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Uma Lista Ligada de coordenadas </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="li2PL1G05/bot/algorithms.h" line="39" column="6" bodyfile="bot/algorithms.c" bodystart="18" bodyend="62" declfile="li2PL1G05/bot/algorithms.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="li2PL1G05_2bot_2algorithms_8h_1afbd8632fa3325380d2c65bc5a4610e44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int value_of</definition>
+        <argsstring>(COORDINATE c)</argsstring>
+        <name>value_of</name>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Valor da Casa Esta função devolve o valor de uma casa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uma Coordenada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O valor da casa </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="li2PL1G05/bot/algorithms.h" line="48" column="5" bodyfile="bot/algorithms.c" bodystart="64" bodyend="76" declfile="li2PL1G05/bot/algorithms.h" declline="48" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="li2PL1G05_2bot_2algorithms_8h_1a40f43ac82ea17bd32a870cc96402b4c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int minmax</definition>
+        <argsstring>(STATE *e, COORDINATE c, int depth, int alpha, int beta, int j)</argsstring>
+        <name>minmax</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>MinMax Esta função é o brain do bot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero de Pecas a Procurar </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pontuação minima do jogador maximizante </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pontuação maxima do jogador minimizante </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificação do jogador </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O valor da melhor coordenada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="li2PL1G05/bot/algorithms.h" line="62" column="5" declfile="li2PL1G05/bot/algorithms.h" declline="62" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="li2PL1G05_2bot_2algorithms_8h_1af364734ddd7bc1054a49fde31ffa5cdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+        <definition>COORDINATE decide_between_equals</definition>
+        <argsstring>(STATE *e, COORDINATE c1, COORDINATE c2)</argsstring>
+        <name>decide_between_equals</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+          <defname>s</defname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+<para>Decide Iguais Esta função escolhe a melhor casa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para p estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uma coordenada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>outra coordenada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A melhor coordenada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="li2PL1G05/bot/algorithms.h" line="72" column="12" bodyfile="bot/algorithms.c" bodystart="117" bodyend="122" declfile="li2PL1G05/bot/algorithms.h" declline="72" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="li2PL1G05_2bot_2algorithms_8h_1af611b278d54aee5fcbd5135a10d3117a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bot_2linked__lists_8h_1a033767905a5074a8ba2f23b740e7ece5" kindref="member">LIST</ref></type>
+        <definition>LIST free_coordinates</definition>
+        <argsstring>(STATE *e, LIST l)</argsstring>
+        <name>free_coordinates</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+          <defname>s</defname>
+        </param>
+        <param>
+          <type><ref refid="bot_2linked__lists_8h_1a033767905a5074a8ba2f23b740e7ece5" kindref="member">LIST</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>FreeCoord Esta função monta uma lista de coordenadas vazias. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lista de coordenadas </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Uma Lista de coordenadas </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="li2PL1G05/bot/algorithms.h" line="81" column="6" bodyfile="bot/algorithms.c" bodystart="124" bodyend="134" declfile="li2PL1G05/bot/algorithms.h" declline="81" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="li2PL1G05_2bot_2algorithms_8h_1a5a903bfff767d3ffb1d2d29d4205be03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int num_free_coordinates</definition>
+        <argsstring>(STATE *e)</argsstring>
+        <name>num_free_coordinates</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+<para>Número de vazias Esta função devolve o numero de casa vazias adjacentes ao jogador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>apontador paar um estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Número de casas </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="li2PL1G05/bot/algorithms.h" line="89" column="5" bodyfile="bot/algorithms.c" bodystart="137" bodyend="143" declfile="li2PL1G05/bot/algorithms.h" declline="89" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="li2PL1G05_2bot_2algorithms_8h_1ab66af7501b95decc80304824bc140cf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+        <definition>COORDINATE find_best_coordinate</definition>
+        <argsstring>(STATE *e)</argsstring>
+        <name>find_best_coordinate</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+<para>Melhor coordenada Esta função calcula qual a melhor coordenada para aumentar a probabilidade de ganhar. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A melhor coordenada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="li2PL1G05/bot/algorithms.h" line="99" column="12" bodyfile="bot/algorithms.c" bodystart="154" bodyend="185" declfile="li2PL1G05/bot/algorithms.h" declline="99" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="li2PL1G05_2bot_2algorithms_8h_1aff4ac3ac9d341aaa61d2be9be72fedbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+        <definition>COORDINATE pairity</definition>
+        <argsstring>(STATE *e)</argsstring>
+        <name>pairity</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+<para>Paridade Esta função é o algoritmo da Paridade. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A melhor coordenada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="li2PL1G05/bot/algorithms.h" line="107" column="12" bodyfile="bot/algorithms.c" bodystart="196" bodyend="206" declfile="li2PL1G05/bot/algorithms.h" declline="107" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="li2PL1G05_2bot_2algorithms_8h_1af1091f694c3cf498e56516d593417fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int numbEmpty</definition>
+        <argsstring>(STATE *e, COORDINATE c)</argsstring>
+        <name>numbEmpty</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+          <defname>s</defname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>ContaVazio Esta função conta o numero de casa vazias no tabuleiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada Atual </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Numero de Vazios </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="li2PL1G05/bot/algorithms.h" line="117" column="5" bodyfile="bot/algorithms.c" bodystart="187" bodyend="194" declfile="li2PL1G05/bot/algorithms.h" declline="117" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definição do bot e das funçoes utilizadas pelo mesmo </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#ifndef<sp/>__ALGORITHMS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__ALGORITHMS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2algorithms_8h_1a2f72f31bf325f0df4de4c83205568509" kindref="member">max</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2algorithms_8h_1aebfa23dbf6ec30f35f2986a654bd47c1" kindref="member">min</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><ref refid="structNODE" kindref="compound">LIST</ref><sp/><ref refid="bot_2algorithms_8h_1a839360b010c666f2422f64d8413b502c" kindref="member">possible_coordinates</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2algorithms_8h_1afbd8632fa3325380d2c65bc5a4610e44" kindref="member">value_of</ref>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="li2PL1G05_2bot_2algorithms_8h_1a40f43ac82ea17bd32a870cc96402b4c4" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2algorithms_8h_1a40f43ac82ea17bd32a870cc96402b4c4" kindref="member">minmax</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e,<sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>depth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>alpha,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>beta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/><ref refid="bot_2algorithms_8h_1af364734ddd7bc1054a49fde31ffa5cdd" kindref="member">decide_between_equals</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e,<sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c1,<sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c2);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><ref refid="structNODE" kindref="compound">LIST</ref><sp/><ref refid="bot_2algorithms_8h_1af611b278d54aee5fcbd5135a10d3117a" kindref="member">free_coordinates</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e,<sp/><ref refid="structNODE" kindref="compound">LIST</ref><sp/>l);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2algorithms_8h_1a5a903bfff767d3ffb1d2d29d4205be03" kindref="member">num_free_coordinates</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/><ref refid="bot_2algorithms_8h_1ab66af7501b95decc80304824bc140cf9" kindref="member">find_best_coordinate</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/><ref refid="bot_2algorithms_8h_1aff4ac3ac9d341aaa61d2be9be72fedbc" kindref="member">pairity</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2algorithms_8h_1af1091f694c3cf498e56516d593417fdc" kindref="member">numbEmpty</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e,<sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="li2PL1G05/bot/algorithms.h"/>
+  </compounddef>
+</doxygen>

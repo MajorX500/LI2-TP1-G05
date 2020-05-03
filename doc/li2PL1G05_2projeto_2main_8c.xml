@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="li2PL1G05_2projeto_2main_8c" kind="file" language="C++">
+    <compoundname>main.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes refid="li2PL1G05_2projeto_2linked__lists_8h" local="yes">linked_lists.h</includes>
+    <includes refid="li2PL1G05_2projeto_2data_8h" local="yes">data.h</includes>
+    <includes refid="li2PL1G05_2projeto_2interface_8h" local="yes">interface.h</includes>
+    <includes refid="li2PL1G05_2projeto_2algorithms_8h" local="yes">algorithms.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>li2PL1G05/projeto/main.c</label>
+        <link refid="li2PL1G05_2projeto_2main_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>data.h</label>
+        <link refid="li2PL1G05_2projeto_2data_8h"/>
+      </node>
+      <node id="6">
+        <label>interface.h</label>
+        <link refid="li2PL1G05_2projeto_2interface_8h"/>
+      </node>
+      <node id="4">
+        <label>linked_lists.h</label>
+        <link refid="li2PL1G05_2projeto_2linked__lists_8h"/>
+      </node>
+      <node id="7">
+        <label>algorithms.h</label>
+        <link refid="li2PL1G05_2projeto_2algorithms_8h"/>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="li2PL1G05_2projeto_2main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+<para>Main Esta função executa o jogo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>0 se a função for executada com sucesso </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="li2PL1G05/projeto/main.c" line="12" column="5" bodyfile="li2PL1G05/projeto/main.c" bodystart="12" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="projeto_2linked__lists_8h" kindref="compound">linked_lists.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="projeto_2data_8h" kindref="compound">data.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="projeto_2interface_8h" kindref="compound">interface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="projeto_2algorithms_8h" kindref="compound">algorithms.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="li2PL1G05_2projeto_2main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*s<sp/>=<sp/><ref refid="bot_2data_8c_1a7f5845c0422715df4f2ebab7cd9fd6ad" kindref="member">starting_state</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><ref refid="bot_2interface_8c_1a83e86058ec878c01ecc4d6bdb261760a" kindref="member">draw</ref>(s,<sp/>stdout);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><ref refid="bot_2interface_8c_1a76555a3bd437d587a1ef442cc5678d91" kindref="member">CMD</ref>(s);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/>free(s);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="li2PL1G05/projeto/main.c"/>
+  </compounddef>
+</doxygen>

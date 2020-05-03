@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_30f56cd85179c0aaeec6f92fdf9f3471" kind="dir">
+    <compoundname>bot</compoundname>
+    <innerfile refid="bot_2algorithms_8c">algorithms.c</innerfile>
+    <innerfile refid="bot_2algorithms_8h">algorithms.h</innerfile>
+    <innerfile refid="bot_2bot_8c">bot.c</innerfile>
+    <innerfile refid="bot_2bot_8h">bot.h</innerfile>
+    <innerfile refid="bot_2data_8c">data.c</innerfile>
+    <innerfile refid="bot_2data_8h">data.h</innerfile>
+    <innerfile refid="bot_2interface_8c">interface.c</innerfile>
+    <innerfile refid="bot_2interface_8h">interface.h</innerfile>
+    <innerfile refid="bot_2linked__lists_8c">linked_lists.c</innerfile>
+    <innerfile refid="bot_2linked__lists_8h">linked_lists.h</innerfile>
+    <innerfile refid="bot_2logic_8c">logic.c</innerfile>
+    <innerfile refid="bot_2logic_8h">logic.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="bot/"/>
+  </compounddef>
+</doxygen>

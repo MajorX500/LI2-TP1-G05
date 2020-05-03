@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="projeto_2main_8h" kind="file" language="C++">
+    <compoundname>main.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="projeto_2main_8h_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+<para>Main Esta função executa o jogo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>0 se a função for executada com sucesso </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/main.h" line="14" column="5" bodyfile="li2PL1G05/projeto/main.c" bodystart="12" bodyend="18" declfile="projeto/main.h" declline="14" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Main para o jogo </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>__MAIN_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__MAIN_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="li2PL1G05_2projeto_2main_8h_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="projeto/main.h"/>
+  </compounddef>
+</doxygen>

@@ -1,16 +1,17 @@
-CFLAGS = -std=gnu11 -Wall -Wextra -pedantic-errors -O
+CFLAGS = -std=gnu11 -Wall -Wextra -pedantic-errors -O -lm
 CC = gcc
 
-slimetrail: src/main.o src/data.o src/interface.o src/logic.o src/linked_lists.o src/algorithms.o
+slimetrail: projeto/main.o projeto/data.o projeto/interface.o projeto/logic.o projeto/linked_lists.o projeto/algorithms.o
 	$(CC) $(CFLAGS) -o slimetrail $^ 
 
-bot: src/bot.o src/data.o src/interface.o src/logic.o src/linked_lists.o src/algorithms.o
-	$(CC) $(CFLAGS) -o bot $^
+bot: bot/bot.o bot/data.o bot/interface.o bot/logic.o bot/linked_lists.o bot/algorithms.o
+	$(CC) $(CFLAGS) -o bot.out $^
 
 run: slimetrail
 	./slimetrail	
 
 clean:
-	@rm -f src/*.o
+	@rm -f projeto/*.o
+	@rm -f bot/*.o
 	@rm -f slimetrail
-	@rm -f bot
+	@rm -f bot.out

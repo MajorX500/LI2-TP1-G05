@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="Report_8md" kind="file" language="Markdown">
+    <compoundname>Report.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Guião<sp/>5:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Durante<sp/>esta<sp/>semana<sp/>realizamos<sp/>as<sp/>actividades<sp/>propostas,chegando<sp/>até<sp/>a<sp/>adiantar<sp/>mais<sp/>algumas,<sp/>como<sp/>a<sp/>função<sp/>que<sp/>verifica<sp/>se<sp/>a<sp/>jogada<sp/>é<sp/>válida<sp/>(que<sp/>ainda<sp/>não<sp/>se<sp/>encontra<sp/>completamente<sp/>funcional),</highlight></codeline>
+<codeline><highlight class="normal">e<sp/>a<sp/>função<sp/>que<sp/>coloca<sp/>a<sp/>peça<sp/>preta<sp/>no<sp/>local<sp/>atual<sp/>da<sp/>peça<sp/>branca.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Não<sp/>foram<sp/>encontradas<sp/>grandes<sp/>dificuldades,<sp/>apenas<sp/>tivemos<sp/>que<sp/>pesquisar<sp/>algumas<sp/>informações<sp/>de<sp/>como<sp/>operar<sp/>em<sp/>structs,<sp/>de<sp/>aprender<sp/>como<sp/>utilizar<sp/>a<sp/>função<sp/>do<sp/>malloc()<sp/>para<sp/>inicializar<sp/>a<sp/>matriz<sp/>do<sp/>tabuleiro.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Guião<sp/>6:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Neste<sp/>Guião<sp/>desenvolvemos<sp/>as<sp/>funções<sp/>`ler`,<sp/>`gr`,<sp/>`Q`<sp/>e<sp/>`check_winner`,<sp/>que<sp/>fazem<sp/>a<sp/>leitura<sp/>de<sp/>um<sp/>estado<sp/>a<sp/>partir<sp/>um<sp/>ficheiro,<sp/>gravação<sp/>de<sp/>um<sp/>estado<sp/>num<sp/>ficheiro,<sp/>o<sp/>fecho<sp/>da<sp/>aplicação<sp/>e<sp/>verifica<sp/>se<sp/>naquela<sp/>jogada<sp/>existe<sp/>algum<sp/>vencedor<sp/>respetivamente.</highlight></codeline>
+<codeline><highlight class="normal">Criamos<sp/>um<sp/>prompt<sp/>que<sp/>escreve<sp/>no<sp/>terminal<sp/>algumas<sp/>informações<sp/>essenciais<sp/>aos<sp/>jogadores<sp/>para<sp/>garantir<sp/>uma<sp/>experiencia<sp/>agradável.</highlight></codeline>
+<codeline><highlight class="normal">Acabamos<sp/>a<sp/>função<sp/>que<sp/>verifica<sp/>se<sp/>a<sp/>jogada<sp/>é<sp/>válida,<sp/>juntamente<sp/>com<sp/>a<sp/>função<sp/>que<sp/>realiza<sp/>o<sp/>movimento.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Com<sp/>a<sp/>ajuda<sp/>do<sp/>programa<sp/>Doxygen<sp/>passamos<sp/>à<sp/>fase<sp/>de<sp/>criação<sp/>da<sp/>documentação<sp/>do<sp/>código,<sp/>onde<sp/>surgiu<sp/>a<sp/>única<sp/>dificuldade<sp/>com<sp/>que<sp/>nos<sp/>deparamos:<sp/>a<sp/>&quot;syntax&quot;<sp/>utilizada<sp/>na<sp/>documentação,<sp/>que<sp/>implicou<sp/>a<sp/>leitura<sp/>da<sp/>documentação<sp/>da<sp/>aplicação<sp/>e<sp/>a<sp/>consulta<sp/>de<sp/>fóruns.</highlight></codeline>
+    </programlisting>
+    <location file="Report.md"/>
+  </compounddef>
+</doxygen>

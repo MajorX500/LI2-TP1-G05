@@ -1,0 +1,957 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="bot_2data_8h" kind="file" language="C++">
+    <compoundname>data.h</compoundname>
+    <includedby refid="bot_2algorithms_8c" local="yes">bot/algorithms.c</includedby>
+    <includedby refid="bot_2bot_8c" local="yes">bot/bot.c</includedby>
+    <includedby refid="bot_2data_8c" local="yes">bot/data.c</includedby>
+    <includedby refid="bot_2interface_8c" local="yes">bot/interface.c</includedby>
+    <includedby refid="bot_2logic_8c" local="yes">bot/logic.c</includedby>
+    <invincdepgraph>
+      <node id="6">
+        <label>bot/logic.c</label>
+        <link refid="bot_2logic_8c"/>
+      </node>
+      <node id="3">
+        <label>bot/bot.c</label>
+        <link refid="bot_2bot_8c"/>
+      </node>
+      <node id="5">
+        <label>bot/interface.c</label>
+        <link refid="bot_2interface_8c"/>
+      </node>
+      <node id="2">
+        <label>bot/algorithms.c</label>
+        <link refid="bot_2algorithms_8c"/>
+      </node>
+      <node id="4">
+        <label>bot/data.c</label>
+        <link refid="bot_2data_8c"/>
+      </node>
+      <node id="1">
+        <label>bot/data.h</label>
+        <link refid="bot_2data_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structCOORDINATE" prot="public">COORDINATE</innerclass>
+    <innerclass refid="structMOVE" prot="public">MOVE</innerclass>
+    <innerclass refid="structSTATE" prot="public">STATE</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>HOUSE</name>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" prot="public">
+          <name>EMPTY</name>
+          <initializer>= &apos;.&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Vazia HOUSE::EMPTY </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" prot="public">
+          <name>WHITE</name>
+          <initializer>= &apos;@&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Branca HOUSE::WHITE </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" prot="public">
+          <name>BLACK</name>
+          <initializer>= &apos;#&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Preta HOUSE::BLACK </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" prot="public">
+          <name>H1</name>
+          <initializer>= &apos;1&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Casa 1 HOUSE::H1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" prot="public">
+          <name>H2</name>
+          <initializer>= &apos;2&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Casa 2 HOUSE::H2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" prot="public">
+          <name>EMPTY</name>
+          <initializer>= &apos;.&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Vazia HOUSE::EMPTY </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" prot="public">
+          <name>WHITE</name>
+          <initializer>= &apos;@&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Branca HOUSE::WHITE </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" prot="public">
+          <name>BLACK</name>
+          <initializer>= &apos;#&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Preta HOUSE::BLACK </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" prot="public">
+          <name>H1</name>
+          <initializer>= &apos;1&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Casa 1 HOUSE::H1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" prot="public">
+          <name>H2</name>
+          <initializer>= &apos;2&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Casa 2 HOUSE::H2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" prot="public">
+          <name>EMPTY</name>
+          <initializer>= &apos;.&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Vazia HOUSE::EMPTY </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" prot="public">
+          <name>WHITE</name>
+          <initializer>= &apos;@&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Branca HOUSE::WHITE </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" prot="public">
+          <name>BLACK</name>
+          <initializer>= &apos;#&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Preta HOUSE::BLACK </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" prot="public">
+          <name>H1</name>
+          <initializer>= &apos;1&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Casa 1 HOUSE::H1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" prot="public">
+          <name>H2</name>
+          <initializer>= &apos;2&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Casa 2 HOUSE::H2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" prot="public">
+          <name>EMPTY</name>
+          <initializer>= &apos;.&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Vazia HOUSE::EMPTY </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" prot="public">
+          <name>WHITE</name>
+          <initializer>= &apos;@&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Branca HOUSE::WHITE </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" prot="public">
+          <name>BLACK</name>
+          <initializer>= &apos;#&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Preta HOUSE::BLACK </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" prot="public">
+          <name>H1</name>
+          <initializer>= &apos;1&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Casa 1 HOUSE::H1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" prot="public">
+          <name>H2</name>
+          <initializer>= &apos;2&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Casa 2 HOUSE::H2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Tipo de dados para a casa. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="11" column="1" bodyfile="bot/data.h" bodystart="11" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="bot_2data_8h_1abea336e51b9e60c4d4a3752105b05c67" prot="public" static="no">
+        <type><ref refid="structMOVE" kindref="compound">MOVE</ref></type>
+        <definition>typedef MOVE MOVES[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>MOVES</name>
+        <briefdescription>
+<para>Tipo de dados para as jogadas. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="46" column="14" bodyfile="bot/data.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bot_2data_8h_1a6f9078a7c6336dfbb2ab5a414ffe84da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void empty_board</definition>
+        <argsstring>(HOUSE t[8][8])</argsstring>
+        <name>empty_board</name>
+        <param>
+          <type><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" kindref="member">HOUSE</ref></type>
+          <declname>t</declname>
+          <array>[8][8]</array>
+        </param>
+        <briefdescription>
+<para>Tabuleiro vazio Esta função inicializa o array do tabuleiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="81" column="6" bodyfile="bot/data.c" bodystart="8" bodyend="17" declfile="bot/data.h" declline="81" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1a7f5845c0422715df4f2ebab7cd9fd6ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+        <definition>STATE* starting_state</definition>
+        <argsstring>()</argsstring>
+        <name>starting_state</name>
+        <briefdescription>
+<para>Inicializa o valor do estado Esta função inicializa o valor do estado. Isso implica o tabuleiro ser colocado na posição inicial e todos os campos do estado estarem com o valor por omissão. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>O novo estado </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="88" column="7" bodyfile="bot/data.c" bodystart="19" bodyend="23" declfile="bot/data.h" declline="88" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1a73c58ce464546440c7ac842eb9cb0146" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int get_current_player</definition>
+        <argsstring>(STATE *e)</argsstring>
+        <name>get_current_player</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Jogador Atual Esta função diz qual é o jogador a efectuar a jogada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O jogador atual </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="97" column="5" bodyfile="bot/data.c" bodystart="33" bodyend="35" declfile="bot/data.h" declline="97" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1a38ac8382815348fe79ffd0947eafbaf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" kindref="member">HOUSE</ref></type>
+        <definition>HOUSE get_house</definition>
+        <argsstring>(STATE *e, COORDINATE c)</argsstring>
+        <name>get_house</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Devolve o valor de uma casa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A coordenada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O valor da casa </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="105" column="7" bodyfile="bot/data.c" bodystart="37" bodyend="39" declfile="bot/data.h" declline="105" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1aaf7ad647219c432a49efdd5b7e971a80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int get_num_moves</definition>
+        <argsstring>(STATE *e)</argsstring>
+        <name>get_num_moves</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Número de jogadas Esta função calcula qual o número total das jogadas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Número total de jogadas </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="113" column="5" bodyfile="bot/data.c" bodystart="41" bodyend="43" declfile="bot/data.h" declline="113" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1a914ad07e2e3c130cb6bb4d022166ada2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+        <definition>COORDINATE get_previous_move</definition>
+        <argsstring>(STATE *e)</argsstring>
+        <name>get_previous_move</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Jogada anterior Esta função diz qual foi a coordenada da jogada anterior. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A coordenada da jogada anterior </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="121" column="12" bodyfile="bot/data.c" bodystart="45" bodyend="47" declfile="bot/data.h" declline="121" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1ab7b9dc4f9bdb23de75f80c1844ecd8b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structMOVE" kindref="compound">MOVE</ref></type>
+        <definition>MOVE get_move</definition>
+        <argsstring>(STATE *e, int i)</argsstring>
+        <name>get_move</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Jogada no array de jogadas Esta função devolve a jogada de um certo indice do array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indice da jogada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="129" column="6" bodyfile="bot/data.c" bodystart="49" bodyend="51" declfile="bot/data.h" declline="129" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1a4ad699323014715baa43695eeea01471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void change_house</definition>
+        <argsstring>(STATE *e, COORDINATE c, HOUSE h)</argsstring>
+        <name>change_house</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" kindref="member">HOUSE</ref></type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>Querido Mudei a Casa Esta função altera o valor da casa de uma certa coordenada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A coordenada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>O valor da casa </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="138" column="6" bodyfile="bot/data.c" bodystart="53" bodyend="55" declfile="bot/data.h" declline="138" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1a13eb82dd09bcb25c2572f8c2d01b45c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void update_previous_move</definition>
+        <argsstring>(STATE *e, COORDINATE c)</argsstring>
+        <name>update_previous_move</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Atualiza jogada anterior Esta função altera a coordenada da jogada anterior no estado para a coordenada nova. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A coordenada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="146" column="6" bodyfile="bot/data.c" bodystart="57" bodyend="59" declfile="bot/data.h" declline="146" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1ad011353bcb4b499763e84aea4261a19f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void next_player</definition>
+        <argsstring>(STATE *e)</argsstring>
+        <name>next_player</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Próximo jogador Esta função altera o jogador atual. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="153" column="6" bodyfile="bot/data.c" bodystart="61" bodyend="63" declfile="bot/data.h" declline="153" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1a012fd6da3d2378ef9bfd8ba26395dad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_player1</definition>
+        <argsstring>(STATE *e)</argsstring>
+        <name>set_player1</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Jogador 1 atual Esta função altera o jogador atual para o jogador 1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="160" column="6" bodyfile="bot/data.c" bodystart="65" bodyend="67" declfile="bot/data.h" declline="160" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1adc8511745f803f10ab3415f82f0bdbc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_player2</definition>
+        <argsstring>(STATE *e)</argsstring>
+        <name>set_player2</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Jogador 2 atual Esta função altera o jogador atual para o jogador 2. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="167" column="6" bodyfile="bot/data.c" bodystart="69" bodyend="71" declfile="bot/data.h" declline="167" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1a27de50e8fbc3f51dde428d34ea403587" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void next_move</definition>
+        <argsstring>(STATE *e)</argsstring>
+        <name>next_move</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Póxima jogada Esta função altera o o número de jogadas efetuadas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="174" column="6" bodyfile="bot/data.c" bodystart="73" bodyend="75" declfile="bot/data.h" declline="174" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1a9358404c8116749631485d96d8e0040e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void store_p1_coordinate</definition>
+        <argsstring>(STATE *e, COORDINATE c)</argsstring>
+        <name>store_p1_coordinate</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Guarda coordenada do jogador 1 Esta função guarda uma coordenada do jogador 1 no array de jogadas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada a ser guardada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="182" column="6" bodyfile="bot/data.c" bodystart="77" bodyend="79" declfile="bot/data.h" declline="182" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1a8d75498054a6d8ce5528eb571f1c226e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void store_p2_coordinate</definition>
+        <argsstring>(STATE *e, COORDINATE c)</argsstring>
+        <name>store_p2_coordinate</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Guarda coordenada do jogador 2 Esta função guarda uma coordenada do jogador 2 no array de jogadas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada a ser guardada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="190" column="6" bodyfile="bot/data.c" bodystart="81" bodyend="83" declfile="bot/data.h" declline="190" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1a197f00b56f55587d8973c8e03c3c374a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clear_state</definition>
+        <argsstring>(STATE *e)</argsstring>
+        <name>clear_state</name>
+        <param>
+          <type><ref refid="structSTATE" kindref="compound">STATE</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Faz o rollback do estado Esta função limpa o estado do jogo, deixando apenas qual a lista de jogadas e o nº das mesmas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="197" column="6" bodyfile="bot/data.c" bodystart="25" bodyend="31" declfile="bot/data.h" declline="197" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1aa8d2c926dee8f8c40cc1da25b5a22a18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+        <definition>COORDINATE get_player_coordinate</definition>
+        <argsstring>(MOVE j, int p)</argsstring>
+        <name>get_player_coordinate</name>
+        <param>
+          <type><ref refid="structMOVE" kindref="compound">MOVE</ref></type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Coordenada do jogador Esta função retorna uma coordenada de um dos jogadores. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Jogada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Jogador </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a coordenada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="206" column="12" bodyfile="bot/data.c" bodystart="85" bodyend="90" declfile="bot/data.h" declline="206" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="bot_2data_8h_1aa20725a938220bd22635712776edbcc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int get_player_point</definition>
+        <argsstring>(COORDINATE c, char a)</argsstring>
+        <name>get_player_point</name>
+        <param>
+          <type><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Eixo do jogador Esta função retorna um eixo de um dos jogadores. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>eixo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>n valor do eixo </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bot/data.h" line="215" column="5" bodyfile="bot/data.c" bodystart="92" bodyend="97" declfile="bot/data.h" declline="215" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definição do estado e das funções que o manipulam </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>__DATA_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__DATA_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="12" refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba2f0d18fc0d0fa4a6cd92dc328501874d" kindref="member">EMPTY</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,<sp/></highlight></codeline>
+<codeline lineno="13" refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba283fc479650da98250635b9c3c0e7e50" kindref="member">WHITE</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;@&apos;</highlight><highlight class="normal">,<sp/></highlight></codeline>
+<codeline lineno="14" refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312baf77fb67151d0c18d397069ad8c271ba3" kindref="member">BLACK</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">,<sp/></highlight></codeline>
+<codeline lineno="15" refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312ba7ec6526640e5add74fe4b322e6343120" kindref="member">H1</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;1&apos;</highlight><highlight class="normal">,<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" kindref="member">H2</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;2&apos;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="17" refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312babc856fd5d1be355fd3d34b860c506cd0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" kindref="member">HOUSE</ref>;<sp/></highlight></codeline>
+<codeline lineno="26" refid="structCOORDINATE" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27" refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCOORDINATE_1a7909a19f3cc1b7a8ab97cdea8d16b21c" kindref="member">x</ref>;<sp/></highlight></codeline>
+<codeline lineno="28" refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCOORDINATE_1a08192bd646d4c754849c80ec7c364f5a" kindref="member">y</ref>;<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}<sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structMOVE" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39" refid="structMOVE_1a802f677826192d2695df3fe13256ac1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/><ref refid="structMOVE_1a802f677826192d2695df3fe13256ac1d" kindref="member">player1</ref>;</highlight></codeline>
+<codeline lineno="40" refid="structMOVE_1a65881528e3c27539f6813e8479cf2f02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/><ref refid="structMOVE_1a65881528e3c27539f6813e8479cf2f02" kindref="member">player2</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}<sp/><ref refid="structMOVE" kindref="compound">MOVE</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="bot_2data_8h_1abea336e51b9e60c4d4a3752105b05c67" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structMOVE" kindref="compound">MOVE</ref><sp/><ref refid="bot_2data_8h_1abea336e51b9e60c4d4a3752105b05c67" kindref="member">MOVES</ref>[32];</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="structSTATE" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64" refid="structSTATE_1af1d03dd04058d7c57a4029abeae701f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" kindref="member">HOUSE</ref><sp/>board[8][8];</highlight></codeline>
+<codeline lineno="66" refid="structSTATE_1ab058fa820cbb60d2138b762e2cc258ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/><ref refid="structSTATE_1ab058fa820cbb60d2138b762e2cc258ab" kindref="member">previous_move</ref>;</highlight></codeline>
+<codeline lineno="68" refid="structSTATE_1ac8e19f87314fe850d57487a27b3df0e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bot_2data_8h_1abea336e51b9e60c4d4a3752105b05c67" kindref="member">MOVES</ref><sp/><ref refid="structSTATE_1ac8e19f87314fe850d57487a27b3df0e8" kindref="member">moves</ref>;</highlight></codeline>
+<codeline lineno="70" refid="structSTATE_1a815121cea9f6fd1fffb97ab8d2f623db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structSTATE_1a815121cea9f6fd1fffb97ab8d2f623db" kindref="member">num_moves</ref>;</highlight></codeline>
+<codeline lineno="72" refid="structSTATE_1af6129f7baf3c348badfee5147a6aacfb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structSTATE_1af6129f7baf3c348badfee5147a6aacfb" kindref="member">current_player</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}<sp/><ref refid="structSTATE" kindref="compound">STATE</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bot_2data_8h_1a6f9078a7c6336dfbb2ab5a414ffe84da" kindref="member">empty_board</ref>(<ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" kindref="member">HOUSE</ref><sp/>t[8][8]);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*<ref refid="bot_2data_8h_1a7f5845c0422715df4f2ebab7cd9fd6ad" kindref="member">starting_state</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2data_8h_1a73c58ce464546440c7ac842eb9cb0146" kindref="member">get_current_player</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" kindref="member">HOUSE</ref><sp/><ref refid="bot_2data_8h_1a38ac8382815348fe79ffd0947eafbaf9" kindref="member">get_house</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e,<sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2data_8h_1aaf7ad647219c432a49efdd5b7e971a80" kindref="member">get_num_moves</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/><ref refid="bot_2data_8h_1a914ad07e2e3c130cb6bb4d022166ada2" kindref="member">get_previous_move</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><ref refid="structMOVE" kindref="compound">MOVE</ref><sp/><ref refid="bot_2data_8h_1ab7b9dc4f9bdb23de75f80c1844ecd8b8" kindref="member">get_move</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bot_2data_8h_1a4ad699323014715baa43695eeea01471" kindref="member">change_house</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e,<sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c,<sp/><ref refid="bot_2data_8h_1a695a2c9044d3fd6651f8eeeced1b312b" kindref="member">HOUSE</ref><sp/>h);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bot_2data_8h_1a13eb82dd09bcb25c2572f8c2d01b45c3" kindref="member">update_previous_move</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e,<sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bot_2data_8h_1ad011353bcb4b499763e84aea4261a19f" kindref="member">next_player</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bot_2data_8h_1a012fd6da3d2378ef9bfd8ba26395dad4" kindref="member">set_player1</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bot_2data_8h_1adc8511745f803f10ab3415f82f0bdbc3" kindref="member">set_player2</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bot_2data_8h_1a27de50e8fbc3f51dde428d34ea403587" kindref="member">next_move</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bot_2data_8h_1a9358404c8116749631485d96d8e0040e" kindref="member">store_p1_coordinate</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e,<sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bot_2data_8h_1a8d75498054a6d8ce5528eb571f1c226e" kindref="member">store_p2_coordinate</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e,<sp/><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bot_2data_8h_1a197f00b56f55587d8973c8e03c3c374a" kindref="member">clear_state</ref>(<ref refid="structSTATE" kindref="compound">STATE</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/><ref refid="bot_2data_8h_1aa8d2c926dee8f8c40cc1da25b5a22a18" kindref="member">get_player_coordinate</ref>(<ref refid="structMOVE" kindref="compound">MOVE</ref><sp/>j,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bot_2data_8h_1aa20725a938220bd22635712776edbcc2" kindref="member">get_player_point</ref>(<ref refid="structCOORDINATE" kindref="compound">COORDINATE</ref><sp/>c,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>a);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="bot/data.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Rastros<sp/>-<sp/>LI2</highlight></codeline>
+<codeline><highlight class="normal">Um<sp/>jogo<sp/>baseado<sp/>no<sp/>jogo<sp/>&quot;Rastros&quot;,<sp/>criado<sp/>em<sp/>C<sp/>no<sp/>âmbito<sp/>da<sp/>cadeira<sp/>de<sp/>Laboratórios<sp/>de<sp/>Informática<sp/>II<sp/>2019/2020,<sp/>no<sp/>mestrado<sp/>integrado<sp/>em<sp/>Engenharia<sp/>Informática<sp/>da<sp/>Universidade<sp/>do<sp/>Minho.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Turno<sp/>-<sp/>PL1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Grupo<sp/>-<sp/>005</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Elementos<sp/>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>A93294<sp/>-<sp/>Pedro<sp/>Miguel<sp/>Rodrigues<sp/>Gomes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>A93216<sp/>-<sp/>Guilherme<sp/>Lima<sp/>Barros<sp/>Gomes<sp/>Fernandes</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>SlimeTrail<sp/>-<sp/>LI2</highlight></codeline>
+<codeline><highlight class="normal">A<sp/>game<sp/>based<sp/>on<sp/>the<sp/>game<sp/>&quot;SlimeTrail&quot;,<sp/>created<sp/>in<sp/>C<sp/>under<sp/>the<sp/>course<sp/>of<sp/>Computer<sp/>Laboratories<sp/>II<sp/>2019/2020,<sp/>in<sp/>the<sp/>integrated<sp/>master&apos;s<sp/>degree<sp/>in<sp/>Software<sp/>Engineering<sp/>at<sp/>the<sp/>University<sp/>of<sp/>Minho.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Turn<sp/>-<sp/>PL1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Group<sp/>-<sp/>005</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Elements<sp/>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>A93294<sp/>-<sp/>Pedro<sp/>Miguel<sp/>Rodrigues<sp/>Gomes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>A93216<sp/>-<sp/>Guilherme<sp/>Lima<sp/>Barros<sp/>Gomes<sp/>Fernandes</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

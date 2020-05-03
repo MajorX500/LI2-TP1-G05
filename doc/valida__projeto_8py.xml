@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="valida__projeto_8py" kind="file" language="Python">
+    <compoundname>valida_projeto.py</compoundname>
+    <innernamespace refid="namespacevalida__projeto">valida_projeto</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys,<sp/>os,<sp/>re,<sp/>subprocess,<sp/>glob,<sp/>os.path</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">check_for_warnings(folder):</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>os.path.isdir(folder):</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>args<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;-std=gnu11<sp/>-Wall<sp/>-Wextra<sp/>-pedantic-errors<sp/>-O&apos;</highlight><highlight class="normal">.split()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>files<sp/>=<sp/>glob.glob(f</highlight><highlight class="stringliteral">&apos;{folder}/*.c&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>res<sp/>=<sp/>subprocess.run([</highlight><highlight class="stringliteral">&apos;gcc&apos;</highlight><highlight class="normal">,<sp/>*args,<sp/>*files,<sp/></highlight><highlight class="stringliteral">&apos;-lm&apos;</highlight><highlight class="normal">],<sp/>stderr=subprocess.STDOUT,<sp/>stdout=subprocess.PIPE,<sp/>cwd<sp/>=<sp/>folder)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>warnings<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>if(res.stdout):</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>warnings<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>warnings</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">count_XML_files(folder):</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>files<sp/>=<sp/>glob.glob(f</highlight><highlight class="stringliteral">&apos;{folder}/*.xml&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>tam<sp/>=<sp/>len(files)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tam<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>tam<sp/>&gt;<sp/>0<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;NO!&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">check_documentation(proj,<sp/>doc):</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>os.path.isdir(proj):</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os.system(f</highlight><highlight class="stringliteral">&apos;cd<sp/>{proj};<sp/>doxygen<sp/>-g<sp/>&gt;<sp/>/dev/null;<sp/>sed<sp/>-e<sp/>&quot;s/\(GENERATE_XML.*=.*\)NO/\\1YES/;<sp/>s/\(RECURSIVE.*=.*\)NO/\\1YES/&quot;<sp/>Doxyfile<sp/>&gt;<sp/>sai;<sp/>mv<sp/>sai<sp/>Doxyfile;<sp/>doxygen<sp/>&gt;<sp/>/dev/null<sp/>2&gt;&amp;1&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os.system(f</highlight><highlight class="stringliteral">&apos;cd<sp/>{proj};<sp/>python3<sp/>-m<sp/>coverxygen<sp/>--xml-dir<sp/>xml<sp/>--src-dir<sp/>.<sp/>--output<sp/>sai&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#os.system(f&apos;cd<sp/>{proj};<sp/>lcov<sp/>--summary<sp/>sai<sp/>2&gt;&amp;1<sp/>|<sp/>grep<sp/>lines<sp/>|<sp/>cut<sp/>-f2<sp/>-d:<sp/>|<sp/>cut<sp/>-f1<sp/>-d%&apos;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>subprocess.run(</highlight><highlight class="stringliteral">&apos;lcov<sp/>--summary<sp/>sai&apos;</highlight><highlight class="normal">.split(),<sp/>stderr=subprocess.STDOUT,<sp/>stdout=subprocess.PIPE,<sp/>cwd<sp/>=<sp/>proj)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m<sp/>=<sp/>re.search(</highlight><highlight class="stringliteral">r&apos;lines\.*:\s+(.*?)%&apos;</highlight><highlight class="normal">,<sp/>res.stdout.decode(</highlight><highlight class="stringliteral">&apos;utf8&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m.group(1)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">count_C_files(folder):</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>files<sp/>=<sp/>glob.glob(f</highlight><highlight class="stringliteral">&apos;{folder}/*.[hc]&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>len(files)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">check_for_readme(folder):</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>possibilities<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;README<sp/>Readme<sp/>readme&apos;</highlight><highlight class="normal">.split()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>any(os.path.isfile(f</highlight><highlight class="stringliteral">&apos;{folder}/{poss}.md&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>poss<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>possibilities)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">extrai(filename):</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>m<sp/>=<sp/>re.match(</highlight><highlight class="stringliteral">r&apos;((li2|la1)PL([1-8])G([01][0-9])).zip&apos;</highlight><highlight class="normal">,<sp/>filename)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>m:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&apos;O<sp/>nome<sp/>do<sp/>ficheiro<sp/>{filename}<sp/>não<sp/>está<sp/>correto&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>dir,<sp/>curso,<sp/>turno,<sp/>grupo<sp/>=<sp/>m.groups()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>base_dir<sp/>=<sp/>f</highlight><highlight class="stringliteral">&apos;{dir}&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>code_dir<sp/>=<sp/>f</highlight><highlight class="stringliteral">&apos;{dir}/projeto&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>doc_dir<sp/>=<sp/>f</highlight><highlight class="stringliteral">&apos;{dir}/doc&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>bot_dir<sp/>=<sp/>f</highlight><highlight class="stringliteral">&apos;{dir}/bot&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>os.system(f</highlight><highlight class="stringliteral">&apos;rm<sp/>-rf<sp/>{base_dir}&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>os.makedirs(base_dir,<sp/>exist_ok<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>os.system(f</highlight><highlight class="stringliteral">&apos;cp<sp/>{filename}<sp/>{base_dir};<sp/>cd<sp/>{base_dir};<sp/>unzip<sp/>-o<sp/>-q<sp/>{filename}&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>warnings<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;NO&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>any(check_for_warnings(folder)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>folder<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>[code_dir,<sp/>bot_dir])<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;YES!&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>num_files_projeto<sp/>=<sp/>count_C_files(code_dir)<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>os.path.isdir(code_dir)<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;NO!&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>num_files_bot<sp/>=<sp/>count_C_files(bot_dir)<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>os.path.isdir(bot_dir)<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;NO!&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#documentation<sp/>=<sp/>count_XML_files(doc_dir)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>documentation<sp/>=<sp/>check_documentation(code_dir,<sp/>doc_dir)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&apos;Curso:<sp/>{curso}\tTurno:<sp/>{turno}\tGrupo:<sp/>{grupo}\tREADME:<sp/>{check_for_readme(base_dir)}\tDoc:<sp/>{documentation}%\tWarnings:<sp/>{warnings}\t#files_projeto:<sp/>{num_files_projeto}\t#files_bot:<sp/>{num_files_bot}&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>filename<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>sys.argv[1:]:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>extrai(filename)</highlight></codeline>
+    </programlisting>
+    <location file="valida_projeto.py"/>
+  </compounddef>
+</doxygen>
